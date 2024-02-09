@@ -1,4 +1,4 @@
-module github.com/tendermint/tendermint
+module github.com/KYVENetwork/celestia-core
 
 go 1.19
 
