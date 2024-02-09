@@ -7,16 +7,16 @@ import (
 	"fmt"
 	"time"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/log"
-	cmtsync "github.com/tendermint/tendermint/libs/sync"
-	"github.com/tendermint/tendermint/light"
-	"github.com/tendermint/tendermint/p2p"
-	ssproto "github.com/tendermint/tendermint/proto/tendermint/statesync"
-	"github.com/tendermint/tendermint/proxy"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/light"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	ssproto "github.com/KYVENetwork/celestia-core/proto/tendermint/statesync"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const (

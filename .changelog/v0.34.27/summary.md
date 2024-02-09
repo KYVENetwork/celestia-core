@@ -1,7 +1,7 @@
 *Feb 27, 2023*
 
 This is the first official release of CometBFT - a fork of [Tendermint
-Core](https://github.com/tendermint/tendermint). This particular release is
+Core](https://github.com/KYVENetwork/celestia-core). This particular release is
 intended to be compatible with the Tendermint Core v0.34 release series.
 
 For details as to how to upgrade to CometBFT from Tendermint Core, please see

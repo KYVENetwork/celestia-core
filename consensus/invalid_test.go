@@ -3,13 +3,13 @@ package consensus
 import (
 	"testing"
 
-	"github.com/tendermint/tendermint/libs/bytes"
-	"github.com/tendermint/tendermint/libs/log"
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
-	"github.com/tendermint/tendermint/p2p"
-	cmtcons "github.com/tendermint/tendermint/proto/tendermint/consensus"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/bytes"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	cmtcons "github.com/KYVENetwork/celestia-core/proto/tendermint/consensus"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 //----------------------------------------------

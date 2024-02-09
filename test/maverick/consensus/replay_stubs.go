@@ -1,12 +1,12 @@
 package consensus
 
 import (
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/clist"
-	mempl "github.com/tendermint/tendermint/mempool"
-	cmtstate "github.com/tendermint/tendermint/proto/tendermint/state"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/clist"
+	mempl "github.com/KYVENetwork/celestia-core/mempool"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/tendermint/state"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 //-----------------------------------------------------------------------------

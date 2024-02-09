@@ -5,8 +5,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	cmtjson "github.com/tendermint/tendermint/libs/json"
-	"github.com/tendermint/tendermint/privval"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	"github.com/KYVENetwork/celestia-core/privval"
 )
 
 // GenValidatorCmd allows the generation of a keypair for a

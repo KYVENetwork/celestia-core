@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"reflect"
 
-	cmtjson "github.com/tendermint/tendermint/libs/json"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
 )
 
 func argsToURLValues(args map[string]interface{}) (url.Values, error) {

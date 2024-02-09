@@ -10,10 +10,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/libs/protoio"
-	"github.com/tendermint/tendermint/p2p/conn"
-	tmp2p "github.com/tendermint/tendermint/proto/tendermint/p2p"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	"github.com/KYVENetwork/celestia-core/libs/protoio"
+	"github.com/KYVENetwork/celestia-core/p2p/conn"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/tendermint/p2p"
 )
 
 var defaultNodeName = "host_peer"

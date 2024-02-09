@@ -9,9 +9,9 @@ import (
 	"reflect"
 	"sort"
 
-	cmtjson "github.com/tendermint/tendermint/libs/json"
-	"github.com/tendermint/tendermint/libs/log"
-	types "github.com/tendermint/tendermint/rpc/jsonrpc/types"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	types "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
 )
 
 // HTTP + JSON handler

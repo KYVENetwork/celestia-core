@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	cmttime "github.com/tendermint/tendermint/types/time"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
 // ValidateTime does a basic time validation ensuring time does not drift too

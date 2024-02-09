@@ -7,12 +7,12 @@ import (
 	db "github.com/cometbft/cometbft-db"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/log"
-	blockidxkv "github.com/tendermint/tendermint/state/indexer/block/kv"
-	"github.com/tendermint/tendermint/state/txindex"
-	"github.com/tendermint/tendermint/state/txindex/kv"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	blockidxkv "github.com/KYVENetwork/celestia-core/state/indexer/block/kv"
+	"github.com/KYVENetwork/celestia-core/state/txindex"
+	"github.com/KYVENetwork/celestia-core/state/txindex/kv"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func TestIndexerServiceIndexesBlocks(t *testing.T) {

@@ -10,13 +10,13 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/bytes"
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/privval"
-	"github.com/tendermint/tendermint/types"
-	cmttime "github.com/tendermint/tendermint/types/time"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/bytes"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/privval"
+	"github.com/KYVENetwork/celestia-core/types"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
 var (

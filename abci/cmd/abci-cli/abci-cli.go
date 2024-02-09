@@ -11,18 +11,18 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/tendermint/tendermint/libs/log"
-	cmtos "github.com/tendermint/tendermint/libs/os"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
 
-	abcicli "github.com/tendermint/tendermint/abci/client"
-	"github.com/tendermint/tendermint/abci/example/code"
-	"github.com/tendermint/tendermint/abci/example/counter"
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	"github.com/tendermint/tendermint/abci/server"
-	servertest "github.com/tendermint/tendermint/abci/tests/server"
-	"github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/abci/version"
-	"github.com/tendermint/tendermint/proto/tendermint/crypto"
+	abcicli "github.com/KYVENetwork/celestia-core/abci/client"
+	"github.com/KYVENetwork/celestia-core/abci/example/code"
+	"github.com/KYVENetwork/celestia-core/abci/example/counter"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	"github.com/KYVENetwork/celestia-core/abci/server"
+	servertest "github.com/KYVENetwork/celestia-core/abci/tests/server"
+	"github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/abci/version"
+	"github.com/KYVENetwork/celestia-core/proto/tendermint/crypto"
 )
 
 // client is a global variable so it can be reused by the console

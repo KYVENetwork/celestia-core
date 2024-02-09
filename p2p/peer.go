@@ -8,11 +8,11 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/tendermint/tendermint/libs/cmap"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
+	"github.com/KYVENetwork/celestia-core/libs/cmap"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/libs/service"
 
-	cmtconn "github.com/tendermint/tendermint/p2p/conn"
+	cmtconn "github.com/KYVENetwork/celestia-core/p2p/conn"
 )
 
 //go:generate ../scripts/mockery_generate.sh Peer

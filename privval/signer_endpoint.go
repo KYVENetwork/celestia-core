@@ -5,10 +5,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/tendermint/tendermint/libs/protoio"
-	"github.com/tendermint/tendermint/libs/service"
-	cmtsync "github.com/tendermint/tendermint/libs/sync"
-	privvalproto "github.com/tendermint/tendermint/proto/tendermint/privval"
+	"github.com/KYVENetwork/celestia-core/libs/protoio"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	privvalproto "github.com/KYVENetwork/celestia-core/proto/tendermint/privval"
 )
 
 const (

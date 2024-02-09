@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
 )
 
 // LightBlock is a SignedHeader and a ValidatorSet.

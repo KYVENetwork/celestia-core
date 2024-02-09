@@ -10,15 +10,15 @@ import (
 
 	"github.com/creachadair/taskgroup"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/clist"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/mempool"
-	"github.com/tendermint/tendermint/pkg/trace"
-	"github.com/tendermint/tendermint/pkg/trace/schema"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/clist"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/mempool"
+	"github.com/KYVENetwork/celestia-core/pkg/trace"
+	"github.com/KYVENetwork/celestia-core/pkg/trace/schema"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 var _ mempool.Mempool = (*TxMempool)(nil)

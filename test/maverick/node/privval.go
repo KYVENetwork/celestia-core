@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	cmtbytes "github.com/tendermint/tendermint/libs/bytes"
-	cmtjson "github.com/tendermint/tendermint/libs/json"
-	cmtos "github.com/tendermint/tendermint/libs/os"
-	"github.com/tendermint/tendermint/libs/tempfile"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	cmtbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
+	"github.com/KYVENetwork/celestia-core/libs/tempfile"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // *******************************************************************************************************************

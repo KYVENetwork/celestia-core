@@ -13,18 +13,18 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/mempool/mock"
-	"github.com/tendermint/tendermint/p2p"
-	bcproto "github.com/tendermint/tendermint/proto/tendermint/blockchain"
-	"github.com/tendermint/tendermint/proxy"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/store"
-	"github.com/tendermint/tendermint/test/factory"
-	"github.com/tendermint/tendermint/types"
-	cmttime "github.com/tendermint/tendermint/types/time"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/mempool/mock"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	bcproto "github.com/KYVENetwork/celestia-core/proto/tendermint/blockchain"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/store"
+	"github.com/KYVENetwork/celestia-core/test/factory"
+	"github.com/KYVENetwork/celestia-core/types"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
 var config *cfg.Config

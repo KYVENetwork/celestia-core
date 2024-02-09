@@ -3,7 +3,7 @@ package cat
 import (
 	"time"
 
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // wrappedTx defines a wrapper around a raw transaction with additional metadata

@@ -5,12 +5,12 @@ import (
 	"os"
 	"testing"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
-	cmttime "github.com/tendermint/tendermint/types/time"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
 var config *cfg.Config // NOTE: must be reset for each _test.go file

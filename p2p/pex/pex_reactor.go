@@ -8,13 +8,13 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/tendermint/tendermint/libs/cmap"
-	cmtmath "github.com/tendermint/tendermint/libs/math"
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
-	"github.com/tendermint/tendermint/libs/service"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/p2p/conn"
-	tmp2p "github.com/tendermint/tendermint/proto/tendermint/p2p"
+	"github.com/KYVENetwork/celestia-core/libs/cmap"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/p2p/conn"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/tendermint/p2p"
 )
 
 type Peer = p2p.Peer

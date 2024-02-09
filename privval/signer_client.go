@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto"
-	cryptoenc "github.com/tendermint/tendermint/crypto/encoding"
-	privvalproto "github.com/tendermint/tendermint/proto/tendermint/privval"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
+	privvalproto "github.com/KYVENetwork/celestia-core/proto/tendermint/privval"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // SignerClient implements PrivValidator.

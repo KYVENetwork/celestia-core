@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
 )
 
 // PrivValidator defines the functionality of a local CometBFT validator

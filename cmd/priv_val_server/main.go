@@ -5,12 +5,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/libs/log"
-	cmtnet "github.com/tendermint/tendermint/libs/net"
-	cmtos "github.com/tendermint/tendermint/libs/os"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtnet "github.com/KYVENetwork/celestia-core/libs/net"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
 
-	"github.com/tendermint/tendermint/privval"
+	"github.com/KYVENetwork/celestia-core/privval"
 )
 
 func main() {

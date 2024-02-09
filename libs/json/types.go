@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"reflect"
 
-	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 )
 
 var (

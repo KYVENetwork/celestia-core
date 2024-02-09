@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"time"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	mempl "github.com/tendermint/tendermint/mempool"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	mempl "github.com/KYVENetwork/celestia-core/mempool"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 var ErrTimedOutWaitingForTx = errors.New("timed out waiting for tx to be included in a block")

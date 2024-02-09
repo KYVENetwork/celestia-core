@@ -1,9 +1,9 @@
 package p2p
 
 import (
+	"github.com/KYVENetwork/celestia-core/p2p/conn"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/tendermint/p2p"
 	"github.com/gogo/protobuf/proto"
-	"github.com/tendermint/tendermint/p2p/conn"
-	tmp2p "github.com/tendermint/tendermint/proto/tendermint/p2p"
 )
 
 type ChannelDescriptor = conn.ChannelDescriptor

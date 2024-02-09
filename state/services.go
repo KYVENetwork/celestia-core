@@ -1,7 +1,7 @@
 package state
 
 import (
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 //------------------------------------------------------

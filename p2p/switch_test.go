@@ -19,12 +19,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/libs/log"
-	cmtsync "github.com/tendermint/tendermint/libs/sync"
-	"github.com/tendermint/tendermint/p2p/conn"
-	p2pproto "github.com/tendermint/tendermint/proto/tendermint/p2p"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/p2p/conn"
+	p2pproto "github.com/KYVENetwork/celestia-core/proto/tendermint/p2p"
 )
 
 var cfg *config.P2PConfig

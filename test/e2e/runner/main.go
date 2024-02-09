@@ -8,11 +8,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/pkg/trace"
-	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
-	"github.com/tendermint/tendermint/test/e2e/pkg/infra"
-	"github.com/tendermint/tendermint/test/e2e/pkg/infra/docker"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/pkg/trace"
+	e2e "github.com/KYVENetwork/celestia-core/test/e2e/pkg"
+	"github.com/KYVENetwork/celestia-core/test/e2e/pkg/infra"
+	"github.com/KYVENetwork/celestia-core/test/e2e/pkg/infra/docker"
 )
 
 var (

@@ -11,17 +11,17 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/tendermint/tendermint/evidence"
-	"github.com/tendermint/tendermint/evidence/mocks"
-	"github.com/tendermint/tendermint/libs/log"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	cmtversion "github.com/tendermint/tendermint/proto/tendermint/version"
-	sm "github.com/tendermint/tendermint/state"
-	smmocks "github.com/tendermint/tendermint/state/mocks"
-	"github.com/tendermint/tendermint/store"
-	"github.com/tendermint/tendermint/test/factory"
-	"github.com/tendermint/tendermint/types"
-	"github.com/tendermint/tendermint/version"
+	"github.com/KYVENetwork/celestia-core/evidence"
+	"github.com/KYVENetwork/celestia-core/evidence/mocks"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/tendermint/version"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	smmocks "github.com/KYVENetwork/celestia-core/state/mocks"
+	"github.com/KYVENetwork/celestia-core/store"
+	"github.com/KYVENetwork/celestia-core/test/factory"
+	"github.com/KYVENetwork/celestia-core/types"
+	"github.com/KYVENetwork/celestia-core/version"
 )
 
 func TestMain(m *testing.M) {

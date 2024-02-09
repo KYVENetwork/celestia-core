@@ -1,13 +1,13 @@
 package proxy
 
 import (
-	"github.com/tendermint/tendermint/libs/bytes"
-	lrpc "github.com/tendermint/tendermint/light/rpc"
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpcserver "github.com/tendermint/tendermint/rpc/jsonrpc/server"
-	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/bytes"
+	lrpc "github.com/KYVENetwork/celestia-core/light/rpc"
+	rpcclient "github.com/KYVENetwork/celestia-core/rpc/client"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	rpcserver "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/server"
+	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func RPCRoutes(c *lrpc.Client) map[string]*rpcserver.RPCFunc {

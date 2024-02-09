@@ -3,8 +3,8 @@ package mempool
 import (
 	"fmt"
 
+	"github.com/KYVENetwork/celestia-core/p2p"
 	"github.com/gogo/protobuf/proto"
-	"github.com/tendermint/tendermint/p2p"
 )
 
 var (

@@ -15,7 +15,7 @@ some of the remaining necessary changes to be more isolated from the rest of the
 strategies should significantly streamline pulling updates from upstream, and allow us to iterate faster since most
 changes will be isolated to celestia-node.
 
-Update: many of the changes described below have since been minimized or removed. Please see ADR 008 for a summarized list of changes. Notably, we removed intermediate state roots, adopted two new methods from ABCI++ instead of PreprocessTxs, and are still signing over the PartSetHeader. 
+Update: many of the changes described below have since been minimized or removed. Please see ADR 008 for a summarized list of changes. Notably, we removed intermediate state roots, adopted two new methods from ABCI++ instead of PreprocessTxs, and are still signing over the PartSetHeader.
 
 ## Decision
 
@@ -131,7 +131,7 @@ describe how to hash the block data here:
 
 #### Only produce blocks on some interval
 
-- Control block times (https://github.com/tendermint/tendermint/issues/5911)
+- Control block times (https://github.com/KYVENetwork/celestia-core/issues/5911)
 
 #### Stop signing over the PartSetHeader
 

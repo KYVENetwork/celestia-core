@@ -4,8 +4,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/tendermint/tendermint/libs/service"
-	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 )
 
 //---------------------------------------------------------------------------------------

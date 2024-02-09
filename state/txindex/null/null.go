@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/pubsub/query"
-	"github.com/tendermint/tendermint/state/txindex"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	"github.com/KYVENetwork/celestia-core/state/txindex"
 )
 
 var _ txindex.TxIndexer = (*TxIndex)(nil)

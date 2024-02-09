@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	cmtcrypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
+	cmtcrypto "github.com/KYVENetwork/celestia-core/proto/tendermint/crypto"
 )
 
 //----------------------------------------
