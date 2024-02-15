@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	abci "github.com/KYVENetwork/celestia-core/abci/types"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 var (

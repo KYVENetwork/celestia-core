@@ -7,7 +7,7 @@ import (
 	clist "github.com/KYVENetwork/celestia-core/libs/clist"
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	"github.com/KYVENetwork/celestia-core/p2p"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/types"
 	"github.com/gogo/protobuf/proto"
 )

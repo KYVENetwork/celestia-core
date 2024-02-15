@@ -9,8 +9,8 @@ import (
 
 	"github.com/KYVENetwork/celestia-core/crypto"
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
-	cmtstate "github.com/KYVENetwork/celestia-core/proto/tendermint/state"
-	cmtversion "github.com/KYVENetwork/celestia-core/proto/tendermint/version"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestiacore/version"
 	"github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/state/mocks"
 	"github.com/KYVENetwork/celestia-core/types"

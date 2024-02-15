@@ -14,7 +14,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
 	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/types"
 	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
@@ -131,11 +131,11 @@ func TestUnmarshalValidatorKey(t *testing.T) {
 	serialized := fmt.Sprintf(`{
   "address": "%s",
   "pub_key": {
-    "type": "tendermint/PubKeyEd25519",
+    "type": "celestiacore/PubKeyEd25519",
     "value": "%s"
   },
   "priv_key": {
-    "type": "tendermint/PrivKeyEd25519",
+    "type": "celestiacore/PrivKeyEd25519",
     "value": "%s"
   }
 }`, addr, pubB64, privB64)

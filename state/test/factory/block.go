@@ -6,7 +6,7 @@ import (
 	sm "github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/test/factory"
 
-	tmproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	tmproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

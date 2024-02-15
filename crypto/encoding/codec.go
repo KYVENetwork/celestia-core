@@ -7,13 +7,13 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
 	"github.com/KYVENetwork/celestia-core/crypto/secp256k1"
 	"github.com/KYVENetwork/celestia-core/libs/json"
-	pc "github.com/KYVENetwork/celestia-core/proto/tendermint/crypto"
+	pc "github.com/KYVENetwork/celestia-core/proto/celestiacore/crypto"
 )
 
 func init() {
-	json.RegisterType((*pc.PublicKey)(nil), "tendermint.crypto.PublicKey")
-	json.RegisterType((*pc.PublicKey_Ed25519)(nil), "tendermint.crypto.PublicKey_Ed25519")
-	json.RegisterType((*pc.PublicKey_Secp256K1)(nil), "tendermint.crypto.PublicKey_Secp256K1")
+	json.RegisterType((*pc.PublicKey)(nil), "celestiacore.crypto.PublicKey")
+	json.RegisterType((*pc.PublicKey_Ed25519)(nil), "celestiacore.crypto.PublicKey_Ed25519")
+	json.RegisterType((*pc.PublicKey_Secp256K1)(nil), "celestiacore.crypto.PublicKey_Secp256K1")
 }
 
 // PubKeyToProto takes crypto.PubKey and transforms it to a protobuf Pubkey

@@ -16,7 +16,7 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 
 	abci "github.com/KYVENetwork/celestia-core/abci/types"
-	cmtstate "github.com/KYVENetwork/celestia-core/proto/tendermint/state"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
 	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
 	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
 	sm "github.com/KYVENetwork/celestia-core/state"

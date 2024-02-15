@@ -14,7 +14,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/p2p"
 	"github.com/KYVENetwork/celestia-core/pkg/trace"
 	"github.com/KYVENetwork/celestia-core/pkg/trace/schema"
-	protomem "github.com/KYVENetwork/celestia-core/proto/tendermint/mempool"
+	protomem "github.com/KYVENetwork/celestia-core/proto/celestiacore/mempool"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

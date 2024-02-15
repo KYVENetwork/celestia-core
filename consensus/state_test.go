@@ -18,7 +18,7 @@ import (
 	cmtpubsub "github.com/KYVENetwork/celestia-core/libs/pubsub"
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
 	p2pmock "github.com/KYVENetwork/celestia-core/p2p/mock"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

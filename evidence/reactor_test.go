@@ -24,7 +24,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	"github.com/KYVENetwork/celestia-core/p2p"
 	p2pmocks "github.com/KYVENetwork/celestia-core/p2p/mocks"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	sm "github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/types"
 )

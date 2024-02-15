@@ -12,9 +12,9 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
 	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
-	cryptoproto "github.com/KYVENetwork/celestia-core/proto/tendermint/crypto"
-	privproto "github.com/KYVENetwork/celestia-core/proto/tendermint/privval"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cryptoproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/crypto"
+	privproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/privval"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

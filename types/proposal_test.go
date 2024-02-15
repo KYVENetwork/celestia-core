@@ -12,7 +12,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
 	"github.com/KYVENetwork/celestia-core/libs/protoio"
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 var (

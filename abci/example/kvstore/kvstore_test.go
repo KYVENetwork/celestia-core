@@ -15,7 +15,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/abci/example/code"
 	abciserver "github.com/KYVENetwork/celestia-core/abci/server"
 	"github.com/KYVENetwork/celestia-core/abci/types"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 const (

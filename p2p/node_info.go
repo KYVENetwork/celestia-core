@@ -8,7 +8,7 @@ import (
 
 	cmtbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
 	cmtstrings "github.com/KYVENetwork/celestia-core/libs/strings"
-	tmp2p "github.com/KYVENetwork/celestia-core/proto/tendermint/p2p"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestiacore/p2p"
 	"github.com/KYVENetwork/celestia-core/version"
 )
 

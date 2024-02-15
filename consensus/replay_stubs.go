@@ -4,7 +4,7 @@ import (
 	abci "github.com/KYVENetwork/celestia-core/abci/types"
 	"github.com/KYVENetwork/celestia-core/libs/clist"
 	mempl "github.com/KYVENetwork/celestia-core/mempool"
-	cmtstate "github.com/KYVENetwork/celestia-core/proto/tendermint/state"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
 	"github.com/KYVENetwork/celestia-core/proxy"
 	"github.com/KYVENetwork/celestia-core/types"
 )

@@ -8,7 +8,7 @@ import (
 	cfg "github.com/KYVENetwork/celestia-core/config"
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/types"
 	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )

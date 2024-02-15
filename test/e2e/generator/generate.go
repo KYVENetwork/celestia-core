@@ -360,7 +360,7 @@ func (m misbehaviorOption) atHeight(height int64) map[string]string {
 // Parses strings like "v0.34.21:1,v0.34.22:2" to represent two versions
 // ("v0.34.21" and "v0.34.22") with weights of 1 and 2 respectively.
 // Versions may be specified as cometbft/e2e-node:v0.34.27-alpha.1:1 or
-// ghcr.io/informalsystems/tendermint:v0.34.26:1.
+// ghcr.io/informalsystems/celestiacore:v0.34.26:1.
 // If only the tag and weight are specified, cometbft/e2e-node is assumed.
 // Also returns the last version in the list, which will be used for updates.
 func parseWeightedVersions(s string) (weightedChoice, string, error) {

@@ -7,7 +7,7 @@ import (
 	"github.com/gogo/protobuf/proto"
 
 	"github.com/KYVENetwork/celestia-core/p2p"
-	bcproto "github.com/KYVENetwork/celestia-core/proto/tendermint/blockchain"
+	bcproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/blockchain"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

@@ -10,8 +10,8 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/fail"
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	mempl "github.com/KYVENetwork/celestia-core/mempool"
-	cmtstate "github.com/KYVENetwork/celestia-core/proto/tendermint/state"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/proxy"
 	"github.com/KYVENetwork/celestia-core/types"
 )

@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/KYVENetwork/celestia-core/crypto"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

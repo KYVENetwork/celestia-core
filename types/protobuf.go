@@ -6,7 +6,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
 	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
 	"github.com/KYVENetwork/celestia-core/crypto/secp256k1"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 //-------------------------------------------------------

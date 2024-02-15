@@ -15,7 +15,7 @@ import (
 	lighthttp "github.com/KYVENetwork/celestia-core/light/provider/http"
 	lightrpc "github.com/KYVENetwork/celestia-core/light/rpc"
 	lightdb "github.com/KYVENetwork/celestia-core/light/store/db"
-	cmtstate "github.com/KYVENetwork/celestia-core/proto/tendermint/state"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
 	rpchttp "github.com/KYVENetwork/celestia-core/rpc/client/http"
 	sm "github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/types"

@@ -12,7 +12,7 @@ import (
 	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
 	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
 	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 var (

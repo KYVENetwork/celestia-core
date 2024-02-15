@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	bcproto "github.com/KYVENetwork/celestia-core/proto/tendermint/blockchain"
+	bcproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/blockchain"
 	"github.com/KYVENetwork/celestia-core/state/test/factory"
 	"github.com/KYVENetwork/celestia-core/types"
 )

@@ -22,7 +22,7 @@ import (
 	servertest "github.com/KYVENetwork/celestia-core/abci/tests/server"
 	"github.com/KYVENetwork/celestia-core/abci/types"
 	"github.com/KYVENetwork/celestia-core/abci/version"
-	"github.com/KYVENetwork/celestia-core/proto/tendermint/crypto"
+	"github.com/KYVENetwork/celestia-core/proto/celestiacore/crypto"
 )
 
 // client is a global variable so it can be reused by the console

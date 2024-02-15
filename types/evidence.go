@@ -14,7 +14,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
 	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 // Evidence represents any provable malicious activity by a validator.
@@ -511,8 +511,8 @@ func EvidenceFromProto(evidence *cmtproto.Evidence) (Evidence, error) {
 }
 
 func init() {
-	cmtjson.RegisterType(&DuplicateVoteEvidence{}, "tendermint/DuplicateVoteEvidence")
-	cmtjson.RegisterType(&LightClientAttackEvidence{}, "tendermint/LightClientAttackEvidence")
+	cmtjson.RegisterType(&DuplicateVoteEvidence{}, "celestiacore/DuplicateVoteEvidence")
+	cmtjson.RegisterType(&LightClientAttackEvidence{}, "celestiacore/LightClientAttackEvidence")
 }
 
 //-------------------------------------------- ERRORS --------------------------------------

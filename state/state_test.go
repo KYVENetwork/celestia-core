@@ -18,8 +18,8 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
 	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
-	cmtstate "github.com/KYVENetwork/celestia-core/proto/tendermint/state"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	sm "github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/types"
 )

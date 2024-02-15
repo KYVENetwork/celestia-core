@@ -13,7 +13,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/config"
 	"github.com/KYVENetwork/celestia-core/p2p"
 	p2pmocks "github.com/KYVENetwork/celestia-core/p2p/mocks"
-	ssproto "github.com/KYVENetwork/celestia-core/proto/tendermint/statesync"
+	ssproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/statesync"
 	proxymocks "github.com/KYVENetwork/celestia-core/proxy/mocks"
 )
 

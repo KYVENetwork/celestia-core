@@ -12,7 +12,7 @@ import (
 	cmtbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
 	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
 	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 

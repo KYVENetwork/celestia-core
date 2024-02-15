@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
-	cmtcrypto "github.com/KYVENetwork/celestia-core/proto/tendermint/crypto"
+	cmtcrypto "github.com/KYVENetwork/celestia-core/proto/celestiacore/crypto"
 )
 
 const (

@@ -43,16 +43,16 @@ transactions](./indexing-transactions.md) for details.
 
 ## Query parameter and event type restrictions
 
-While CometBFT imposes no restrictions on the application with regards to the type of 
-the event output, there are several restrictions when it comes to querying 
-events whose attribute values are numeric. 
+While CometBFT imposes no restrictions on the application with regards to the type of
+the event output, there are several restrictions when it comes to querying
+events whose attribute values are numeric.
 
 - Queries cannot include negative numbers
 - If floating points are compared to integers, they are converted to an integer
 - Floating point to floating point comparison leads to a loss of precision for very big floating point numbers
-(e.g., `10000000000000000000.0` is treated the same as `10000000000000000000.6`) 
+(e.g., `10000000000000000000.0` is treated the same as `10000000000000000000.6`)
 - When floating points do get converted to integers, they are always rounded down.
-This has been done to preserve the behaviour present before introducing the support for BigInts in the query parameters. 
+This has been done to preserve the behaviour present before introducing the support for BigInts in the query parameters.
 
 ## ValidatorSetUpdates
 
@@ -71,13 +71,13 @@ Response:
     "result": {
         "query": "tm.event='ValidatorSetUpdates'",
         "data": {
-            "type": "tendermint/event/ValidatorSetUpdates",
+            "type": "celestiacore/event/ValidatorSetUpdates",
             "value": {
               "validator_updates": [
                 {
                   "address": "09EAD022FD25DE3A02E64B0FE9610B1417183EE4",
                   "pub_key": {
-                    "type": "tendermint/PubKeyEd25519",
+                    "type": "celestiacore/PubKeyEd25519",
                     "value": "ww0z4WaZ0Xg+YI10w43wTWbBmM3dpVza4mmSQYsd0ck="
                   },
                   "voting_power": "10",

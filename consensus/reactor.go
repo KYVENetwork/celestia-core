@@ -16,8 +16,8 @@ import (
 	"github.com/KYVENetwork/celestia-core/p2p"
 	"github.com/KYVENetwork/celestia-core/pkg/trace"
 	"github.com/KYVENetwork/celestia-core/pkg/trace/schema"
-	cmtcons "github.com/KYVENetwork/celestia-core/proto/tendermint/consensus"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtcons "github.com/KYVENetwork/celestia-core/proto/celestiacore/consensus"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	sm "github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/types"
 	cmttime "github.com/KYVENetwork/celestia-core/types/time"
@@ -1547,15 +1547,15 @@ type Message interface {
 }
 
 func init() {
-	cmtjson.RegisterType(&NewRoundStepMessage{}, "tendermint/NewRoundStepMessage")
-	cmtjson.RegisterType(&NewValidBlockMessage{}, "tendermint/NewValidBlockMessage")
-	cmtjson.RegisterType(&ProposalMessage{}, "tendermint/Proposal")
-	cmtjson.RegisterType(&ProposalPOLMessage{}, "tendermint/ProposalPOL")
-	cmtjson.RegisterType(&BlockPartMessage{}, "tendermint/BlockPart")
-	cmtjson.RegisterType(&VoteMessage{}, "tendermint/Vote")
-	cmtjson.RegisterType(&HasVoteMessage{}, "tendermint/HasVote")
-	cmtjson.RegisterType(&VoteSetMaj23Message{}, "tendermint/VoteSetMaj23")
-	cmtjson.RegisterType(&VoteSetBitsMessage{}, "tendermint/VoteSetBits")
+	cmtjson.RegisterType(&NewRoundStepMessage{}, "celestiacore/NewRoundStepMessage")
+	cmtjson.RegisterType(&NewValidBlockMessage{}, "celestiacore/NewValidBlockMessage")
+	cmtjson.RegisterType(&ProposalMessage{}, "celestiacore/Proposal")
+	cmtjson.RegisterType(&ProposalPOLMessage{}, "celestiacore/ProposalPOL")
+	cmtjson.RegisterType(&BlockPartMessage{}, "celestiacore/BlockPart")
+	cmtjson.RegisterType(&VoteMessage{}, "celestiacore/Vote")
+	cmtjson.RegisterType(&HasVoteMessage{}, "celestiacore/HasVote")
+	cmtjson.RegisterType(&VoteSetMaj23Message{}, "celestiacore/VoteSetMaj23")
+	cmtjson.RegisterType(&VoteSetBitsMessage{}, "celestiacore/VoteSetBits")
 }
 
 //-------------------------------------

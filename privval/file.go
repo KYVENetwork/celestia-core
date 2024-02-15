@@ -16,7 +16,7 @@ import (
 	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
 	"github.com/KYVENetwork/celestia-core/libs/protoio"
 	"github.com/KYVENetwork/celestia-core/libs/tempfile"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/types"
 	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )

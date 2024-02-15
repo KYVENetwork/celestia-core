@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/KYVENetwork/celestia-core/p2p"
-	ssproto "github.com/KYVENetwork/celestia-core/proto/tendermint/statesync"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	ssproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/statesync"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 func TestValidateMsg(t *testing.T) {

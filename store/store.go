@@ -8,8 +8,8 @@ import (
 	"github.com/gogo/protobuf/proto"
 
 	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
-	cmtstore "github.com/KYVENetwork/celestia-core/proto/tendermint/store"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtstore "github.com/KYVENetwork/celestia-core/proto/celestiacore/store"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

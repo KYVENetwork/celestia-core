@@ -26,7 +26,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/p2p"
 	"github.com/KYVENetwork/celestia-core/pkg/trace"
 	"github.com/KYVENetwork/celestia-core/pkg/trace/schema"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	sm "github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/types"
 	cmttime "github.com/KYVENetwork/celestia-core/types/time"

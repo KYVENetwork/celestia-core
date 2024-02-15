@@ -17,7 +17,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
 	"github.com/KYVENetwork/celestia-core/libs/service"
-	cmtcons "github.com/KYVENetwork/celestia-core/proto/tendermint/consensus"
+	cmtcons "github.com/KYVENetwork/celestia-core/proto/celestiacore/consensus"
 	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
@@ -32,9 +32,9 @@ const (
 //--------------------------------------------------------
 // types and functions for savings consensus messages
 // func init() {
-// 	cmtjson.RegisterType(msgInfo{}, "tendermint/wal/MsgInfo")
-// 	cmtjson.RegisterType(timeoutInfo{}, "tendermint/wal/TimeoutInfo")
-// 	cmtjson.RegisterType(cmtcon.EndHeightMessage  {}, "tendermint/wal/EndHeightMessage  ")
+// 	cmtjson.RegisterType(msgInfo{}, "celestiacore/wal/MsgInfo")
+// 	cmtjson.RegisterType(timeoutInfo{}, "celestiacore/wal/TimeoutInfo")
+// 	cmtjson.RegisterType(cmtcon.EndHeightMessage  {}, "celestiacore/wal/EndHeightMessage  ")
 // }
 
 // Write ahead logger writes msgs to disk before they are processed.

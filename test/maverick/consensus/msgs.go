@@ -8,8 +8,8 @@ import (
 	cstypes "github.com/KYVENetwork/celestia-core/consensus/types"
 	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
 	"github.com/KYVENetwork/celestia-core/p2p"
-	cmtcons "github.com/KYVENetwork/celestia-core/proto/tendermint/consensus"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtcons "github.com/KYVENetwork/celestia-core/proto/celestiacore/consensus"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

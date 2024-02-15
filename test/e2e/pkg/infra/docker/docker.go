@@ -89,7 +89,7 @@ services:
     - 6060
     volumes:
     - ./{{ .Name }}:/cometbft
-    - ./{{ .Name }}:/tendermint
+    - ./{{ .Name }}:/celestiacore
     networks:
       {{ $.Name }}:
         ipv{{ if $.IPv6 }}6{{ else }}4{{ end}}_address: {{ .IP }}
@@ -116,7 +116,7 @@ services:
     - 6060
     volumes:
     - ./{{ .Name }}:/cometbft
-    - ./{{ .Name }}:/tendermint
+    - ./{{ .Name }}:/celestiacore
     networks:
       {{ $.Name }}:
         ipv{{ if $.IPv6 }}6{{ else }}4{{ end}}_address: {{ .IP }}

@@ -9,7 +9,7 @@ import (
 
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
 	"github.com/KYVENetwork/celestia-core/pkg/consts"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 func makeTxs(cnt, size int) Txs {
