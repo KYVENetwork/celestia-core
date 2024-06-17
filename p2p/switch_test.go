@@ -24,7 +24,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 	"github.com/KYVENetwork/celestia-core/p2p/conn"
-	p2pproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/p2p"
+	p2pproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/p2p"
 )
 
 var cfg *config.P2PConfig

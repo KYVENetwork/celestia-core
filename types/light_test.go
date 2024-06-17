@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/KYVENetwork/celestia-core/crypto"
-	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestia-core/version"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestiacore/version"
 	"github.com/KYVENetwork/celestia-core/version"
 )
 

@@ -4,7 +4,7 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 
 	abci "github.com/KYVENetwork/celestia-core/abci/types"
-	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestia-core/state"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
-	cmtcrypto "github.com/KYVENetwork/celestia-core/proto/celestia-core/crypto"
+	cmtcrypto "github.com/KYVENetwork/celestia-core/proto/celestiacore/crypto"
 )
 
 const ProofOpDomino = "test:domino"

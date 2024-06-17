@@ -11,7 +11,7 @@ import (
 
 	"github.com/KYVENetwork/celestia-core/crypto/merkle"
 	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 const (

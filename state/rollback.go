@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestia-core/state"
-	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestia-core/version"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestiacore/version"
 	"github.com/KYVENetwork/celestia-core/version"
 )
 

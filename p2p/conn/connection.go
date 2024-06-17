@@ -21,7 +21,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/service"
 	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 	"github.com/KYVENetwork/celestia-core/libs/timer"
-	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestia-core/p2p"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestiacore/p2p"
 )
 
 const (

@@ -17,8 +17,8 @@ import (
 	cmtbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
 	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
 	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
-	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestia-core/version"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestiacore/version"
 	"github.com/KYVENetwork/celestia-core/version"
 )
 

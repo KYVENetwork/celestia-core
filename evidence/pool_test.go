@@ -14,7 +14,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/evidence"
 	"github.com/KYVENetwork/celestia-core/evidence/mocks"
 	"github.com/KYVENetwork/celestia-core/libs/log"
-	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestia-core/version"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestiacore/version"
 	sm "github.com/KYVENetwork/celestia-core/state"
 	smmocks "github.com/KYVENetwork/celestia-core/state/mocks"
 	"github.com/KYVENetwork/celestia-core/store"

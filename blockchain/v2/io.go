@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/KYVENetwork/celestia-core/p2p"
-	bcproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/blockchain"
+	bcproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/blockchain"
 	"github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/types"
 )

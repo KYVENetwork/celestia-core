@@ -27,7 +27,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/async"
 	"github.com/KYVENetwork/celestia-core/libs/protoio"
 	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
-	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestia-core/p2p"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestiacore/p2p"
 )
 
 // 4 + 1024 == 1028 total frame size

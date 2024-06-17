@@ -7,7 +7,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
 	"github.com/KYVENetwork/celestia-core/crypto/secp256k1"
 	"github.com/KYVENetwork/celestia-core/libs/json"
-	pc "github.com/KYVENetwork/celestia-core/proto/celestia-core/crypto"
+	pc "github.com/KYVENetwork/celestia-core/proto/celestiacore/crypto"
 )
 
 func init() {

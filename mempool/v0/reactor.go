@@ -13,7 +13,7 @@ import (
 	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 	"github.com/KYVENetwork/celestia-core/mempool"
 	"github.com/KYVENetwork/celestia-core/p2p"
-	protomem "github.com/KYVENetwork/celestia-core/proto/celestia-core/mempool"
+	protomem "github.com/KYVENetwork/celestia-core/proto/celestiacore/mempool"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

@@ -2,7 +2,7 @@ package p2p
 
 import (
 	"github.com/KYVENetwork/celestia-core/p2p/conn"
-	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestia-core/p2p"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestiacore/p2p"
 	"github.com/gogo/protobuf/proto"
 )
 

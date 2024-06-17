@@ -8,7 +8,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/bits"
 	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
 	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 const (

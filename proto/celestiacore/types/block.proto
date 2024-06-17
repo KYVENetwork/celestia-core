@@ -1,0 +1,15 @@
+syntax = "proto3";
+package celestiacore.types;
+
+option go_package = "github.com/KYVENetwork/celestia-core/proto/celestiacore/types";
+
+import "gogoproto/gogo.proto";
+import "celestiacore/types/types.proto";
+import "celestiacore/types/evidence.proto";
+
+message Block {
+  Header                        header      = 1 [(gogoproto.nullable) = false];
+  Data                          data        = 2 [(gogoproto.nullable) = false];
+  celestiacore.types.EvidenceList evidence    = 3 [(gogoproto.nullable) = false];
+  Commit                        last_commit = 4;
+}

@@ -25,7 +25,7 @@ import (
 	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
 	"github.com/KYVENetwork/celestia-core/libs/service"
 	"github.com/KYVENetwork/celestia-core/p2p"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	sm "github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/types"
 	cmttime "github.com/KYVENetwork/celestia-core/types/time"

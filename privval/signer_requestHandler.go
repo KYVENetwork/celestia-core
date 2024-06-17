@@ -5,9 +5,9 @@ import (
 
 	"github.com/KYVENetwork/celestia-core/crypto"
 	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
-	cryptoproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/crypto"
-	privvalproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/privval"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
+	cryptoproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/crypto"
+	privvalproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/privval"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

@@ -23,7 +23,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/mempool"
 	"github.com/KYVENetwork/celestia-core/p2p"
 	"github.com/KYVENetwork/celestia-core/p2p/mocks"
-	protomem "github.com/KYVENetwork/celestia-core/proto/celestia-core/mempool"
+	protomem "github.com/KYVENetwork/celestia-core/proto/celestiacore/mempool"
 	"github.com/KYVENetwork/celestia-core/proxy"
 	"github.com/KYVENetwork/celestia-core/types"
 )

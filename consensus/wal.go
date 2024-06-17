@@ -16,7 +16,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
 	"github.com/KYVENetwork/celestia-core/libs/service"
-	cmtcons "github.com/KYVENetwork/celestia-core/proto/celestia-core/consensus"
+	cmtcons "github.com/KYVENetwork/celestia-core/proto/celestiacore/consensus"
 	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 

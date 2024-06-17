@@ -13,7 +13,7 @@ import (
 
 	abcitypes "github.com/KYVENetwork/celestia-core/abci/types"
 	cmtcfg "github.com/KYVENetwork/celestia-core/config"
-	protocmtstate "github.com/KYVENetwork/celestia-core/proto/celestia-core/state"
+	protocmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
 	blockmocks "github.com/KYVENetwork/celestia-core/state/indexer/mocks"
 	"github.com/KYVENetwork/celestia-core/state/mocks"
 	txmocks "github.com/KYVENetwork/celestia-core/state/txindex/mocks"

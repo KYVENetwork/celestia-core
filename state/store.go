@@ -10,8 +10,8 @@ import (
 	abci "github.com/KYVENetwork/celestia-core/abci/types"
 	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
 	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
-	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestia-core/state"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

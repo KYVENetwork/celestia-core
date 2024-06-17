@@ -13,7 +13,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/abci/types"
 	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
 	"github.com/KYVENetwork/celestia-core/libs/log"
-	pc "github.com/KYVENetwork/celestia-core/proto/celestia-core/crypto"
+	pc "github.com/KYVENetwork/celestia-core/proto/celestiacore/crypto"
 )
 
 const (

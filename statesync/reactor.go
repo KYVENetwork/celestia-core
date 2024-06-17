@@ -11,7 +11,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/config"
 	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 	"github.com/KYVENetwork/celestia-core/p2p"
-	ssproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/statesync"
+	ssproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/statesync"
 	"github.com/KYVENetwork/celestia-core/proxy"
 	sm "github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/types"

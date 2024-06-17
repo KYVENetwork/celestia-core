@@ -16,8 +16,8 @@ import (
 
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	"github.com/KYVENetwork/celestia-core/libs/protoio"
-	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestia-core/p2p"
-	"github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestiacore/p2p"
+	"github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 const maxPingPongPacketSize = 1024 // bytes

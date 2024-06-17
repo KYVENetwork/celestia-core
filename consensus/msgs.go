@@ -8,8 +8,8 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/bits"
 	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
 	"github.com/KYVENetwork/celestia-core/p2p"
-	cmtcons "github.com/KYVENetwork/celestia-core/proto/celestia-core/consensus"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
+	cmtcons "github.com/KYVENetwork/celestia-core/proto/celestiacore/consensus"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/types"
 	"github.com/gogo/protobuf/proto"
 )

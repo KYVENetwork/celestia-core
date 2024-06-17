@@ -9,7 +9,7 @@ We will refer to the following message types in the following sections.
 
 ### Part
 
-The [`Part`](https://github.com/celestiaorg/celestia-core/blob/0498541b8db00c7fefa918d906877ef2ee0a3710/proto/celestia-core/types/types.pb.go#L151) serves as a representation for a block part.
+The [`Part`](https://github.com/celestiaorg/celestia-core/blob/0498541b8db00c7fefa918d906877ef2ee0a3710/proto/celestiacore/types/types.pb.go#L151) serves as a representation for a block part.
 Its `bytes` field is constrained to a maximum size of [64kB](https://github.com/celestiaorg/celestia-core/blob/5a7dff4f3a5f99a4a22bb8a4528363f733177a2e/types/params.go#L19).
 `Proof` is the Merkle inclusion proof of the block part in the block (it is the proof of its inclusion in the Merkle root `Hash` found in the `PartSetHeader` of that particular block)
 
@@ -23,7 +23,7 @@ type Part struct {
 
 ### Block Part
 
-A [`BlockPart`](https://github.com/celestiaorg/celestia-core/blob/0498541b8db00c7fefa918d906877ef2ee0a3710/proto/celestia-core/consensus/types.pb.go#L292) encapsulates a block part as well as the height and round of the block.
+A [`BlockPart`](https://github.com/celestiaorg/celestia-core/blob/0498541b8db00c7fefa918d906877ef2ee0a3710/proto/celestiacore/consensus/types.pb.go#L292) encapsulates a block part as well as the height and round of the block.
 
 ```go
 // BlockPart is sent when gossipping a piece of the proposed block.

@@ -15,7 +15,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto"
 	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
-	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestia-core/state"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
 	sm "github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/types"
 )

@@ -12,7 +12,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 	"github.com/KYVENetwork/celestia-core/p2p"
-	bcproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/blockchain"
+	bcproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/blockchain"
 	"github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/types"
 )

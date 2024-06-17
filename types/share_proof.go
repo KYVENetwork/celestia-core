@@ -6,8 +6,8 @@ import (
 	"math"
 
 	"github.com/KYVENetwork/celestia-core/pkg/consts"
-	"github.com/KYVENetwork/celestia-core/proto/celestia-core/crypto"
-	tmproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
+	"github.com/KYVENetwork/celestia-core/proto/celestiacore/crypto"
+	tmproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/celestiaorg/nmt"
 )
 

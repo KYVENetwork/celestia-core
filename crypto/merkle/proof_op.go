@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	cmtcrypto "github.com/KYVENetwork/celestia-core/proto/celestia-core/crypto"
+	cmtcrypto "github.com/KYVENetwork/celestia-core/proto/celestiacore/crypto"
 )
 
 //----------------------------------------

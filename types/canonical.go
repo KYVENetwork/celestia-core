@@ -3,7 +3,7 @@ package types
 import (
 	"time"
 
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 

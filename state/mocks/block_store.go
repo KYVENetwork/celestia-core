@@ -4,7 +4,7 @@ package mocks
 
 import (
 	mock "github.com/stretchr/testify/mock"
-	cmtstore "github.com/KYVENetwork/celestia-core/proto/celestia-core/store"
+	cmtstore "github.com/KYVENetwork/celestia-core/proto/celestiacore/store"
 	types "github.com/KYVENetwork/celestia-core/types"
 )
 

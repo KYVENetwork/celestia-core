@@ -15,7 +15,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
 	"github.com/KYVENetwork/celestia-core/privval"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/rpc/client"
 	rpctest "github.com/KYVENetwork/celestia-core/rpc/test"
 	"github.com/KYVENetwork/celestia-core/types"

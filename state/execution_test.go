@@ -24,7 +24,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	mmock "github.com/KYVENetwork/celestia-core/mempool/mock"
-	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestia-core/version"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestiacore/version"
 	"github.com/KYVENetwork/celestia-core/proxy"
 	sm "github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/state/mocks"

@@ -191,7 +191,7 @@ core to the application. The application replies with corresponding
 response messages.
 
 The messages are specified here: [ABCI Message
-Types](https://github.com/KYVENetwork/celestia-core/blob/main/proto/celestia-core/abci/types.proto).
+Types](https://github.com/KYVENetwork/celestia-core/blob/main/proto/celestiacore/abci/types.proto).
 
 The **DeliverTx** message is the work horse of the application. Each
 transaction in the blockchain is delivered with this message. The

@@ -18,8 +18,8 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 
 	abci "github.com/KYVENetwork/celestia-core/abci/types"
-	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestia-core/state"
-	cmtstore "github.com/KYVENetwork/celestia-core/proto/celestia-core/store"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
+	cmtstore "github.com/KYVENetwork/celestia-core/proto/celestiacore/store"
 	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
 	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
 	sm "github.com/KYVENetwork/celestia-core/state"

@@ -18,7 +18,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	"github.com/KYVENetwork/celestia-core/mempool/mock"
 	"github.com/KYVENetwork/celestia-core/p2p"
-	bcproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/blockchain"
+	bcproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/blockchain"
 	"github.com/KYVENetwork/celestia-core/proxy"
 	sm "github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/store"

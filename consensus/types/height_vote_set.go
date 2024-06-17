@@ -9,7 +9,7 @@ import (
 	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
 	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
 	"github.com/KYVENetwork/celestia-core/p2p"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 
