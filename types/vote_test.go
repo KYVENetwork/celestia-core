@@ -12,7 +12,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
 	"github.com/KYVENetwork/celestia-core/libs/protoio"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
 )
 
 func examplePrevote() *Vote {

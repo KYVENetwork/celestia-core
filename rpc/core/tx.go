@@ -9,7 +9,7 @@ import (
 	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
 	cmtquery "github.com/KYVENetwork/celestia-core/libs/pubsub/query"
 	"github.com/KYVENetwork/celestia-core/pkg/consts"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
 	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
 	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
 	"github.com/KYVENetwork/celestia-core/state"

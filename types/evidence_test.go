@@ -11,8 +11,8 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto"
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
-	cmtversion "github.com/KYVENetwork/celestia-core/proto/tendermint/version"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestia-core/version"
 	"github.com/KYVENetwork/celestia-core/version"
 )
 

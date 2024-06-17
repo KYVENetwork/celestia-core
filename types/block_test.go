@@ -22,8 +22,8 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/bits"
 	"github.com/KYVENetwork/celestia-core/libs/bytes"
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
-	cmtversion "github.com/KYVENetwork/celestia-core/proto/tendermint/version"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestia-core/version"
 	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 	"github.com/KYVENetwork/celestia-core/version"
 )

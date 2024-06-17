@@ -14,7 +14,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/service"
 	"github.com/KYVENetwork/celestia-core/p2p"
 	"github.com/KYVENetwork/celestia-core/p2p/conn"
-	tmp2p "github.com/KYVENetwork/celestia-core/proto/tendermint/p2p"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestia-core/p2p"
 )
 
 type Peer = p2p.Peer

@@ -8,7 +8,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/protoio"
 	"github.com/KYVENetwork/celestia-core/libs/service"
 	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
-	privvalproto "github.com/KYVENetwork/celestia-core/proto/tendermint/privval"
+	privvalproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/privval"
 )
 
 const (

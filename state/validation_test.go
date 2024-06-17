@@ -13,7 +13,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	memmock "github.com/KYVENetwork/celestia-core/mempool/mock"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
 	sm "github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/state/mocks"
 	"github.com/KYVENetwork/celestia-core/test/factory"

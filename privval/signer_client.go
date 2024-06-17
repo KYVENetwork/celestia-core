@@ -6,8 +6,8 @@ import (
 
 	"github.com/KYVENetwork/celestia-core/crypto"
 	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
-	privvalproto "github.com/KYVENetwork/celestia-core/proto/tendermint/privval"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	privvalproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/privval"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

@@ -15,7 +15,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
 	"github.com/KYVENetwork/celestia-core/libs/bytes"
 	"github.com/KYVENetwork/celestia-core/libs/log"
-	"github.com/KYVENetwork/celestia-core/proto/tendermint/p2p"
+	"github.com/KYVENetwork/celestia-core/proto/celestia-core/p2p"
 
 	"github.com/KYVENetwork/celestia-core/config"
 	cmtconn "github.com/KYVENetwork/celestia-core/p2p/conn"

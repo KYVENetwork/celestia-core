@@ -9,7 +9,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto"
 	cmtbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
 	"github.com/KYVENetwork/celestia-core/libs/protoio"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
 )
 
 const (

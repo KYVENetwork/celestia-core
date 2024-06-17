@@ -1,6 +1,6 @@
 package types
 
-import cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+import cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
 
 // IsVoteTypeValid returns true if t is a valid vote type.
 func IsVoteTypeValid(t cmtproto.SignedMsgType) bool {

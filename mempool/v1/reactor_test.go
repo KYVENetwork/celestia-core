@@ -21,7 +21,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	"github.com/KYVENetwork/celestia-core/mempool"
 	"github.com/KYVENetwork/celestia-core/p2p"
-	memproto "github.com/KYVENetwork/celestia-core/proto/tendermint/mempool"
+	memproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/mempool"
 	"github.com/KYVENetwork/celestia-core/proxy"
 	"github.com/KYVENetwork/celestia-core/types"
 )

@@ -10,7 +10,7 @@ import (
 
 	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 	"github.com/KYVENetwork/celestia-core/light/store"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

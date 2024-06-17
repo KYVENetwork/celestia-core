@@ -17,7 +17,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
 	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
 )
 
 func TestValidatorSetBasic(t *testing.T) {

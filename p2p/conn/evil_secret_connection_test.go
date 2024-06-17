@@ -15,7 +15,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
 	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
 	"github.com/KYVENetwork/celestia-core/libs/protoio"
-	tmp2p "github.com/KYVENetwork/celestia-core/proto/tendermint/p2p"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestia-core/p2p"
 )
 
 type buffer struct {

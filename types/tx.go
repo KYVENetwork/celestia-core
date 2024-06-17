@@ -10,7 +10,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
 	cmtbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
 	"github.com/KYVENetwork/celestia-core/pkg/consts"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
 	"github.com/gogo/protobuf/proto"
 )
 

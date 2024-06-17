@@ -34,7 +34,7 @@ import (
 	mempoolv1 "github.com/KYVENetwork/celestia-core/mempool/v1"
 	"github.com/KYVENetwork/celestia-core/p2p"
 	"github.com/KYVENetwork/celestia-core/privval"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
 	sm "github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/store"
 	"github.com/KYVENetwork/celestia-core/types"

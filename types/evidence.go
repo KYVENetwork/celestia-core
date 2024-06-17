@@ -14,7 +14,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
 	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
 )
 
 // Evidence represents any provable malicious activity by a validator.

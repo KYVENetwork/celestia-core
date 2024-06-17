@@ -9,8 +9,8 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	cmtstate "github.com/KYVENetwork/celestia-core/proto/tendermint/state"
-	cmtversion "github.com/KYVENetwork/celestia-core/proto/tendermint/version"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestia-core/state"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestia-core/version"
 	"github.com/KYVENetwork/celestia-core/types"
 	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 	"github.com/KYVENetwork/celestia-core/version"

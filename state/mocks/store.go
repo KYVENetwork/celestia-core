@@ -6,7 +6,7 @@ import (
 	state "github.com/KYVENetwork/celestia-core/state"
 	mock "github.com/stretchr/testify/mock"
 
-	tendermintstate "github.com/KYVENetwork/celestia-core/proto/tendermint/state"
+	tendermintstate "github.com/KYVENetwork/celestia-core/proto/celestia-core/state"
 
 	types "github.com/KYVENetwork/celestia-core/types"
 )

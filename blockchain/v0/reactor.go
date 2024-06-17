@@ -10,7 +10,7 @@ import (
 	bc "github.com/KYVENetwork/celestia-core/blockchain"
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	"github.com/KYVENetwork/celestia-core/p2p"
-	bcproto "github.com/KYVENetwork/celestia-core/proto/tendermint/blockchain"
+	bcproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/blockchain"
 	sm "github.com/KYVENetwork/celestia-core/state"
 	"github.com/KYVENetwork/celestia-core/store"
 	"github.com/KYVENetwork/celestia-core/types"

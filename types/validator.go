@@ -9,7 +9,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/crypto"
 	ce "github.com/KYVENetwork/celestia-core/crypto/encoding"
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestia-core/types"
 )
 
 // Volatile state for each Validator
