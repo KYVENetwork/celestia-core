@@ -5,13 +5,13 @@ import (
 
 	"github.com/spf13/cobra"
 
-	cfg "github.com/KYVENetwork/tendermint/config"
-	cmtos "github.com/KYVENetwork/tendermint/libs/os"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
-	"github.com/KYVENetwork/tendermint/p2p"
-	"github.com/KYVENetwork/tendermint/privval"
-	"github.com/KYVENetwork/tendermint/types"
-	cmttime "github.com/KYVENetwork/tendermint/types/time"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/privval"
+	"github.com/KYVENetwork/celestia-core/types"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
 // InitFilesCmd initialises a fresh CometBFT Core instance.

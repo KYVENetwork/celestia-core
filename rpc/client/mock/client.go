@@ -18,13 +18,13 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/KYVENetwork/tendermint/libs/bytes"
-	"github.com/KYVENetwork/tendermint/libs/service"
-	"github.com/KYVENetwork/tendermint/rpc/client"
-	"github.com/KYVENetwork/tendermint/rpc/core"
-	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
-	rpctypes "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/bytes"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	"github.com/KYVENetwork/celestia-core/rpc/client"
+	"github.com/KYVENetwork/celestia-core/rpc/core"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // Client wraps arbitrary implementations of the various interfaces.

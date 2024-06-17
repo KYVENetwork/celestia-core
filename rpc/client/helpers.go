@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // Waiter is informed of current height, decided whether to quit early

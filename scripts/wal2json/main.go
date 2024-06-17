@@ -12,8 +12,8 @@ import (
 	"io"
 	"os"
 
-	cs "github.com/KYVENetwork/tendermint/consensus"
-	cmtjson "github.com/KYVENetwork/tendermint/libs/json"
+	cs "github.com/KYVENetwork/celestia-core/consensus"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
 )
 
 func main() {

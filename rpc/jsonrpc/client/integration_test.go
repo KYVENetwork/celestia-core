@@ -16,7 +16,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/celestia-core/libs/log"
 )
 
 func TestWSClientReconnectWithJitter(t *testing.T) {

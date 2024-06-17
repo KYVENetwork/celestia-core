@@ -12,11 +12,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	"github.com/KYVENetwork/tendermint/p2p"
-	"github.com/KYVENetwork/tendermint/p2p/mock"
-	tmp2p "github.com/KYVENetwork/tendermint/proto/tendermint/p2p"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/p2p/mock"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/tendermint/p2p"
 )
 
 var cfg *config.P2PConfig
@@ -402,7 +402,7 @@ func TestPEXReactorDialsPeerUpToMaxAttemptsInSeedMode(t *testing.T) {
 // this should give it time to request addrs and for the seed
 // to call FlushStop, and allows us to test calling Stop concurrently
 // with FlushStop. Before a fix, this non-deterministically reproduced
-// https://github.com/KYVENetwork/tendermint/issues/3231.
+// https://github.com/KYVENetwork/celestia-core/issues/3231.
 func TestPEXReactorSeedModeFlushStop(t *testing.T) {
 	N := 2
 	switches := make([]*p2p.Switch, N)

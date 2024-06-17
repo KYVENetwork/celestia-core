@@ -12,12 +12,12 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/KYVENetwork/tendermint/abci/example/code"
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	cfg "github.com/KYVENetwork/tendermint/config"
-	mempl "github.com/KYVENetwork/tendermint/mempool"
-	sm "github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/abci/example/code"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	mempl "github.com/KYVENetwork/celestia-core/mempool"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // for testing

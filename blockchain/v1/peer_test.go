@@ -8,10 +8,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
-	"github.com/KYVENetwork/tendermint/p2p"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func TestPeerMonitor(t *testing.T) {

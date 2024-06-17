@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	cfg "github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/privval"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/privval"
 )
 
 func Test_ResetAll(t *testing.T) {

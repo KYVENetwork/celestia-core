@@ -5,12 +5,12 @@ import (
 	"strings"
 	"testing"
 
-	abcicli "github.com/KYVENetwork/tendermint/abci/client"
-	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
-	"github.com/KYVENetwork/tendermint/abci/server"
-	"github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	abcicli "github.com/KYVENetwork/celestia-core/abci/client"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	"github.com/KYVENetwork/celestia-core/abci/server"
+	"github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
 )
 
 //----------------------------------------

@@ -13,17 +13,17 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	cfg "github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	"github.com/KYVENetwork/tendermint/mempool/mock"
-	"github.com/KYVENetwork/tendermint/p2p"
-	bcproto "github.com/KYVENetwork/tendermint/proto/tendermint/blockchain"
-	"github.com/KYVENetwork/tendermint/proxy"
-	sm "github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/store"
-	"github.com/KYVENetwork/tendermint/types"
-	cmttime "github.com/KYVENetwork/tendermint/types/time"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/mempool/mock"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	bcproto "github.com/KYVENetwork/celestia-core/proto/tendermint/blockchain"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/store"
+	"github.com/KYVENetwork/celestia-core/types"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
 var config *cfg.Config

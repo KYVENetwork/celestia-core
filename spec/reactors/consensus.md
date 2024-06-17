@@ -280,4 +280,4 @@ This should hold true even when one of the  two ends of communication lags behin
 ### Optimization Ideas
 
 1. Could other peers halt the transmission of block parts to a peer that reaches the prevote step (taking prevote step as an indication that the node must have possessed the entire block)?
-1. [Another optimization idea](https://github.com/KYVENetwork/tendermint/pull/904) is explained and implemented in the original CometBFT repo. However, that constitutes a breaking change if we wish to integrate.
+1. [Another optimization idea](https://github.com/KYVENetwork/celestia-core/pull/904) is explained and implemented in the original CometBFT repo. However, that constitutes a breaking change if we wish to integrate.

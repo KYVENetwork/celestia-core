@@ -1,8 +1,8 @@
 package types
 
 import (
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
 )
 
 var (

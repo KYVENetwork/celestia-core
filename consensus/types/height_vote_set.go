@@ -6,11 +6,11 @@ import (
 	"strings"
 	"sync"
 
-	cmtjson "github.com/KYVENetwork/tendermint/libs/json"
-	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
-	"github.com/KYVENetwork/tendermint/p2p"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
-	"github.com/KYVENetwork/tendermint/types"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 type RoundVoteSet struct {

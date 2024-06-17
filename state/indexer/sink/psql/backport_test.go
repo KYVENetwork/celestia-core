@@ -1,8 +1,8 @@
 package psql
 
 import (
-	"github.com/KYVENetwork/tendermint/state/indexer"
-	"github.com/KYVENetwork/tendermint/state/txindex"
+	"github.com/KYVENetwork/celestia-core/state/indexer"
+	"github.com/KYVENetwork/celestia-core/state/txindex"
 )
 
 var (

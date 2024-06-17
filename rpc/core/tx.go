@@ -5,16 +5,16 @@ import (
 	"fmt"
 	"sort"
 
-	abcitypes "github.com/KYVENetwork/tendermint/abci/types"
-	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
-	cmtquery "github.com/KYVENetwork/tendermint/libs/pubsub/query"
-	"github.com/KYVENetwork/tendermint/pkg/consts"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
-	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
-	rpctypes "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
-	"github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/state/txindex/null"
-	"github.com/KYVENetwork/tendermint/types"
+	abcitypes "github.com/KYVENetwork/celestia-core/abci/types"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	cmtquery "github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	"github.com/KYVENetwork/celestia-core/pkg/consts"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
+	"github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/state/txindex/null"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // Tx allows you to query the transaction results. `nil` could mean the

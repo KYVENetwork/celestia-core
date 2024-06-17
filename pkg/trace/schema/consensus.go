@@ -1,8 +1,8 @@
 package schema
 
 import (
-	"github.com/KYVENetwork/tendermint/pkg/trace"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/pkg/trace"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // ConsensusTables returns the list of tables that are used for consensus

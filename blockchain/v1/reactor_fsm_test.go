@@ -7,11 +7,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
-	"github.com/KYVENetwork/tendermint/p2p"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 type lastBlockRequestT struct {

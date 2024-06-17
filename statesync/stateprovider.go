@@ -8,18 +8,18 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
-	"github.com/KYVENetwork/tendermint/light"
-	lightprovider "github.com/KYVENetwork/tendermint/light/provider"
-	lighthttp "github.com/KYVENetwork/tendermint/light/provider/http"
-	lightrpc "github.com/KYVENetwork/tendermint/light/rpc"
-	lightdb "github.com/KYVENetwork/tendermint/light/store/db"
-	cmtstate "github.com/KYVENetwork/tendermint/proto/tendermint/state"
-	rpchttp "github.com/KYVENetwork/tendermint/rpc/client/http"
-	sm "github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/types"
-	"github.com/KYVENetwork/tendermint/version"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/light"
+	lightprovider "github.com/KYVENetwork/celestia-core/light/provider"
+	lighthttp "github.com/KYVENetwork/celestia-core/light/provider/http"
+	lightrpc "github.com/KYVENetwork/celestia-core/light/rpc"
+	lightdb "github.com/KYVENetwork/celestia-core/light/store/db"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/tendermint/state"
+	rpchttp "github.com/KYVENetwork/celestia-core/rpc/client/http"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/types"
+	"github.com/KYVENetwork/celestia-core/version"
 )
 
 //go:generate ../scripts/mockery_generate.sh StateProvider

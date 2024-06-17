@@ -1,6 +1,6 @@
 package schema
 
-import "github.com/KYVENetwork/tendermint/pkg/trace"
+import "github.com/KYVENetwork/celestia-core/pkg/trace"
 
 const (
 	ABCITable = "abci"

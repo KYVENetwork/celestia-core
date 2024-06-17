@@ -8,13 +8,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/crypto"
-	"github.com/KYVENetwork/tendermint/crypto/tmhash"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
-	cryptoproto "github.com/KYVENetwork/tendermint/proto/tendermint/crypto"
-	privvalproto "github.com/KYVENetwork/tendermint/proto/tendermint/privval"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	cryptoproto "github.com/KYVENetwork/celestia-core/proto/tendermint/crypto"
+	privvalproto "github.com/KYVENetwork/celestia-core/proto/tendermint/privval"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 type signerTestCase struct {

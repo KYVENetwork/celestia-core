@@ -5,8 +5,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	cmtos "github.com/KYVENetwork/tendermint/libs/os"
-	"github.com/KYVENetwork/tendermint/p2p"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
+	"github.com/KYVENetwork/celestia-core/p2p"
 )
 
 // GenNodeKeyCmd allows the generation of a node key. It prints node's ID to

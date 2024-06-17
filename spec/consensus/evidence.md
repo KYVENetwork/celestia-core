@@ -165,7 +165,7 @@ message Evidence {
     (gogoproto.nullable) = false, (gogoproto.stdtime) = true];
   // Total voting power of the validator set in case the ABCI application does
   // not store historical validators.
-  // https://github.com/KYVENetwork/tendermint/issues/4581
+  // https://github.com/KYVENetwork/celestia-core/issues/4581
   int64 total_voting_power = 5;
 }
 ```

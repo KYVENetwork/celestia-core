@@ -7,10 +7,10 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	cfg "github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/libs/cli"
-	cmtflags "github.com/KYVENetwork/tendermint/libs/cli/flags"
-	"github.com/KYVENetwork/tendermint/libs/log"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/cli"
+	cmtflags "github.com/KYVENetwork/celestia-core/libs/cli/flags"
+	"github.com/KYVENetwork/celestia-core/libs/log"
 )
 
 var (

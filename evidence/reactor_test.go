@@ -16,17 +16,17 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	cfg "github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/crypto"
-	"github.com/KYVENetwork/tendermint/crypto/tmhash"
-	"github.com/KYVENetwork/tendermint/evidence"
-	"github.com/KYVENetwork/tendermint/evidence/mocks"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	"github.com/KYVENetwork/tendermint/p2p"
-	p2pmocks "github.com/KYVENetwork/tendermint/p2p/mocks"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
-	sm "github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/types"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	"github.com/KYVENetwork/celestia-core/evidence"
+	"github.com/KYVENetwork/celestia-core/evidence/mocks"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	p2pmocks "github.com/KYVENetwork/celestia-core/p2p/mocks"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 var (

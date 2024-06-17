@@ -10,8 +10,8 @@ package server
 import (
 	"fmt"
 
-	"github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/libs/service"
+	"github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/service"
 )
 
 func NewServer(protoAddr, transport string, app types.Application) (service.Service, error) {

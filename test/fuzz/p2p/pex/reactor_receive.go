@@ -3,13 +3,13 @@ package pex
 import (
 	"net"
 
-	"github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	"github.com/KYVENetwork/tendermint/libs/service"
-	"github.com/KYVENetwork/tendermint/p2p"
-	"github.com/KYVENetwork/tendermint/p2p/pex"
-	"github.com/KYVENetwork/tendermint/version"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/p2p/pex"
+	"github.com/KYVENetwork/celestia-core/version"
 )
 
 var (

@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/mempool"
+	"github.com/KYVENetwork/celestia-core/mempool"
 )
 
 func BenchmarkTxMempool_CheckTx(b *testing.B) {

@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
-	rpchttp "github.com/KYVENetwork/tendermint/rpc/client/http"
-	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
-	rpctest "github.com/KYVENetwork/tendermint/rpc/test"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	rpchttp "github.com/KYVENetwork/celestia-core/rpc/client/http"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	rpctest "github.com/KYVENetwork/celestia-core/rpc/test"
 )
 
 func ExampleHTTP_simple() {

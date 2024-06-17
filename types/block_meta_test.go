@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/crypto/tmhash"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
 )
 
 func TestBlockMeta_ToProto(t *testing.T) {

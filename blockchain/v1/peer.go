@@ -5,10 +5,10 @@ import (
 	"math"
 	"time"
 
-	flow "github.com/KYVENetwork/tendermint/libs/flowrate"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	"github.com/KYVENetwork/tendermint/p2p"
-	"github.com/KYVENetwork/tendermint/types"
+	flow "github.com/KYVENetwork/celestia-core/libs/flowrate"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 //--------

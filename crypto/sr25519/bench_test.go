@@ -4,8 +4,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/KYVENetwork/tendermint/crypto"
-	"github.com/KYVENetwork/tendermint/crypto/internal/benchmarking"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/internal/benchmarking"
 )
 
 func BenchmarkKeyGeneration(b *testing.B) {

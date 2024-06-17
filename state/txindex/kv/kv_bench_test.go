@@ -9,9 +9,9 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/libs/pubsub/query"
-	"github.com/KYVENetwork/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func BenchmarkTxSearch(b *testing.B) {

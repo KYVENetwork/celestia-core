@@ -4,8 +4,8 @@ import (
 	"sync"
 	"testing"
 
-	bh "github.com/KYVENetwork/tendermint/behaviour"
-	"github.com/KYVENetwork/tendermint/p2p"
+	bh "github.com/KYVENetwork/celestia-core/behaviour"
+	"github.com/KYVENetwork/celestia-core/p2p"
 )
 
 // TestMockReporter tests the MockReporter's ability to store reported

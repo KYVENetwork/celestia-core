@@ -8,7 +8,7 @@ import (
 	"syscall"
 	"time"
 
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
 )
 
 /* AutoFile usage

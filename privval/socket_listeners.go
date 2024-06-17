@@ -4,8 +4,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	p2pconn "github.com/KYVENetwork/tendermint/p2p/conn"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	p2pconn "github.com/KYVENetwork/celestia-core/p2p/conn"
 )
 
 const (
@@ -140,7 +140,7 @@ func (ln *UnixListener) Accept() (net.Conn, error) {
 	conn := newTimeoutConn(tc, ln.timeoutReadWrite)
 
 	// TODO: wrap in something that authenticates
-	// with a MAC - https://github.com/KYVENetwork/tendermint/issues/3099
+	// with a MAC - https://github.com/KYVENetwork/celestia-core/issues/3099
 
 	return conn, nil
 }

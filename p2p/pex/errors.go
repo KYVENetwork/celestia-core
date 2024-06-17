@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/KYVENetwork/tendermint/p2p"
+	"github.com/KYVENetwork/celestia-core/p2p"
 )
 
 type ErrAddrBookNonRoutable struct {

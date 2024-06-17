@@ -12,13 +12,13 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	cfg "github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtos "github.com/KYVENetwork/tendermint/libs/os"
-	"github.com/KYVENetwork/tendermint/proxy"
-	sm "github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/store"
-	"github.com/KYVENetwork/tendermint/types"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/store"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const (

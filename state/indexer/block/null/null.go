@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/KYVENetwork/tendermint/libs/pubsub/query"
-	"github.com/KYVENetwork/tendermint/state/indexer"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	"github.com/KYVENetwork/celestia-core/state/indexer"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 var _ indexer.BlockIndexer = (*BlockerIndexer)(nil)

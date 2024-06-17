@@ -6,7 +6,7 @@ order: 1
 
 ## From Binary
 
-To download pre-built binaries, see the [releases page](https://github.com/KYVENetwork/tendermint/releases).
+To download pre-built binaries, see the [releases page](https://github.com/KYVENetwork/celestia-core/releases).
 
 ## From Source
 

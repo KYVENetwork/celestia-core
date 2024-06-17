@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/KYVENetwork/tendermint/p2p"
+	"github.com/KYVENetwork/celestia-core/p2p"
 )
 
 func TestStatusIndexer(t *testing.T) {

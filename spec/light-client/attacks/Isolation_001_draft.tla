@@ -7,7 +7,7 @@
  *
  * It follows the English specification:
  *
- * https://github.com/KYVENetwork/tendermint/blob/v0.34.x/spec/light-client/attacks/isolate-attackers_001_draft.md
+ * https://github.com/KYVENetwork/celestia-core/blob/v0.34.x/spec/light-client/attacks/isolate-attackers_001_draft.md
  *
  * The assumptions made in this specification:
  *

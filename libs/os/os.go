@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/celestia-core/libs/log"
 )
 
 type logger interface {

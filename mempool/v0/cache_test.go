@@ -6,11 +6,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/mempool"
-	"github.com/KYVENetwork/tendermint/proxy"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/mempool"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func TestCacheAfterUpdate(t *testing.T) {

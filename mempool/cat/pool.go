@@ -10,12 +10,12 @@ import (
 
 	"github.com/creachadair/taskgroup"
 
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	"github.com/KYVENetwork/tendermint/mempool"
-	"github.com/KYVENetwork/tendermint/proxy"
-	"github.com/KYVENetwork/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/mempool"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // enforce compile-time satisfaction of the Mempool interface

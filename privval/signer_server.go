@@ -3,10 +3,10 @@ package privval
 import (
 	"io"
 
-	"github.com/KYVENetwork/tendermint/libs/service"
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
-	privvalproto "github.com/KYVENetwork/tendermint/proto/tendermint/privval"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	privvalproto "github.com/KYVENetwork/celestia-core/proto/tendermint/privval"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // ValidationRequestHandlerFunc handles different remoteSigner requests

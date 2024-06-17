@@ -8,15 +8,15 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/crypto"
-	"github.com/KYVENetwork/tendermint/crypto/tmhash"
-	cmtstate "github.com/KYVENetwork/tendermint/proto/tendermint/state"
-	cmtversion "github.com/KYVENetwork/tendermint/proto/tendermint/version"
-	"github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/state/mocks"
-	"github.com/KYVENetwork/tendermint/store"
-	"github.com/KYVENetwork/tendermint/types"
-	"github.com/KYVENetwork/tendermint/version"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/tendermint/state"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/tendermint/version"
+	"github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/state/mocks"
+	"github.com/KYVENetwork/celestia-core/store"
+	"github.com/KYVENetwork/celestia-core/types"
+	"github.com/KYVENetwork/celestia-core/version"
 )
 
 func TestRollback(t *testing.T) {

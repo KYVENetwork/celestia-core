@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
 )
 
 func MakeCommit(blockID BlockID, height int64, round int32,

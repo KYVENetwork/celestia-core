@@ -7,12 +7,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	flow "github.com/KYVENetwork/tendermint/libs/flowrate"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	"github.com/KYVENetwork/tendermint/libs/service"
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
-	"github.com/KYVENetwork/tendermint/p2p"
-	"github.com/KYVENetwork/tendermint/types"
+	flow "github.com/KYVENetwork/celestia-core/libs/flowrate"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 /*

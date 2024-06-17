@@ -1,4 +1,4 @@
-GOMOD="github.com/KYVENetwork/tendermint/test/loadtime"
+GOMOD="github.com/KYVENetwork/celestia-core/test/loadtime"
 OUTPUT?=build/
 
 build:

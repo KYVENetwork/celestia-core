@@ -9,10 +9,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/crypto/tmhash"
-	"github.com/KYVENetwork/tendermint/libs/protoio"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	"github.com/KYVENetwork/celestia-core/libs/protoio"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
 )
 
 var (

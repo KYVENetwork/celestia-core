@@ -3,8 +3,8 @@ package mock
 import (
 	"context"
 
-	"github.com/KYVENetwork/tendermint/rpc/client"
-	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
+	"github.com/KYVENetwork/celestia-core/rpc/client"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
 )
 
 // StatusMock returns the result specified by the Call

@@ -3,7 +3,7 @@ package schema
 import (
 	"strings"
 
-	"github.com/KYVENetwork/tendermint/config"
+	"github.com/KYVENetwork/celestia-core/config"
 )
 
 func init() {

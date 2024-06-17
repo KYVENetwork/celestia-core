@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/libs/bits"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/bits"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 //-----------------------------------------------------------------------------

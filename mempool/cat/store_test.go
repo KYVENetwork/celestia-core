@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 	"github.com/stretchr/testify/require"
 )
 

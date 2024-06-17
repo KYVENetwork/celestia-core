@@ -8,14 +8,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
-	"github.com/KYVENetwork/tendermint/libs/service"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/libs/service"
 
-	abcicli "github.com/KYVENetwork/tendermint/abci/client"
-	"github.com/KYVENetwork/tendermint/abci/example/code"
-	abciserver "github.com/KYVENetwork/tendermint/abci/server"
-	"github.com/KYVENetwork/tendermint/abci/types"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	abcicli "github.com/KYVENetwork/celestia-core/abci/client"
+	"github.com/KYVENetwork/celestia-core/abci/example/code"
+	abciserver "github.com/KYVENetwork/celestia-core/abci/server"
+	"github.com/KYVENetwork/celestia-core/abci/types"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
 )
 
 const (

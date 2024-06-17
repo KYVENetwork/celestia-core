@@ -62,7 +62,7 @@ as `abci-cli` above. The kvstore just stores transactions in a merkle
 tree.
 
 Its code can be found
-[here](https://github.com/KYVENetwork/tendermint/blob/v0.34.x/abci/cmd/abci-cli/abci-cli.go)
+[here](https://github.com/KYVENetwork/celestia-core/blob/v0.34.x/abci/cmd/abci-cli/abci-cli.go)
 and looks like the following:
 
 ```go
@@ -137,7 +137,7 @@ response.
 
 The server may be generic for a particular language, and we provide a
 [reference implementation in
-Golang](https://github.com/KYVENetwork/tendermint/tree/v0.34.x/abci/server). See the
+Golang](https://github.com/KYVENetwork/celestia-core/tree/v0.34.x/abci/server). See the
 [list of other ABCI implementations](https://github.com/tendermint/awesome#ecosystem) for servers in
 other languages.
 

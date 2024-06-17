@@ -7,9 +7,9 @@ import (
 
 	"github.com/google/orderedcode"
 
-	"github.com/KYVENetwork/tendermint/libs/pubsub/query"
-	"github.com/KYVENetwork/tendermint/state/indexer"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	"github.com/KYVENetwork/celestia-core/state/indexer"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 type HeightInfo struct {

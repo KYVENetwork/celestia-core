@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	rpchttp "github.com/KYVENetwork/tendermint/rpc/client/http"
-	rpctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
-	e2e "github.com/KYVENetwork/tendermint/test/e2e/pkg"
-	"github.com/KYVENetwork/tendermint/types"
+	rpchttp "github.com/KYVENetwork/celestia-core/rpc/client/http"
+	rpctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	e2e "github.com/KYVENetwork/celestia-core/test/e2e/pkg"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func init() {

@@ -1,7 +1,7 @@
 package core
 
 import (
-	rpc "github.com/KYVENetwork/tendermint/rpc/jsonrpc/server"
+	rpc "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/server"
 )
 
 // TODO: better system than "unsafe" prefix

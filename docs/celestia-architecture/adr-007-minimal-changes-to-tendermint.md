@@ -131,7 +131,7 @@ describe how to hash the block data here:
 
 #### Only produce blocks on some interval
 
-- Control block times (https://github.com/KYVENetwork/tendermint/issues/5911)
+- Control block times (https://github.com/KYVENetwork/celestia-core/issues/5911)
 
 #### Stop signing over the PartSetHeader
 

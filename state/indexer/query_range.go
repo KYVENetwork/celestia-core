@@ -3,8 +3,8 @@ package indexer
 import (
 	"time"
 
-	"github.com/KYVENetwork/tendermint/libs/pubsub/query"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // QueryRanges defines a mapping between a composite event key and a QueryRange.

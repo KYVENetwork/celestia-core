@@ -7,13 +7,13 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	bc "github.com/KYVENetwork/tendermint/blockchain"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	"github.com/KYVENetwork/tendermint/p2p"
-	bcproto "github.com/KYVENetwork/tendermint/proto/tendermint/blockchain"
-	sm "github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/store"
-	"github.com/KYVENetwork/tendermint/types"
+	bc "github.com/KYVENetwork/celestia-core/blockchain"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	bcproto "github.com/KYVENetwork/celestia-core/proto/tendermint/blockchain"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/store"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const (

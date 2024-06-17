@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"sync"
 
-	abci "github.com/KYVENetwork/tendermint/abci/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
 )
 
 const (

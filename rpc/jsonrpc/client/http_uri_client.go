@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	types "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
+	types "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
 )
 
 const (

@@ -17,7 +17,7 @@ This baseline is then compared with results obtained in later versions.
 Out of the testnet-based test cases described in [the releases document][releases] we focused on two of them:
 _200 Node Test_, and _Rotating Nodes Test_.
 
-[releases]: https://github.com/KYVENetwork/tendermint/blob/main/RELEASES.md#large-scale-testnets
+[releases]: https://github.com/KYVENetwork/celestia-core/blob/main/RELEASES.md#large-scale-testnets
 
 ## Software Dependencies
 
@@ -102,8 +102,8 @@ The CometBFT team should improve it at every iteration to increase the amount of
 2. Extract the latency report and the raw latencies for all the experiments. Run these commands from the directory containing the blockstore
     * ```bash
        mkdir results
-       go run github.com/KYVENetwork/tendermint/test/loadtime/cmd/report@f1aaa436d --database-type goleveldb --data-dir ./ > results/report.txt`
-       go run github.com/KYVENetwork/tendermint/test/loadtime/cmd/report@f1aaa436d --database-type goleveldb --data-dir ./ --csv results/raw.csv`
+       go run github.com/KYVENetwork/celestia-core/test/loadtime/cmd/report@f1aaa436d --database-type goleveldb --data-dir ./ > results/report.txt`
+       go run github.com/KYVENetwork/celestia-core/test/loadtime/cmd/report@f1aaa436d --database-type goleveldb --data-dir ./ --csv results/raw.csv`
        ```
 3. File `report.txt` contains an unordered list of experiments with varying concurrent connections and transaction rate
     * If you are looking for the saturation point

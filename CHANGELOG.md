@@ -12,27 +12,27 @@ that code.
 ### BREAKING CHANGES
 
 - `[crypto/merkle]` Do not allow verification of Merkle Proofs against empty trees (`nil` root). `Proof.ComputeRootHash` now panics when it encounters an error, but `Proof.Verify` does not panic
-  ([\#558](https://github.com/KYVENetwork/tendermint/issues/558))
+  ([\#558](https://github.com/KYVENetwork/celestia-core/issues/558))
 
 ### BUG FIXES
 
 - `[consensus]` Unexpected error conditions in `ApplyBlock` are non-recoverable, so ignoring the error and carrying on is a bug. We replaced a `return` that disregarded the error by a `panic`.
-  ([\#496](https://github.com/KYVENetwork/tendermint/pull/496))
+  ([\#496](https://github.com/KYVENetwork/celestia-core/pull/496))
 - `[consensus]` Rename `(*PeerState).ToJSON` to `MarshalJSON` to fix a logging data race
-  ([\#524](https://github.com/KYVENetwork/tendermint/pull/524))
+  ([\#524](https://github.com/KYVENetwork/celestia-core/pull/524))
 - `[light]` Fixed an edge case where a light client would panic when attempting
   to query a node that (1) has started from a non-zero height and (2) does
   not yet have any data. The light client will now, correctly, not panic
   _and_ keep the node in its list of providers in the same way it would if
   it queried a node starting from height zero that does not yet have data
-  ([\#575](https://github.com/KYVENetwork/tendermint/issues/575))
+  ([\#575](https://github.com/KYVENetwork/celestia-core/issues/575))
 
 ### IMPROVEMENTS
 
-- `[crypto/sr25519]` Upgrade to go-schnorrkel@v1.0.0 ([\#475](https://github.com/KYVENetwork/tendermint/issues/475))
+- `[crypto/sr25519]` Upgrade to go-schnorrkel@v1.0.0 ([\#475](https://github.com/KYVENetwork/celestia-core/issues/475))
 - `[jsonrpc/client]` Improve the error message for client errors stemming from
   bad HTTP responses.
-  ([cometbft/cometbft\#638](https://github.com/KYVENetwork/tendermint/pull/638))
+  ([cometbft/cometbft\#638](https://github.com/KYVENetwork/celestia-core/pull/638))
 
 ## v0.34.27
 
@@ -47,7 +47,7 @@ our [upgrading guidelines](./UPGRADING.md).
 
 If you have any questions, comments, concerns or feedback on this release, we
 would love to hear from you! Please contact us via [GitHub
-Discussions](https://github.com/KYVENetwork/tendermint/discussions),
+Discussions](https://github.com/KYVENetwork/celestia-core/discussions),
 [Discord](https://discord.gg/cosmosnetwork) (in the `#cometbft` channel) or
 [Telegram](https://t.me/CometBFT).
 
@@ -57,12 +57,12 @@ to this release!
 ### BREAKING CHANGES
 
 - Rename binary to `cometbft` and Docker image to `cometbft/cometbft`
-  ([\#152](https://github.com/KYVENetwork/tendermint/pull/152))
+  ([\#152](https://github.com/KYVENetwork/celestia-core/pull/152))
 - The `TMHOME` environment variable was renamed to `CMTHOME`, and all
   environment variables starting with `TM_` are instead prefixed with `CMT_`
-  ([\#211](https://github.com/KYVENetwork/tendermint/issues/211))
+  ([\#211](https://github.com/KYVENetwork/celestia-core/issues/211))
 - Use Go 1.19 to build CometBFT, since Go 1.18 has reached end-of-life.
-  ([\#360](https://github.com/KYVENetwork/tendermint/issues/360))
+  ([\#360](https://github.com/KYVENetwork/celestia-core/issues/360))
 
 ### BUG FIXES
 
@@ -71,10 +71,10 @@ to this release!
   ([\#4](https://github.com/informalsystems/tendermint/pull/4))
 - `[state/kvindexer]` Resolved crashes when event values contained slashes,
   introduced after adding event sequences.
-  (\#[383](https://github.com/KYVENetwork/tendermint/pull/383): @jmalicevic)
+  (\#[383](https://github.com/KYVENetwork/celestia-core/pull/383): @jmalicevic)
 - `[consensus]` Short-term fix for the case when `needProofBlock` cannot find
   previous block meta by defaulting to the creation of a new proof block.
-  ([\#386](https://github.com/KYVENetwork/tendermint/pull/386): @adizere)
+  ([\#386](https://github.com/KYVENetwork/celestia-core/pull/386): @adizere)
   - Special thanks to the [Vega.xyz](https://vega.xyz/) team, and in particular
     to Zohar (@ze97286), for reporting the problem and working with us to get to
     a fix.
@@ -88,9 +88,9 @@ to this release!
 
 - Replace [tm-db](https://github.com/tendermint/tm-db) with
   [cometbft-db](https://github.com/cometbft/cometbft-db)
-  ([\#160](https://github.com/KYVENetwork/tendermint/pull/160))
+  ([\#160](https://github.com/KYVENetwork/celestia-core/pull/160))
 - Bump tm-load-test to v1.3.0 to remove implicit dependency on Tendermint Core
-  ([\#165](https://github.com/KYVENetwork/tendermint/pull/165))
+  ([\#165](https://github.com/KYVENetwork/celestia-core/pull/165))
 - `[crypto]` Update to use btcec v2 and the latest btcutil
   ([tendermint/tendermint\#9787](https://github.com/tendermint/tendermint/pull/9787):
   @wcsiu)
@@ -106,12 +106,12 @@ to this release!
 - `[e2e]` Add functionality for uncoordinated (minor) upgrades
   ([\#56](https://github.com/tendermint/tendermint/pull/56))
 - `[tools/tm-signer-harness]` Remove the folder as it is unused
-  ([\#136](https://github.com/KYVENetwork/tendermint/issues/136))
+  ([\#136](https://github.com/KYVENetwork/celestia-core/issues/136))
 - Append the commit hash to the version of CometBFT being built
-  ([\#204](https://github.com/KYVENetwork/tendermint/pull/204))
+  ([\#204](https://github.com/KYVENetwork/celestia-core/pull/204))
 - `[mempool/v1]` Suppress "rejected bad transaction" in priority mempool logs by
   reducing log level from info to debug
-  ([\#314](https://github.com/KYVENetwork/tendermint/pull/314): @JayT106)
+  ([\#314](https://github.com/KYVENetwork/celestia-core/pull/314): @JayT106)
 - `[consensus]` Add `consensus_block_gossip_parts_received` and
   `consensus_step_duration_seconds` metrics in order to aid in investigating the
   impact of database compaction on consensus performance

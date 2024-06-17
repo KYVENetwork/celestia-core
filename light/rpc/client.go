@@ -10,15 +10,15 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/crypto/merkle"
-	cmtbytes "github.com/KYVENetwork/tendermint/libs/bytes"
-	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
-	service "github.com/KYVENetwork/tendermint/libs/service"
-	rpcclient "github.com/KYVENetwork/tendermint/rpc/client"
-	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
-	rpctypes "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
-	"github.com/KYVENetwork/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	cmtbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	service "github.com/KYVENetwork/celestia-core/libs/service"
+	rpcclient "github.com/KYVENetwork/celestia-core/rpc/client"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 var errNegOrZeroHeight = errors.New("negative or zero height")

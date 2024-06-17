@@ -115,7 +115,7 @@ go build
 CometBFT communicates with the application through the Application
 BlockChain Interface (ABCI). The messages exchanged through the interface are
 defined in the ABCI [protobuf
-file](https://github.com/KYVENetwork/tendermint/blob/v0.34.x/proto/tendermint/abci/types.proto).
+file](https://github.com/KYVENetwork/celestia-core/blob/v0.34.x/proto/tendermint/abci/types.proto).
 
 We begin by creating the basic scaffolding for an ABCI application by
 creating a new type, `KVStoreApplication`, which implements the
@@ -127,7 +127,7 @@ Create a file called `app.go` with the following contents:
 package main
 
 import (
-	abcitypes "github.com/KYVENetwork/tendermint/abci/types"
+	abcitypes "github.com/KYVENetwork/celestia-core/abci/types"
 )
 
 type KVStoreApplication struct{}
@@ -246,7 +246,7 @@ Next, update the `import` stanza at the top to include the Badger library:
 ```go
 import(
 	"github.com/dgraph-io/badger/v3"
-	abcitypes "github.com/KYVENetwork/tendermint/abci/types"
+	abcitypes "github.com/KYVENetwork/celestia-core/abci/types"
 )
 ```
 
@@ -311,7 +311,7 @@ import(
 	"bytes"
 
 	"github.com/dgraph-io/badger/v3"
-	abcitypes "github.com/KYVENetwork/tendermint/abci/types"
+	abcitypes "github.com/KYVENetwork/celestia-core/abci/types"
 )
 ```
 
@@ -403,7 +403,7 @@ import (
 	"log"
 
 	"github.com/dgraph-io/badger/v3"
-	abcitypes "github.com/KYVENetwork/tendermint/abci/types"
+	abcitypes "github.com/KYVENetwork/celestia-core/abci/types"
 )
 ```
 
@@ -462,7 +462,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	abciserver "github.com/KYVENetwork/tendermint/abci/server"
+	abciserver "github.com/KYVENetwork/celestia-core/abci/server"
 	"log"
 	"os"
 	"os/signal"
@@ -470,7 +470,7 @@ import (
 	"syscall"
 
 	"github.com/dgraph-io/badger/v3"
-	cmtlog "github.com/KYVENetwork/tendermint/libs/log"
+	cmtlog "github.com/KYVENetwork/celestia-core/libs/log"
 )
 
 var homeDir string
@@ -566,12 +566,12 @@ which connects to our server and send us transactions and other messages.
 
 Our application is almost ready to run, but first we'll need to populate the CometBFT configuration files.
 The following command will create a `cometbft-home` directory in your project and add a basic set of configuration files in `cometbft-home/config/`.
-For more information on what these files contain see [the configuration documentation](https://github.com/KYVENetwork/tendermint/blob/v0.34.x/docs/core/configuration.md).
+For more information on what these files contain see [the configuration documentation](https://github.com/KYVENetwork/celestia-core/blob/v0.34.x/docs/core/configuration.md).
 
 From the root of your project, run:
 
 ```bash
-go run github.com/KYVENetwork/tendermint/cmd/cometbft@v0.34.27 init --home /tmp/cometbft-home
+go run github.com/KYVENetwork/celestia-core/cmd/cometbft@v0.34.27 init --home /tmp/cometbft-home
 ```
 
 You should see an output similar to the following:
@@ -609,7 +609,7 @@ Open a new terminal window and cd to the same folder where the app is running.
 Then execute the following command:
 
 ```bash
-go run github.com/KYVENetwork/tendermint/cmd/cometbft@v0.34.27 node --home /tmp/cometbft-home --proxy_app=unix://example.sock
+go run github.com/KYVENetwork/celestia-core/cmd/cometbft@v0.34.27 node --home /tmp/cometbft-home --proxy_app=unix://example.sock
 ```
 
 This should start the full node and connect to our ABCI application, which will be
@@ -680,4 +680,4 @@ echo "cm9ja3M=" | base64 -d
 
 I hope everything went smoothly and your first, but hopefully not the last,
 CometBFT application is up and running. If not, please [open an issue on
-Github](https://github.com/KYVENetwork/tendermint/issues/new/choose).
+Github](https://github.com/KYVENetwork/celestia-core/issues/new/choose).

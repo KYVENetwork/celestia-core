@@ -3,9 +3,9 @@ package cat
 import (
 	"fmt"
 
-	tmsync "github.com/KYVENetwork/tendermint/libs/sync"
-	"github.com/KYVENetwork/tendermint/mempool"
-	"github.com/KYVENetwork/tendermint/p2p"
+	tmsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/mempool"
+	"github.com/KYVENetwork/celestia-core/p2p"
 )
 
 const firstPeerID = mempool.UnknownPeerID + 1

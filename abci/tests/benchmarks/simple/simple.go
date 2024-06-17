@@ -7,8 +7,8 @@ import (
 	"log"
 	"reflect"
 
-	"github.com/KYVENetwork/tendermint/abci/types"
-	cmtnet "github.com/KYVENetwork/tendermint/libs/net"
+	"github.com/KYVENetwork/celestia-core/abci/types"
+	cmtnet "github.com/KYVENetwork/celestia-core/libs/net"
 )
 
 func main() {

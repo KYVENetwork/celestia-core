@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/KYVENetwork/tendermint/crypto/merkle"
-	tmbytes "github.com/KYVENetwork/tendermint/libs/bytes"
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	tmbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
 	"github.com/stretchr/testify/assert"
 )
 

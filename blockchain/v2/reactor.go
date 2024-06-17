@@ -7,14 +7,14 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/KYVENetwork/tendermint/behaviour"
-	bc "github.com/KYVENetwork/tendermint/blockchain"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
-	"github.com/KYVENetwork/tendermint/p2p"
-	bcproto "github.com/KYVENetwork/tendermint/proto/tendermint/blockchain"
-	"github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/behaviour"
+	bc "github.com/KYVENetwork/celestia-core/blockchain"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	bcproto "github.com/KYVENetwork/celestia-core/proto/tendermint/blockchain"
+	"github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const (

@@ -3,8 +3,8 @@ package indexer
 import (
 	"context"
 
-	"github.com/KYVENetwork/tendermint/libs/pubsub/query"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 //go:generate ../../scripts/mockery_generate.sh BlockIndexer

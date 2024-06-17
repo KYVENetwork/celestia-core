@@ -6,9 +6,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtos "github.com/KYVENetwork/tendermint/libs/os"
-	"github.com/KYVENetwork/tendermint/privval"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
+	"github.com/KYVENetwork/celestia-core/privval"
 )
 
 // ResetAllCmd removes the database of this CometBFT core

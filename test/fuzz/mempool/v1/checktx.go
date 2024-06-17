@@ -1,13 +1,13 @@
 package v1
 
 import (
-	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
-	"github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	mempl "github.com/KYVENetwork/tendermint/mempool"
-	"github.com/KYVENetwork/tendermint/proxy"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	mempl "github.com/KYVENetwork/celestia-core/mempool"
+	"github.com/KYVENetwork/celestia-core/proxy"
 
-	mempoolv1 "github.com/KYVENetwork/tendermint/mempool/v1"
+	mempoolv1 "github.com/KYVENetwork/celestia-core/mempool/v1"
 )
 
 var mempool mempl.Mempool

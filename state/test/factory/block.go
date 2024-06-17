@@ -3,11 +3,11 @@ package factory
 import (
 	"time"
 
-	sm "github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/test/factory"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/test/factory"
 
-	tmproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
-	"github.com/KYVENetwork/tendermint/types"
+	tmproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func MakeBlocks(n int, state *sm.State, privVal types.PrivValidator) []*types.Block {

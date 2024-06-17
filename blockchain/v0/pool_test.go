@@ -8,10 +8,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
-	"github.com/KYVENetwork/tendermint/p2p"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func init() {
@@ -45,7 +45,7 @@ func (p testPeer) simulateInput(input inputData) {
 	input.pool.AddBlock(input.request.PeerID, block, 123)
 	// TODO: uncommenting this creates a race which is detected by:
 	// https://github.com/golang/go/blob/2bd767b1022dd3254bcec469f0ee164024726486/src/testing/testing.go#L854-L856
-	// see: https://github.com/KYVENetwork/tendermint/issues/3390#issue-418379890
+	// see: https://github.com/KYVENetwork/celestia-core/issues/3390#issue-418379890
 	// input.t.Logf("Added block from peer %v (height: %v)", input.request.PeerID, input.request.Height)
 }
 

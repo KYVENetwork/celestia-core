@@ -2,7 +2,7 @@
 
 # events
 
-`import "github.com/KYVENetwork/tendermint/libs/events"`
+`import "github.com/KYVENetwork/celestia-core/libs/events"`
 
 * [Overview](#pkg-overview)
 * [Index](#pkg-index)
@@ -27,7 +27,7 @@ Pub-Sub in go with event caching
 
 ### Package files
 
-[event_cache.go](/src/github.com/KYVENetwork/tendermint/libs/events/event_cache.go) [events.go](/src/github.com/KYVENetwork/tendermint/libs/events/events.go)
+[event_cache.go](/src/github.com/KYVENetwork/celestia-core/libs/events/event_cache.go) [events.go](/src/github.com/KYVENetwork/celestia-core/libs/events/events.go)
 
 
 

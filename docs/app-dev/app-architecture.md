@@ -52,4 +52,4 @@ See the following for more extensive documentation:
 - [Interchain Standard for the Light-Client REST API](https://github.com/cosmos/cosmos-sdk/pull/1617) (legacy/deprecated)
 - [CometBFT RPC Docs](https://docs.cometbft.com/v0.34/rpc/)
 - [CometBFT in Production](../core/running-in-production.md)
-- [ABCI spec](https://github.com/KYVENetwork/tendermint/tree/v0.34.x/spec/abci)
+- [ABCI spec](https://github.com/KYVENetwork/celestia-core/tree/v0.34.x/spec/abci)

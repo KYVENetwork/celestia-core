@@ -3,8 +3,8 @@ package v2
 import (
 	"fmt"
 
-	"github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 type processorContext interface {

@@ -9,10 +9,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	cfg "github.com/KYVENetwork/tendermint/config"
-	cmtos "github.com/KYVENetwork/tendermint/libs/os"
-	nm "github.com/KYVENetwork/tendermint/node"
-	"github.com/KYVENetwork/tendermint/pkg/trace"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
+	nm "github.com/KYVENetwork/celestia-core/node"
+	"github.com/KYVENetwork/celestia-core/pkg/trace"
 )
 
 var (

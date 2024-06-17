@@ -3,7 +3,7 @@ package crypto_test
 import (
 	"fmt"
 
-	"github.com/KYVENetwork/tendermint/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto"
 )
 
 func ExampleSha256() {

@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	abcicli "github.com/KYVENetwork/tendermint/abci/client"
+	abcicli "github.com/KYVENetwork/celestia-core/abci/client"
 	mock "github.com/stretchr/testify/mock"
 )
 

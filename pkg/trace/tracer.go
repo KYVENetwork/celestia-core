@@ -4,8 +4,8 @@ import (
 	"errors"
 	"os"
 
-	"github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
 )
 
 // Entry is an interface for all structs that are used to define the schema for

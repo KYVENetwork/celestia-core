@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"reflect"
 
-	cmtbytes "github.com/KYVENetwork/tendermint/libs/bytes"
-	cmtstrings "github.com/KYVENetwork/tendermint/libs/strings"
-	tmp2p "github.com/KYVENetwork/tendermint/proto/tendermint/p2p"
-	"github.com/KYVENetwork/tendermint/version"
+	cmtbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
+	cmtstrings "github.com/KYVENetwork/celestia-core/libs/strings"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/tendermint/p2p"
+	"github.com/KYVENetwork/celestia-core/version"
 )
 
 const (

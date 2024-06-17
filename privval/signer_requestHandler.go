@@ -3,12 +3,12 @@ package privval
 import (
 	"fmt"
 
-	"github.com/KYVENetwork/tendermint/crypto"
-	cryptoenc "github.com/KYVENetwork/tendermint/crypto/encoding"
-	cryptoproto "github.com/KYVENetwork/tendermint/proto/tendermint/crypto"
-	privvalproto "github.com/KYVENetwork/tendermint/proto/tendermint/privval"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
+	cryptoproto "github.com/KYVENetwork/celestia-core/proto/tendermint/crypto"
+	privvalproto "github.com/KYVENetwork/celestia-core/proto/tendermint/privval"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func DefaultValidationRequestHandler(

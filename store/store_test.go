@@ -15,17 +15,17 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cfg "github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/crypto"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
-	cmtstore "github.com/KYVENetwork/tendermint/proto/tendermint/store"
-	cmtversion "github.com/KYVENetwork/tendermint/proto/tendermint/version"
-	sm "github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/test/factory"
-	"github.com/KYVENetwork/tendermint/types"
-	cmttime "github.com/KYVENetwork/tendermint/types/time"
-	"github.com/KYVENetwork/tendermint/version"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	cmtstore "github.com/KYVENetwork/celestia-core/proto/tendermint/store"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/tendermint/version"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/test/factory"
+	"github.com/KYVENetwork/celestia-core/types"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
+	"github.com/KYVENetwork/celestia-core/version"
 )
 
 // A cleanupFunc cleans up any config / test files created for a particular

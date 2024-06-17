@@ -1,8 +1,8 @@
 package state
 
 import (
-	cmtstore "github.com/KYVENetwork/tendermint/proto/tendermint/store"
-	"github.com/KYVENetwork/tendermint/types"
+	cmtstore "github.com/KYVENetwork/celestia-core/proto/tendermint/store"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 //------------------------------------------------------

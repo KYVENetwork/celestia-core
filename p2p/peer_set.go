@@ -3,7 +3,7 @@ package p2p
 import (
 	"net"
 
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 )
 
 // IPeerSet has a (immutable) subset of the methods of PeerSet.

@@ -77,12 +77,12 @@ Sometimes it's necessary to rename libraries to avoid naming collisions or ambig
 * Separate imports into blocks - one for the standard lib, one for external libs and one for application libs.
 * Here are some common library labels for consistency:
     * dbm "github.com/cometbft/cometbft-db"
-    * cmtcmd "github.com/KYVENetwork/tendermint/cmd/cometbft/commands"
-    * cmtcfg "github.com/KYVENetwork/tendermint/config"
-    * cmttypes "github.com/KYVENetwork/tendermint/types"
+    * cmtcmd "github.com/KYVENetwork/celestia-core/cmd/cometbft/commands"
+    * cmtcfg "github.com/KYVENetwork/celestia-core/config"
+    * cmttypes "github.com/KYVENetwork/celestia-core/types"
 * Never use anonymous imports (the `.`), for example, `cmtlibs/common` or anything else.
 * When importing a pkg from the `cmt/libs` directory, prefix the pkg alias with cmt.
-    * cmtbits "github.com/KYVENetwork/tendermint/libs/bits"
+    * cmtbits "github.com/KYVENetwork/celestia-core/libs/bits"
 * tip: Use the `_` library import to import a library for initialization effects (side effects)
 
 ## Dependencies

@@ -10,11 +10,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
-	"github.com/KYVENetwork/tendermint/rpc/client"
-	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
-	"github.com/KYVENetwork/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/rpc/client"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 var waitForEventTimeout = 8 * time.Second

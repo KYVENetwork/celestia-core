@@ -1,11 +1,11 @@
 package core
 
 import (
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/libs/bytes"
-	"github.com/KYVENetwork/tendermint/proxy"
-	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
-	rpctypes "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/bytes"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
 )
 
 // ABCIQuery queries the application for some information.

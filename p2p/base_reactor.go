@@ -1,8 +1,8 @@
 package p2p
 
 import (
-	"github.com/KYVENetwork/tendermint/libs/service"
-	"github.com/KYVENetwork/tendermint/p2p/conn"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	"github.com/KYVENetwork/celestia-core/p2p/conn"
 )
 
 // Reactor is responsible for handling incoming messages on one or more

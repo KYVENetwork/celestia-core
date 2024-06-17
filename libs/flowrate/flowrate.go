@@ -10,7 +10,7 @@ import (
 	"math"
 	"time"
 
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 )
 
 // Monitor monitors and limits the transfer rate of a data stream.

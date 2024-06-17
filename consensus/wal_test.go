@@ -13,12 +13,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/consensus/types"
-	"github.com/KYVENetwork/tendermint/crypto/merkle"
-	"github.com/KYVENetwork/tendermint/libs/autofile"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmttypes "github.com/KYVENetwork/tendermint/types"
-	cmttime "github.com/KYVENetwork/tendermint/types/time"
+	"github.com/KYVENetwork/celestia-core/consensus/types"
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	"github.com/KYVENetwork/celestia-core/libs/autofile"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmttypes "github.com/KYVENetwork/celestia-core/types"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
 const (

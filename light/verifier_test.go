@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
-	"github.com/KYVENetwork/tendermint/light"
-	"github.com/KYVENetwork/tendermint/types"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	"github.com/KYVENetwork/celestia-core/light"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const (

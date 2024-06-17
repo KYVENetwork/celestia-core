@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/KYVENetwork/tendermint/libs/bytes"
-	types "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
+	"github.com/KYVENetwork/celestia-core/libs/bytes"
+	types "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
 )
 
 func TestParseJSONMap(t *testing.T) {

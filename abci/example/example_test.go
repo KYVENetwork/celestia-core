@@ -16,14 +16,14 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtnet "github.com/KYVENetwork/tendermint/libs/net"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtnet "github.com/KYVENetwork/celestia-core/libs/net"
 
-	abcicli "github.com/KYVENetwork/tendermint/abci/client"
-	"github.com/KYVENetwork/tendermint/abci/example/code"
-	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
-	abciserver "github.com/KYVENetwork/tendermint/abci/server"
-	"github.com/KYVENetwork/tendermint/abci/types"
+	abcicli "github.com/KYVENetwork/celestia-core/abci/client"
+	"github.com/KYVENetwork/celestia-core/abci/example/code"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	abciserver "github.com/KYVENetwork/celestia-core/abci/server"
+	"github.com/KYVENetwork/celestia-core/abci/types"
 )
 
 var grand *rand.Rand

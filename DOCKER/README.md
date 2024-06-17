@@ -2,18 +2,18 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-DockerHub tags for official releases are [here](https://hub.docker.com/r/KYVENetwork/tendermint/tags/). The "latest" tag will always point to the highest version number.
+DockerHub tags for official releases are [here](https://hub.docker.com/r/KYVENetwork/celestia-core/tags/). The "latest" tag will always point to the highest version number.
 
-Official releases can be found [here](https://github.com/KYVENetwork/tendermint/releases).
+Official releases can be found [here](https://github.com/KYVENetwork/celestia-core/releases).
 
-The Dockerfile for CometBFT is not expected to change in the near future. The main file used for all builds can be found [here](https://raw.githubusercontent.com/KYVENetwork/tendermint/main/DOCKER/Dockerfile).
+The Dockerfile for CometBFT is not expected to change in the near future. The main file used for all builds can be found [here](https://raw.githubusercontent.com/KYVENetwork/celestia-core/main/DOCKER/Dockerfile).
 
-Respective versioned files can be found <https://raw.githubusercontent.com/KYVENetwork/tendermint/vX.XX.XX/DOCKER/Dockerfile> (replace the Xs with the version number).
+Respective versioned files can be found <https://raw.githubusercontent.com/KYVENetwork/celestia-core/vX.XX.XX/DOCKER/Dockerfile> (replace the Xs with the version number).
 
 ## Quick reference
 
 - **Where to get help:** <https://cometbft.com/>
-- **Where to file issues:** <https://github.com/KYVENetwork/tendermint/issues>
+- **Where to file issues:** <https://github.com/KYVENetwork/celestia-core/issues>
 - **Supported Docker versions:** [the latest release](https://github.com/moby/moby/releases) (down to 1.6 on a best-effort basis)
 
 ## CometBFT
@@ -37,7 +37,7 @@ docker run -it --rm -v "/tmp:/cometbft" cometbft/cometbft node --proxy_app=kvsto
 
 ## Local cluster
 
-To run a 4-node network, see the `Makefile` in the root of [the repo](https://github.com/KYVENetwork/tendermint/blob/v0.34.x/Makefile) and run:
+To run a 4-node network, see the `Makefile` in the root of [the repo](https://github.com/KYVENetwork/celestia-core/blob/v0.34.x/Makefile) and run:
 
 ```sh
 make build-linux
@@ -49,8 +49,8 @@ Note that this will build and use a different image than the ones provided here.
 
 ## License
 
-- CometBFT's license is [Apache 2.0](https://github.com/KYVENetwork/tendermint/blob/main/LICENSE).
+- CometBFT's license is [Apache 2.0](https://github.com/KYVENetwork/celestia-core/blob/main/LICENSE).
 
 ## Contributing
 
-Contributions are most welcome! See the [contributing file](https://github.com/KYVENetwork/tendermint/blob/v0.34.x/CONTRIBUTING.md) for more information.
+Contributions are most welcome! See the [contributing file](https://github.com/KYVENetwork/celestia-core/blob/v0.34.x/CONTRIBUTING.md) for more information.

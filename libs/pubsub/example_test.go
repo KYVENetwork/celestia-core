@@ -6,10 +6,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/celestia-core/libs/log"
 
-	"github.com/KYVENetwork/tendermint/libs/pubsub"
-	"github.com/KYVENetwork/tendermint/libs/pubsub/query"
+	"github.com/KYVENetwork/celestia-core/libs/pubsub"
+	"github.com/KYVENetwork/celestia-core/libs/pubsub/query"
 )
 
 func TestExample(t *testing.T) {

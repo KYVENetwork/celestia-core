@@ -3,10 +3,10 @@ package mock
 import (
 	"net"
 
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	"github.com/KYVENetwork/tendermint/libs/service"
-	"github.com/KYVENetwork/tendermint/p2p"
-	"github.com/KYVENetwork/tendermint/p2p/conn"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/p2p/conn"
 )
 
 type Peer struct {

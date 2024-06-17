@@ -5,18 +5,18 @@ crypto is the cryptographic package adapted for CometBFT's uses
 ## Importing it
 
 To get the interfaces,
-`import "github.com/KYVENetwork/tendermint/crypto"`
+`import "github.com/KYVENetwork/celestia-core/crypto"`
 
 For any specific algorithm, use its specific module e.g.
-`import "github.com/KYVENetwork/tendermint/crypto/ed25519"`
+`import "github.com/KYVENetwork/celestia-core/crypto/ed25519"`
 
 ## Binary encoding
 
-For Binary encoding, please refer to the [CometBFT encoding specification](https://github.com/KYVENetwork/tendermint/blob/v0.34.x/spec/core/encoding.md).
+For Binary encoding, please refer to the [CometBFT encoding specification](https://github.com/KYVENetwork/celestia-core/blob/v0.34.x/spec/core/encoding.md).
 
 ## JSON Encoding
 
-JSON encoding is done using CometBFT's internal json encoder. For more information on JSON encoding, please refer to [CometBFT JSON encoding](https://github.com/KYVENetwork/tendermint/blob/main/libs/json/doc.go)
+JSON encoding is done using CometBFT's internal json encoder. For more information on JSON encoding, please refer to [CometBFT JSON encoding](https://github.com/KYVENetwork/celestia-core/blob/main/libs/json/doc.go)
 
 ```go
 Example JSON encodings:

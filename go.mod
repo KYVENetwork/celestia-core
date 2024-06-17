@@ -1,4 +1,4 @@
-module github.com/KYVENetwork/tendermint
+module github.com/KYVENetwork/celestia-core
 
 go 1.22.4
 

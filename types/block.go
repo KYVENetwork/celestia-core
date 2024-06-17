@@ -10,16 +10,16 @@ import (
 	"github.com/gogo/protobuf/proto"
 	gogotypes "github.com/gogo/protobuf/types"
 
-	"github.com/KYVENetwork/tendermint/crypto"
-	"github.com/KYVENetwork/tendermint/crypto/merkle"
-	"github.com/KYVENetwork/tendermint/crypto/tmhash"
-	"github.com/KYVENetwork/tendermint/libs/bits"
-	cmtbytes "github.com/KYVENetwork/tendermint/libs/bytes"
-	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
-	cmtversion "github.com/KYVENetwork/tendermint/proto/tendermint/version"
-	"github.com/KYVENetwork/tendermint/version"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	"github.com/KYVENetwork/celestia-core/libs/bits"
+	cmtbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/tendermint/version"
+	"github.com/KYVENetwork/celestia-core/version"
 )
 
 const (
@@ -336,7 +336,7 @@ func MakeBlock(
 // NOTE: changes to the Header should be duplicated in:
 // - header.Hash()
 // - abci.Header
-// - https://github.com/KYVENetwork/tendermint/blob/v0.34.x/spec/blockchain/blockchain.md
+// - https://github.com/KYVENetwork/celestia-core/blob/v0.34.x/spec/blockchain/blockchain.md
 type Header struct {
 	// basic block info
 	Version cmtversion.Consensus `json:"version"`

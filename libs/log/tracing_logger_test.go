@@ -9,7 +9,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/celestia-core/libs/log"
 )
 
 func TestTracingLogger(t *testing.T) {

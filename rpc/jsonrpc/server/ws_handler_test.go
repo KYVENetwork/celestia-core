@@ -8,8 +8,8 @@ import (
 	"github.com/gorilla/websocket"
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
-	types "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	types "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
 )
 
 func TestWebsocketManagerHandler(t *testing.T) {

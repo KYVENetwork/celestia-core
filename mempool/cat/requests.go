@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const defaultGlobalRequestTimeout = 1 * time.Hour

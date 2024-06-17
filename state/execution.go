@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"time"
 
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	cryptoenc "github.com/KYVENetwork/tendermint/crypto/encoding"
-	"github.com/KYVENetwork/tendermint/crypto/tmhash"
-	"github.com/KYVENetwork/tendermint/libs/fail"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	mempl "github.com/KYVENetwork/tendermint/mempool"
-	cmtstate "github.com/KYVENetwork/tendermint/proto/tendermint/state"
-	"github.com/KYVENetwork/tendermint/proxy"
-	"github.com/KYVENetwork/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	"github.com/KYVENetwork/celestia-core/libs/fail"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	mempl "github.com/KYVENetwork/celestia-core/mempool"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/tendermint/state"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 //-----------------------------------------------------------------------------

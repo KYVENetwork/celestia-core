@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
-	"github.com/KYVENetwork/tendermint/types"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 var (

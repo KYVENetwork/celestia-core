@@ -6,16 +6,16 @@ import (
 	"sync"
 	"sync/atomic"
 
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/libs/clist"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
-	"github.com/KYVENetwork/tendermint/mempool"
-	"github.com/KYVENetwork/tendermint/p2p"
-	"github.com/KYVENetwork/tendermint/proxy"
-	"github.com/KYVENetwork/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/clist"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/mempool"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // CListMempool is an ordered in-memory pool for transactions before they are
@@ -619,7 +619,7 @@ func (mem *CListMempool) Update(
 		//   101 -> 102
 		// Mempool after:
 		//   100
-		// https://github.com/KYVENetwork/tendermint/issues/3322.
+		// https://github.com/KYVENetwork/celestia-core/issues/3322.
 		if e, ok := mem.txsMap.Load(tx.Key()); ok {
 			mem.removeTx(tx, e.(*clist.CElement), false)
 		}

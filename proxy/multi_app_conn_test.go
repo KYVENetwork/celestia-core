@@ -11,8 +11,8 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	abcimocks "github.com/KYVENetwork/tendermint/abci/client/mocks"
-	"github.com/KYVENetwork/tendermint/proxy/mocks"
+	abcimocks "github.com/KYVENetwork/celestia-core/abci/client/mocks"
+	"github.com/KYVENetwork/celestia-core/proxy/mocks"
 )
 
 func TestAppConns_Start_Stop(t *testing.T) {

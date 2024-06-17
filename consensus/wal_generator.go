@@ -11,15 +11,15 @@ import (
 
 	db "github.com/cometbft/cometbft-db"
 
-	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
-	cfg "github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
-	"github.com/KYVENetwork/tendermint/privval"
-	"github.com/KYVENetwork/tendermint/proxy"
-	sm "github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/store"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/privval"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/store"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // WALGenerateNBlocks generates a consensus WAL. It does this by spinning up a

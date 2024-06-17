@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/KYVENetwork/tendermint/crypto"
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	cmtjson "github.com/KYVENetwork/tendermint/libs/json"
-	cmtos "github.com/KYVENetwork/tendermint/libs/os"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
 )
 
 // ID is a hex-encoded crypto.Address

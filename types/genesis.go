@@ -8,11 +8,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/crypto"
-	cmtbytes "github.com/KYVENetwork/tendermint/libs/bytes"
-	cmtjson "github.com/KYVENetwork/tendermint/libs/json"
-	cmtos "github.com/KYVENetwork/tendermint/libs/os"
-	cmttime "github.com/KYVENetwork/tendermint/types/time"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	cmtbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
 const (

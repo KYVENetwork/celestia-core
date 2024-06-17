@@ -3,8 +3,8 @@ package mempool
 import (
 	"container/list"
 
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
-	"github.com/KYVENetwork/tendermint/types"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // TxCache defines an interface for raw transaction caching in a mempool.

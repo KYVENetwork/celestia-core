@@ -5,15 +5,15 @@ import (
 	"net"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/crypto"
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtnet "github.com/KYVENetwork/tendermint/libs/net"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
-	"github.com/KYVENetwork/tendermint/pkg/trace"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtnet "github.com/KYVENetwork/celestia-core/libs/net"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/pkg/trace"
 
-	"github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/p2p/conn"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/p2p/conn"
 )
 
 const testCh = 0x01

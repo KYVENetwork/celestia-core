@@ -10,17 +10,17 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/KYVENetwork/tendermint/crypto"
-	"github.com/KYVENetwork/tendermint/crypto/tmhash"
-	"github.com/KYVENetwork/tendermint/evidence"
-	"github.com/KYVENetwork/tendermint/evidence/mocks"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
-	cmtversion "github.com/KYVENetwork/tendermint/proto/tendermint/version"
-	sm "github.com/KYVENetwork/tendermint/state"
-	smmocks "github.com/KYVENetwork/tendermint/state/mocks"
-	"github.com/KYVENetwork/tendermint/types"
-	"github.com/KYVENetwork/tendermint/version"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	"github.com/KYVENetwork/celestia-core/evidence"
+	"github.com/KYVENetwork/celestia-core/evidence/mocks"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/tendermint/version"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	smmocks "github.com/KYVENetwork/celestia-core/state/mocks"
+	"github.com/KYVENetwork/celestia-core/types"
+	"github.com/KYVENetwork/celestia-core/version"
 )
 
 const (

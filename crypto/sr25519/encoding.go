@@ -1,8 +1,8 @@
 package sr25519
 
 import (
-	"github.com/KYVENetwork/tendermint/crypto"
-	cmtjson "github.com/KYVENetwork/tendermint/libs/json"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
 )
 
 var _ crypto.PrivKey = PrivKey{}

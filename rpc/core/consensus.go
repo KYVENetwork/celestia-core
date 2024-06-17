@@ -1,11 +1,11 @@
 package core
 
 import (
-	cm "github.com/KYVENetwork/tendermint/consensus"
-	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
-	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
-	rpctypes "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
-	"github.com/KYVENetwork/tendermint/types"
+	cm "github.com/KYVENetwork/celestia-core/consensus"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // Validators gets the validator set at the given block height.

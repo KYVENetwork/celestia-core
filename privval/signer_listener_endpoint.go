@@ -5,10 +5,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
-	"github.com/KYVENetwork/tendermint/libs/service"
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
-	privvalproto "github.com/KYVENetwork/tendermint/proto/tendermint/privval"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	privvalproto "github.com/KYVENetwork/celestia-core/proto/tendermint/privval"
 )
 
 // SignerListenerEndpointOption sets an optional parameter on the SignerListenerEndpoint.

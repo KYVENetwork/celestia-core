@@ -3,7 +3,7 @@
  * This is a specification of the light client detector module.
  * It follows the English specification:
  *
- * https://github.com/KYVENetwork/tendermint/blob/v0.34.x/spec/light-client/detection/detection_003_reviewed.md
+ * https://github.com/KYVENetwork/celestia-core/blob/v0.34.x/spec/light-client/detection/detection_003_reviewed.md
  *
  * The assumptions made in this specification:
  *

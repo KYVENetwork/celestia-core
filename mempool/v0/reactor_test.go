@@ -14,17 +14,17 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	cfg "github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
-	"github.com/KYVENetwork/tendermint/mempool"
-	"github.com/KYVENetwork/tendermint/p2p"
-	"github.com/KYVENetwork/tendermint/p2p/mock"
-	memproto "github.com/KYVENetwork/tendermint/proto/tendermint/mempool"
-	"github.com/KYVENetwork/tendermint/proxy"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/mempool"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/p2p/mock"
+	memproto "github.com/KYVENetwork/celestia-core/proto/tendermint/mempool"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const (
@@ -67,7 +67,7 @@ func TestReactorBroadcastTxsMessage(t *testing.T) {
 	waitForTxsOnReactors(t, txs, reactors)
 }
 
-// regression test for https://github.com/KYVENetwork/tendermint/issues/5408
+// regression test for https://github.com/KYVENetwork/celestia-core/issues/5408
 func TestReactorConcurrency(t *testing.T) {
 	config := cfg.TestConfig()
 	const N = 2
@@ -268,7 +268,7 @@ func TestMempoolIDsPanicsIfNodeRequestsOvermaxActiveIDs(t *testing.T) {
 // TODO: This test tests that we don't panic and are able to generate new
 // PeerIDs for each peer we add. It seems as though we should be able to test
 // this in a much more direct way.
-// https://github.com/KYVENetwork/tendermint/issues/9639
+// https://github.com/KYVENetwork/celestia-core/issues/9639
 func TestDontExhaustMaxActiveIDs(t *testing.T) {
 	config := cfg.TestConfig()
 	const N = 1

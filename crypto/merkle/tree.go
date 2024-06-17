@@ -4,7 +4,7 @@ import (
 	"hash"
 	"math/bits"
 
-	"github.com/KYVENetwork/tendermint/crypto/tmhash"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
 )
 
 // HashFromByteSlices computes a Merkle tree where the leaves are the byte slice,

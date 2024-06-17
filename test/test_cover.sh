@@ -1,6 +1,6 @@
 #! /bin/bash
 
-PKGS=$(go list github.com/KYVENetwork/tendermint/...)
+PKGS=$(go list github.com/KYVENetwork/celestia-core/...)
 
 set -e
 

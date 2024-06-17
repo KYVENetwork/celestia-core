@@ -13,9 +13,9 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	cfg "github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/libs/cli"
-	rpchttp "github.com/KYVENetwork/tendermint/rpc/client/http"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/cli"
+	rpchttp "github.com/KYVENetwork/celestia-core/rpc/client/http"
 )
 
 var killCmd = &cobra.Command{

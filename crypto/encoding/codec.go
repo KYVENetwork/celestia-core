@@ -3,11 +3,11 @@ package encoding
 import (
 	"fmt"
 
-	"github.com/KYVENetwork/tendermint/crypto"
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	"github.com/KYVENetwork/tendermint/crypto/secp256k1"
-	"github.com/KYVENetwork/tendermint/libs/json"
-	pc "github.com/KYVENetwork/tendermint/proto/tendermint/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	"github.com/KYVENetwork/celestia-core/crypto/secp256k1"
+	"github.com/KYVENetwork/celestia-core/libs/json"
+	pc "github.com/KYVENetwork/celestia-core/proto/tendermint/crypto"
 )
 
 func init() {

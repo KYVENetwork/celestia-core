@@ -4,13 +4,13 @@ import (
 	"errors"
 	"fmt"
 
-	cstypes "github.com/KYVENetwork/tendermint/consensus/types"
-	"github.com/KYVENetwork/tendermint/libs/bits"
-	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
-	"github.com/KYVENetwork/tendermint/p2p"
-	cmtcons "github.com/KYVENetwork/tendermint/proto/tendermint/consensus"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
-	"github.com/KYVENetwork/tendermint/types"
+	cstypes "github.com/KYVENetwork/celestia-core/consensus/types"
+	"github.com/KYVENetwork/celestia-core/libs/bits"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	cmtcons "github.com/KYVENetwork/celestia-core/proto/tendermint/consensus"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 	"github.com/gogo/protobuf/proto"
 )
 

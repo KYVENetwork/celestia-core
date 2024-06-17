@@ -3,7 +3,7 @@
 package mocks
 
 import (
-	types "github.com/KYVENetwork/tendermint/types"
+	types "github.com/KYVENetwork/celestia-core/types"
 	mock "github.com/stretchr/testify/mock"
 )
 

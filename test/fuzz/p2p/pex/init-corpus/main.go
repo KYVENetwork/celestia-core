@@ -8,9 +8,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	"github.com/KYVENetwork/tendermint/p2p"
-	tmp2p "github.com/KYVENetwork/tendermint/proto/tendermint/p2p"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/tendermint/p2p"
 )
 
 func main() {

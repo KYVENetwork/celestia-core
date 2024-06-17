@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	abciclient "github.com/KYVENetwork/tendermint/abci/client"
-	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
-	abciserver "github.com/KYVENetwork/tendermint/abci/server"
+	abciclient "github.com/KYVENetwork/celestia-core/abci/client"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	abciserver "github.com/KYVENetwork/celestia-core/abci/server"
 )
 
 func TestClientServerNoAddrPrefix(t *testing.T) {

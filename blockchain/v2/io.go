@@ -3,10 +3,10 @@ package v2
 import (
 	"fmt"
 
-	"github.com/KYVENetwork/tendermint/p2p"
-	bcproto "github.com/KYVENetwork/tendermint/proto/tendermint/blockchain"
-	"github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	bcproto "github.com/KYVENetwork/celestia-core/proto/tendermint/blockchain"
+	"github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 type iIO interface {

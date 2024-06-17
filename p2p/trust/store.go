@@ -7,8 +7,8 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/KYVENetwork/tendermint/libs/service"
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 )
 
 const defaultStorePeriodicSaveInterval = 1 * time.Minute

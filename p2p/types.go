@@ -1,8 +1,8 @@
 package p2p
 
 import (
-	"github.com/KYVENetwork/tendermint/p2p/conn"
-	tmp2p "github.com/KYVENetwork/tendermint/proto/tendermint/p2p"
+	"github.com/KYVENetwork/celestia-core/p2p/conn"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/tendermint/p2p"
 	"github.com/gogo/protobuf/proto"
 )
 

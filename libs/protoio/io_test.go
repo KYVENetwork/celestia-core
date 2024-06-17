@@ -41,7 +41,7 @@ import (
 	"github.com/gogo/protobuf/test"
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/libs/protoio"
+	"github.com/KYVENetwork/celestia-core/libs/protoio"
 )
 
 func iotest(writer protoio.WriteCloser, reader protoio.ReadCloser) error {

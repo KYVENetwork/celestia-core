@@ -12,9 +12,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cfg "github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/libs/cli"
-	cmtos "github.com/KYVENetwork/tendermint/libs/os"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/cli"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
 )
 
 var defaultRoot = os.ExpandEnv("$HOME/.some/test/dir")

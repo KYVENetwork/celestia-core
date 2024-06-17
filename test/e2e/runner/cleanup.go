@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
-	e2e "github.com/KYVENetwork/tendermint/test/e2e/pkg"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	e2e "github.com/KYVENetwork/celestia-core/test/e2e/pkg"
 )
 
 // Cleanup removes the Docker Compose containers and testnet directory.

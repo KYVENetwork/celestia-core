@@ -42,6 +42,6 @@ If you are building CometBFT from scratch, please note that it must be compiled
 using Go 1.19 or higher. The use of Go 1.18 is not supported, since this version
 has reached end-of-life with the release of Go 1.20.
 
-[v03424]: https://github.com/KYVENetwork/tendermint/releases/tag/v0.34.24
+[v03424]: https://github.com/KYVENetwork/celestia-core/releases/tag/v0.34.24
 [v03425]: https://github.com/informalsystems/tendermint/releases/tag/v0.34.25
 [v03426]: https://github.com/informalsystems/tendermint/releases/tag/v0.34.26

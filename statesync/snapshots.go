@@ -6,8 +6,8 @@ import (
 	"math/rand"
 	"sort"
 
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
-	"github.com/KYVENetwork/tendermint/p2p"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/p2p"
 )
 
 // snapshotKey is a snapshot key used for lookups.

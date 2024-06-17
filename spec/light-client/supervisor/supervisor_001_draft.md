@@ -307,7 +307,7 @@ type LCInitData struct {
 
 where only one of the components must be provided. `GenesisDoc` is
 defined in the [CometBFT
-Types](https://github.com/KYVENetwork/tendermint/blob/v0.34.x/types/genesis.go).
+Types](https://github.com/KYVENetwork/celestia-core/blob/v0.34.x/types/genesis.go).
 
 #### **[LC-DATA-GENESIS.1]**
 

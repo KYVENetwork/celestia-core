@@ -11,8 +11,8 @@ import (
 	"net/url"
 	"strings"
 
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
-	types "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	types "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
 )
 
 const (

@@ -3,10 +3,10 @@ package proxy
 import (
 	"fmt"
 
-	abcicli "github.com/KYVENetwork/tendermint/abci/client"
-	cmtlog "github.com/KYVENetwork/tendermint/libs/log"
-	cmtos "github.com/KYVENetwork/tendermint/libs/os"
-	"github.com/KYVENetwork/tendermint/libs/service"
+	abcicli "github.com/KYVENetwork/celestia-core/abci/client"
+	cmtlog "github.com/KYVENetwork/celestia-core/libs/log"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
+	"github.com/KYVENetwork/celestia-core/libs/service"
 )
 
 const (

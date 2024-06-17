@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
-	rpctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
-	e2e "github.com/KYVENetwork/tendermint/test/e2e/pkg"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	rpctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	e2e "github.com/KYVENetwork/celestia-core/test/e2e/pkg"
 )
 
 // Perturbs a running testnet.

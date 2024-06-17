@@ -7,18 +7,18 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 	"github.com/gogo/protobuf/proto"
 
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
-	cmtos "github.com/KYVENetwork/tendermint/libs/os"
-	cmtstate "github.com/KYVENetwork/tendermint/proto/tendermint/state"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
-	"github.com/KYVENetwork/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/tendermint/state"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const (
 	// persist validators every valSetCheckpointInterval blocks to avoid
 	// LoadValidators taking too much time.
-	// https://github.com/KYVENetwork/tendermint/pull/3438
+	// https://github.com/KYVENetwork/celestia-core/pull/3438
 	// 100000 results in ~ 100ms to get 100 validators (see BenchmarkLoadValidators)
 	valSetCheckpointInterval = 100000
 )
@@ -237,7 +237,7 @@ func (store dbStore) Bootstrap(state State) error {
 // e.g. `LastHeightChanged` must remain. The state at to must also exist.
 //
 // The from parameter is necessary since we can't do a key scan in a performant way due to the key
-// encoding not preserving ordering: https://github.com/KYVENetwork/tendermint/issues/4567
+// encoding not preserving ordering: https://github.com/KYVENetwork/celestia-core/issues/4567
 // This will cause some old states to be left behind when doing incremental partial prunes,
 // specifically older checkpoints and LastHeightChanged targets.
 func (store dbStore) PruneStates(from int64, to int64) error {

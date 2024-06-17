@@ -17,12 +17,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/crypto"
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	"github.com/KYVENetwork/tendermint/crypto/sr25519"
-	"github.com/KYVENetwork/tendermint/libs/async"
-	cmtos "github.com/KYVENetwork/tendermint/libs/os"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	"github.com/KYVENetwork/celestia-core/crypto/sr25519"
+	"github.com/KYVENetwork/celestia-core/libs/async"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
 )
 
 // Run go test -update from within this module

@@ -5,7 +5,7 @@ OUTPUT?=$(BUILDDIR)/cometbft
 BUILD_TAGS?=cometbft
 
 COMMIT_HASH := $(shell git rev-parse --short HEAD)
-LD_FLAGS = -X github.com/KYVENetwork/tendermint/version.TMGitCommitHash=$(COMMIT_HASH)
+LD_FLAGS = -X github.com/KYVENetwork/celestia-core/version.TMGitCommitHash=$(COMMIT_HASH)
 BUILD_FLAGS = -mod=readonly -ldflags "$(LD_FLAGS)"
 HTTPS_GIT := https://github.com/cometbft/cometbft.git
 CGO_ENABLED ?= 0
@@ -207,7 +207,7 @@ go.sum: go.mod
 draw_deps:
 	@# requires brew install graphviz or apt-get install graphviz
 	go get github.com/RobotsAndPencils/goviz
-	@goviz -i github.com/KYVENetwork/tendermint/cmd/cometbft -d 3 | dot -Tpng -o dependency-graph.png
+	@goviz -i github.com/KYVENetwork/celestia-core/cmd/cometbft -d 3 | dot -Tpng -o dependency-graph.png
 .PHONY: draw_deps
 
 get_deps_bin_size:

@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/libs/pubsub/query"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/pubsub/query"
 )
 
 // XXX/TODO: These types should be moved to the indexer package.

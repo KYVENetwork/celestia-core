@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"time"
 
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
-	"github.com/KYVENetwork/tendermint/p2p"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/p2p"
 )
 
 // errDone is returned by chunkQueue.Next() when all chunks have been returned.

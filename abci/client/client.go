@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/libs/service"
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
+	"github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 )
 
 const (
@@ -138,7 +138,7 @@ func (r *ReqRes) InvokeCallback() {
 // marked done and SetCallback is called before calling GetCallback as that
 // will invoke the callback twice and create a potential race condition.
 //
-// ref: https://github.com/KYVENetwork/tendermint/issues/5439
+// ref: https://github.com/KYVENetwork/celestia-core/issues/5439
 func (r *ReqRes) GetCallback() func(*types.Response) {
 	r.mtx.Lock()
 	defer r.mtx.Unlock()

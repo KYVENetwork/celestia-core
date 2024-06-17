@@ -3,7 +3,7 @@ package types
 import (
 	"context"
 
-	"github.com/KYVENetwork/tendermint/crypto/merkle"
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
 )
 
 // Application is an interface that enables any finite, deterministic state machine

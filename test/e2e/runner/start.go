@@ -5,9 +5,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
-	"github.com/KYVENetwork/tendermint/p2p"
-	e2e "github.com/KYVENetwork/tendermint/test/e2e/pkg"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	e2e "github.com/KYVENetwork/celestia-core/test/e2e/pkg"
 )
 
 func Start(testnet *e2e.Testnet) error {

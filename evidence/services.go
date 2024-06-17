@@ -1,7 +1,7 @@
 package evidence
 
 import (
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 //go:generate ../scripts/mockery_generate.sh BlockStore

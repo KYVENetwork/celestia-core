@@ -179,8 +179,8 @@ enum EvidenceType {
 ```
 
 There are two forms of evidence: Duplicate Vote and Light Client Attack. More
-information can be found in either [data structures](https://github.com/KYVENetwork/tendermint/blob/v0.34.x/spec/core/data_structures.md)
-or [accountability](https://github.com/KYVENetwork/tendermint/blob/v0.34.x/spec/light-client/accountability/)
+information can be found in either [data structures](https://github.com/KYVENetwork/celestia-core/blob/v0.34.x/spec/core/data_structures.md)
+or [accountability](https://github.com/KYVENetwork/celestia-core/blob/v0.34.x/spec/light-client/accountability/)
 
 ## Determinism
 

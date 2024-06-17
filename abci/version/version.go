@@ -1,7 +1,7 @@
 package version
 
 import (
-	"github.com/KYVENetwork/tendermint/version"
+	"github.com/KYVENetwork/celestia-core/version"
 )
 
 // TODO: eliminate this after some version refactor

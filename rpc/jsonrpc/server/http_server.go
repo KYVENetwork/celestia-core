@@ -15,8 +15,8 @@ import (
 
 	"golang.org/x/net/netutil"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
-	types "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	types "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
 )
 
 // Config is a RPC server configuration.

@@ -9,10 +9,10 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/KYVENetwork/tendermint/abci/example/code"
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	"github.com/KYVENetwork/tendermint/version"
+	"github.com/KYVENetwork/celestia-core/abci/example/code"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/version"
 )
 
 const appVersion = 1

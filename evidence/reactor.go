@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"time"
 
-	clist "github.com/KYVENetwork/tendermint/libs/clist"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	"github.com/KYVENetwork/tendermint/p2p"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
-	"github.com/KYVENetwork/tendermint/types"
+	clist "github.com/KYVENetwork/celestia-core/libs/clist"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 	"github.com/gogo/protobuf/proto"
 )
 

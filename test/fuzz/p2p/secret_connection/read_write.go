@@ -6,9 +6,9 @@ import (
 	"io"
 	"log"
 
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	"github.com/KYVENetwork/tendermint/libs/async"
-	sc "github.com/KYVENetwork/tendermint/p2p/conn"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	"github.com/KYVENetwork/celestia-core/libs/async"
+	sc "github.com/KYVENetwork/celestia-core/p2p/conn"
 )
 
 func Fuzz(data []byte) int {

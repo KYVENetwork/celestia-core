@@ -4,13 +4,13 @@ import (
 	"errors"
 	"fmt"
 
-	cmtcon "github.com/KYVENetwork/tendermint/consensus"
-	cstypes "github.com/KYVENetwork/tendermint/consensus/types"
-	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
-	"github.com/KYVENetwork/tendermint/p2p"
-	cmtcons "github.com/KYVENetwork/tendermint/proto/tendermint/consensus"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
-	"github.com/KYVENetwork/tendermint/types"
+	cmtcon "github.com/KYVENetwork/celestia-core/consensus"
+	cstypes "github.com/KYVENetwork/celestia-core/consensus/types"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	cmtcons "github.com/KYVENetwork/celestia-core/proto/tendermint/consensus"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func WALToProto(msg cmtcon.WALMessage) (*cmtcons.WALMessage, error) {

@@ -23,10 +23,10 @@ implementation.
 import (
 	"context"
 
-	"github.com/KYVENetwork/tendermint/libs/bytes"
-	"github.com/KYVENetwork/tendermint/libs/service"
-	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/bytes"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // Client wraps most important rpc calls a client would make if you want to

@@ -1,7 +1,7 @@
 package node
 
 import (
-	"github.com/KYVENetwork/tendermint/config"
+	"github.com/KYVENetwork/celestia-core/config"
 	"github.com/grafana/pyroscope-go"
 
 	otelpyroscope "github.com/grafana/otel-profiling-go"

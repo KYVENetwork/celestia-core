@@ -3,7 +3,7 @@ package merkle
 import (
 	"hash"
 
-	"github.com/KYVENetwork/tendermint/crypto/tmhash"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
 )
 
 var (

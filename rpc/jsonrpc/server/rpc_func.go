@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/celestia-core/libs/log"
 )
 
 // RegisterRPCFuncs adds a route for each function in the funcMap, as well as

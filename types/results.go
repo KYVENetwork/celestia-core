@@ -1,8 +1,8 @@
 package types
 
 import (
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/crypto/merkle"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
 )
 
 // ABCIResults wraps the deliver tx results to return a proof.

@@ -3,9 +3,9 @@ package types
 import (
 	fmt "fmt"
 
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	cryptoenc "github.com/KYVENetwork/tendermint/crypto/encoding"
-	"github.com/KYVENetwork/tendermint/crypto/secp256k1"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
+	"github.com/KYVENetwork/celestia-core/crypto/secp256k1"
 )
 
 func Ed25519ValidatorUpdate(pk []byte, power int64) ValidatorUpdate {

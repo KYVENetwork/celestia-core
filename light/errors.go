@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // ErrOldHeaderExpired means the old (trusted) header has expired according to

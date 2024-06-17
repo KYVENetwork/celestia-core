@@ -198,7 +198,7 @@ The thick red dashed line represents the moving average over a sliding window of
 The following graph shows the that the number of peers was stable throughout the experiment.
 Seed nodes typically have a higher number of peers.
 The fact that non-seed nodes reach more than 50 peers is due to
-[#9548](https://github.com/KYVENetwork/tendermint/issues/9548).
+[#9548](https://github.com/KYVENetwork/celestia-core/issues/9548).
 
 ![peers](./img/baseline/peers.png)
 

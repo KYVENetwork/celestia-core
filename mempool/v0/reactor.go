@@ -7,14 +7,14 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	cfg "github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/libs/clist"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
-	"github.com/KYVENetwork/tendermint/mempool"
-	"github.com/KYVENetwork/tendermint/p2p"
-	protomem "github.com/KYVENetwork/tendermint/proto/tendermint/mempool"
-	"github.com/KYVENetwork/tendermint/types"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/clist"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/mempool"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	protomem "github.com/KYVENetwork/celestia-core/proto/tendermint/mempool"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // Reactor handles mempool tx broadcasting amongst peers.
@@ -258,7 +258,7 @@ func (memR *Reactor) broadcastTxRoutine(peer p2p.Peer) {
 		}
 
 		// NOTE: Transaction batching was disabled due to
-		// https://github.com/KYVENetwork/tendermint/issues/5796
+		// https://github.com/KYVENetwork/celestia-core/issues/5796
 
 		if _, ok := memTx.senders.Load(peerID); !ok {
 			success := p2p.SendEnvelopeShim(peer, p2p.Envelope{ //nolint: staticcheck

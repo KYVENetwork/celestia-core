@@ -18,13 +18,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cmtbytes "github.com/KYVENetwork/tendermint/libs/bytes"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	cmtbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
 
-	client "github.com/KYVENetwork/tendermint/rpc/jsonrpc/client"
-	server "github.com/KYVENetwork/tendermint/rpc/jsonrpc/server"
-	types "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
+	client "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/client"
+	server "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/server"
+	types "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
 )
 
 // Client and Server should work over tcp or unix sockets

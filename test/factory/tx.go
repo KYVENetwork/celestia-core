@@ -1,6 +1,6 @@
 package factory
 
-import "github.com/KYVENetwork/tendermint/types"
+import "github.com/KYVENetwork/celestia-core/types"
 
 // MakeTxs is a helper function to generate mock transactions by given the block height
 // and the transaction numbers.

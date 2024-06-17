@@ -4,8 +4,8 @@ import (
 	"container/list"
 	"time"
 
-	tmsync "github.com/KYVENetwork/tendermint/libs/sync"
-	"github.com/KYVENetwork/tendermint/types"
+	tmsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // LRUTxCache maintains a thread-safe LRU cache of raw transactions. The cache

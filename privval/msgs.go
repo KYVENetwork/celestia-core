@@ -5,7 +5,7 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	privvalproto "github.com/KYVENetwork/tendermint/proto/tendermint/privval"
+	privvalproto "github.com/KYVENetwork/celestia-core/proto/tendermint/privval"
 )
 
 // TODO: Add ChainIDRequest

@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	e2e "github.com/KYVENetwork/tendermint/test/e2e/pkg"
-	"github.com/KYVENetwork/tendermint/types"
+	e2e "github.com/KYVENetwork/celestia-core/test/e2e/pkg"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // Tests that any initial state given in genesis has made it into the app.

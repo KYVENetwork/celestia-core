@@ -9,16 +9,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	cryptoenc "github.com/KYVENetwork/tendermint/crypto/encoding"
-	"github.com/KYVENetwork/tendermint/crypto/tmhash"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
-	"github.com/KYVENetwork/tendermint/privval"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
-	"github.com/KYVENetwork/tendermint/rpc/client"
-	rpctest "github.com/KYVENetwork/tendermint/rpc/test"
-	"github.com/KYVENetwork/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/privval"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/rpc/client"
+	rpctest "github.com/KYVENetwork/celestia-core/rpc/test"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // For some reason the empty node used in tests has a time of

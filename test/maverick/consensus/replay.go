@@ -8,13 +8,13 @@ import (
 	"reflect"
 	"time"
 
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	cmtcon "github.com/KYVENetwork/tendermint/consensus"
-	"github.com/KYVENetwork/tendermint/crypto/merkle"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	"github.com/KYVENetwork/tendermint/proxy"
-	sm "github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	cmtcon "github.com/KYVENetwork/celestia-core/consensus"
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 var crc32c = crc32.MakeTable(crc32.Castagnoli)

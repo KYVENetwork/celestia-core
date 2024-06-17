@@ -8,7 +8,7 @@ For users explicitly making use of the Go APIs provided in the `crypto/merkle`
 package, please note that, in order to fix a potential security issue, we had to
 make a breaking change here. This change should only affect a small minority of
 users. For more details, please see
-[\#557](https://github.com/KYVENetwork/tendermint/issues/557).
+[\#557](https://github.com/KYVENetwork/celestia-core/issues/557).
 
 ## v0.34.27
 
@@ -82,6 +82,6 @@ please see the [Tendermint Core upgrading instructions][tmupgrade].
 [v03424]: https://github.com/tendermint/tendermint/releases/tag/v0.34.24
 [v03425]: https://github.com/informalsystems/tendermint/releases/tag/v0.34.25
 [v03426]: https://github.com/informalsystems/tendermint/releases/tag/v0.34.26
-[discussions]: https://github.com/KYVENetwork/tendermint/discussions
+[discussions]: https://github.com/KYVENetwork/celestia-core/discussions
 [tmupgrade]: https://github.com/tendermint/tendermint/blob/35581cf54ec436b8c37fabb43fdaa3f48339a170/UPGRADING.md
 [go120]: https://go.dev/blog/go1.20

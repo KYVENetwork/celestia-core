@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtnet "github.com/KYVENetwork/tendermint/libs/net"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtnet "github.com/KYVENetwork/celestia-core/libs/net"
 )
 
 // IsConnTimeout returns a boolean indicating whether the error is known to

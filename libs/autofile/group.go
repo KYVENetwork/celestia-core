@@ -13,7 +13,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/libs/service"
+	"github.com/KYVENetwork/celestia-core/libs/service"
 )
 
 const (

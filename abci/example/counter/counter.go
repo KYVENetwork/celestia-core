@@ -4,8 +4,8 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/KYVENetwork/tendermint/abci/example/code"
-	"github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/celestia-core/abci/example/code"
+	"github.com/KYVENetwork/celestia-core/abci/types"
 )
 
 type Application struct {

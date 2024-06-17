@@ -1,6 +1,6 @@
 package store
 
-import "github.com/KYVENetwork/tendermint/types"
+import "github.com/KYVENetwork/celestia-core/types"
 
 // Store is anything that can persistently store headers.
 type Store interface {

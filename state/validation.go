@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/KYVENetwork/tendermint/crypto"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 //-----------------------------------------------------

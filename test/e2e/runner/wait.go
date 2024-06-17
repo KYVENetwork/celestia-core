@@ -3,8 +3,8 @@ package main
 import (
 	"time"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
-	e2e "github.com/KYVENetwork/tendermint/test/e2e/pkg"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	e2e "github.com/KYVENetwork/celestia-core/test/e2e/pkg"
 )
 
 // Wait waits for a number of blocks to be produced, and for all nodes to catch

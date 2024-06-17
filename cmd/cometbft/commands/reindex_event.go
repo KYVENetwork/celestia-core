@@ -8,16 +8,16 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 	"github.com/spf13/cobra"
 
-	abcitypes "github.com/KYVENetwork/tendermint/abci/types"
-	cmtcfg "github.com/KYVENetwork/tendermint/config"
-	"github.com/KYVENetwork/tendermint/libs/progressbar"
-	"github.com/KYVENetwork/tendermint/state"
-	"github.com/KYVENetwork/tendermint/state/indexer"
-	blockidxkv "github.com/KYVENetwork/tendermint/state/indexer/block/kv"
-	"github.com/KYVENetwork/tendermint/state/indexer/sink/psql"
-	"github.com/KYVENetwork/tendermint/state/txindex"
-	"github.com/KYVENetwork/tendermint/state/txindex/kv"
-	"github.com/KYVENetwork/tendermint/types"
+	abcitypes "github.com/KYVENetwork/celestia-core/abci/types"
+	cmtcfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/progressbar"
+	"github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/state/indexer"
+	blockidxkv "github.com/KYVENetwork/celestia-core/state/indexer/block/kv"
+	"github.com/KYVENetwork/celestia-core/state/indexer/sink/psql"
+	"github.com/KYVENetwork/celestia-core/state/txindex"
+	"github.com/KYVENetwork/celestia-core/state/txindex/kv"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const (

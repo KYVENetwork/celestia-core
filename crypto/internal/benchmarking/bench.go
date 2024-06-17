@@ -4,7 +4,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/KYVENetwork/tendermint/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto"
 )
 
 // The code in this file is adapted from agl/ed25519.

@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/celestia-core/libs/log"
 )
 
 func TestVariousLevels(t *testing.T) {

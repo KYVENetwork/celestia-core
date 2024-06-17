@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/KYVENetwork/tendermint/libs/pubsub/query"
+	"github.com/KYVENetwork/celestia-core/libs/pubsub/query"
 )
 
 func TestEmptyQueryMatchesAnything(t *testing.T) {

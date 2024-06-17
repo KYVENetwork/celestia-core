@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/KYVENetwork/tendermint/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto"
 
 	schnorrkel "github.com/ChainSafe/go-schnorrkel"
 )

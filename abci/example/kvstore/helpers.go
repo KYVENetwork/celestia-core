@@ -1,8 +1,8 @@
 package kvstore
 
 import (
-	"github.com/KYVENetwork/tendermint/abci/types"
-	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	"github.com/KYVENetwork/celestia-core/abci/types"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
 )
 
 // RandVal creates one random validator, with a key derived

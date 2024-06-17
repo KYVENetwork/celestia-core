@@ -3,9 +3,9 @@ package txindex
 import (
 	"context"
 
-	"github.com/KYVENetwork/tendermint/libs/service"
-	"github.com/KYVENetwork/tendermint/state/indexer"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	"github.com/KYVENetwork/celestia-core/state/indexer"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // XXX/TODO: These types should be moved to the indexer package.

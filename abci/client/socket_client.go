@@ -10,11 +10,11 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/abci/types"
-	cmtnet "github.com/KYVENetwork/tendermint/libs/net"
-	"github.com/KYVENetwork/tendermint/libs/service"
-	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
-	"github.com/KYVENetwork/tendermint/libs/timer"
+	"github.com/KYVENetwork/celestia-core/abci/types"
+	cmtnet "github.com/KYVENetwork/celestia-core/libs/net"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/libs/timer"
 )
 
 const (

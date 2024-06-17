@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/KYVENetwork/tendermint/pkg/consts"
-	"github.com/KYVENetwork/tendermint/proto/tendermint/crypto"
-	tmproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/pkg/consts"
+	"github.com/KYVENetwork/celestia-core/proto/tendermint/crypto"
+	tmproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
 	"github.com/celestiaorg/nmt"
 )
 

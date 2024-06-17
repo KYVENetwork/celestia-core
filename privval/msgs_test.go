@@ -8,14 +8,14 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/crypto"
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	cryptoenc "github.com/KYVENetwork/tendermint/crypto/encoding"
-	"github.com/KYVENetwork/tendermint/crypto/tmhash"
-	cryptoproto "github.com/KYVENetwork/tendermint/proto/tendermint/crypto"
-	privproto "github.com/KYVENetwork/tendermint/proto/tendermint/privval"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
-	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	cryptoproto "github.com/KYVENetwork/celestia-core/proto/tendermint/crypto"
+	privproto "github.com/KYVENetwork/celestia-core/proto/tendermint/privval"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 var stamp = time.Date(2019, 10, 13, 16, 14, 44, 0, time.UTC)

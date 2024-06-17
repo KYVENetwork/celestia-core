@@ -1,8 +1,8 @@
 package proxy
 
 import (
-	abci "github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/version"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/version"
 )
 
 // RequestInfo contains all the information for sending

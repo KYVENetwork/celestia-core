@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/crypto/ed25519"
-	cmtjson "github.com/KYVENetwork/tendermint/libs/json"
-	cmttime "github.com/KYVENetwork/tendermint/types/time"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
 func TestGenesisBad(t *testing.T) {

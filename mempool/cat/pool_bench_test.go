@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/mempool"
+	"github.com/KYVENetwork/celestia-core/mempool"
 	"github.com/stretchr/testify/require"
 )
 

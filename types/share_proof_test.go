@@ -3,8 +3,8 @@ package types
 import (
 	"testing"
 
-	"github.com/KYVENetwork/tendermint/pkg/consts"
-	"github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/pkg/consts"
+	"github.com/KYVENetwork/celestia-core/proto/tendermint/types"
 	"github.com/stretchr/testify/assert"
 )
 

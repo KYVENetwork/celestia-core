@@ -6,11 +6,11 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/KYVENetwork/tendermint/crypto/merkle"
-	"github.com/KYVENetwork/tendermint/crypto/tmhash"
-	cmtbytes "github.com/KYVENetwork/tendermint/libs/bytes"
-	"github.com/KYVENetwork/tendermint/pkg/consts"
-	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	cmtbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
+	"github.com/KYVENetwork/celestia-core/pkg/consts"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/tendermint/types"
 	"github.com/gogo/protobuf/proto"
 )
 
@@ -107,7 +107,7 @@ func (txs Txs) IndexByHash(hash []byte) int {
 // ToSliceOfBytes converts a Txs to slice of byte slices.
 //
 // NOTE: This method should become obsolete once Txs is switched to [][]byte.
-// ref: #2603 https://github.com/KYVENetwork/tendermint/issues/2603
+// ref: #2603 https://github.com/KYVENetwork/celestia-core/issues/2603
 func (txs Txs) ToSliceOfBytes() [][]byte {
 	txBzs := make([][]byte, len(txs))
 	for i := 0; i < len(txs); i++ {

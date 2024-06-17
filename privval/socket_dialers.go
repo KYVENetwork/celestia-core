@@ -5,9 +5,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/KYVENetwork/tendermint/crypto"
-	cmtnet "github.com/KYVENetwork/tendermint/libs/net"
-	p2pconn "github.com/KYVENetwork/tendermint/p2p/conn"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	cmtnet "github.com/KYVENetwork/celestia-core/libs/net"
+	p2pconn "github.com/KYVENetwork/celestia-core/p2p/conn"
 )
 
 // Socket errors.

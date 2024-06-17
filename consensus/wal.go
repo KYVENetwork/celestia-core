@@ -11,13 +11,13 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	auto "github.com/KYVENetwork/tendermint/libs/autofile"
-	cmtjson "github.com/KYVENetwork/tendermint/libs/json"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtos "github.com/KYVENetwork/tendermint/libs/os"
-	"github.com/KYVENetwork/tendermint/libs/service"
-	cmtcons "github.com/KYVENetwork/tendermint/proto/tendermint/consensus"
-	cmttime "github.com/KYVENetwork/tendermint/types/time"
+	auto "github.com/KYVENetwork/celestia-core/libs/autofile"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	cmtcons "github.com/KYVENetwork/celestia-core/proto/tendermint/consensus"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
 const (

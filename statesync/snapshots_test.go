@@ -6,8 +6,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/KYVENetwork/tendermint/p2p"
-	p2pmocks "github.com/KYVENetwork/tendermint/p2p/mocks"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	p2pmocks "github.com/KYVENetwork/celestia-core/p2p/mocks"
 )
 
 func TestSnapshot_Key(t *testing.T) {

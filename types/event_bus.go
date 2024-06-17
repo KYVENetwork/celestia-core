@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/KYVENetwork/tendermint/abci/types"
-	"github.com/KYVENetwork/tendermint/libs/log"
-	cmtpubsub "github.com/KYVENetwork/tendermint/libs/pubsub"
-	"github.com/KYVENetwork/tendermint/libs/service"
+	"github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtpubsub "github.com/KYVENetwork/celestia-core/libs/pubsub"
+	"github.com/KYVENetwork/celestia-core/libs/service"
 )
 
 const defaultCapacity = 0

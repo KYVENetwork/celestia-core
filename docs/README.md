@@ -24,7 +24,7 @@ To upgrade from Tendermint Core v0.34.x to CometBFT v0.34.x, please see our
 [upgrading instructions](./guides/upgrading-from-tm.md).
 
 To learn about application development on CometBFT, see the
-[Application Blockchain Interface](https://github.com/KYVENetwork/tendermint/tree/v0.34.x/spec/abci).
+[Application Blockchain Interface](https://github.com/KYVENetwork/celestia-core/tree/v0.34.x/spec/abci).
 
 For more details on using CometBFT, see the respective documentation for
 [CometBFT internals](core/), [benchmarking and monitoring](tools/), and
