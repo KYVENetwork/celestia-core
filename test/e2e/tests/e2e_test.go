@@ -9,10 +9,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
-	rpctypes "github.com/cometbft/cometbft/rpc/core/types"
-	e2e "github.com/cometbft/cometbft/test/e2e/pkg"
-	"github.com/cometbft/cometbft/types"
+	rpchttp "github.com/KYVENetwork/tendermint/rpc/client/http"
+	rpctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
+	e2e "github.com/KYVENetwork/tendermint/test/e2e/pkg"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 func init() {

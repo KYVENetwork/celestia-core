@@ -8,18 +8,18 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/cometbft/cometbft/libs/log"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	"github.com/cometbft/cometbft/light"
-	lightprovider "github.com/cometbft/cometbft/light/provider"
-	lighthttp "github.com/cometbft/cometbft/light/provider/http"
-	lightrpc "github.com/cometbft/cometbft/light/rpc"
-	lightdb "github.com/cometbft/cometbft/light/store/db"
-	cmtstate "github.com/cometbft/cometbft/proto/tendermint/state"
-	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/types"
-	"github.com/cometbft/cometbft/version"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
+	"github.com/KYVENetwork/tendermint/light"
+	lightprovider "github.com/KYVENetwork/tendermint/light/provider"
+	lighthttp "github.com/KYVENetwork/tendermint/light/provider/http"
+	lightrpc "github.com/KYVENetwork/tendermint/light/rpc"
+	lightdb "github.com/KYVENetwork/tendermint/light/store/db"
+	cmtstate "github.com/KYVENetwork/tendermint/proto/tendermint/state"
+	rpchttp "github.com/KYVENetwork/tendermint/rpc/client/http"
+	sm "github.com/KYVENetwork/tendermint/state"
+	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/tendermint/version"
 )
 
 //go:generate ../scripts/mockery_generate.sh StateProvider

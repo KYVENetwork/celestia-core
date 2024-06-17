@@ -4,13 +4,13 @@ import (
 	"errors"
 	"fmt"
 
-	cstypes "github.com/cometbft/cometbft/consensus/types"
-	"github.com/cometbft/cometbft/libs/bits"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	"github.com/cometbft/cometbft/p2p"
-	cmtcons "github.com/cometbft/cometbft/proto/tendermint/consensus"
-	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	"github.com/cometbft/cometbft/types"
+	cstypes "github.com/KYVENetwork/tendermint/consensus/types"
+	"github.com/KYVENetwork/tendermint/libs/bits"
+	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
+	"github.com/KYVENetwork/tendermint/p2p"
+	cmtcons "github.com/KYVENetwork/tendermint/proto/tendermint/consensus"
+	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/tendermint/types"
 	"github.com/gogo/protobuf/proto"
 )
 

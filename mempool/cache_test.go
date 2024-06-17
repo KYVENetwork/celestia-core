@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/types"
 	"github.com/stretchr/testify/require"
 )
 

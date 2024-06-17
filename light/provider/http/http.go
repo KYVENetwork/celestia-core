@@ -8,14 +8,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cometbft/cometbft/light/provider"
-	rpcclient "github.com/cometbft/cometbft/rpc/client"
-	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/light/provider"
+	rpcclient "github.com/KYVENetwork/tendermint/rpc/client"
+	rpchttp "github.com/KYVENetwork/tendermint/rpc/client/http"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 var (
-	// This is very brittle, see: https://github.com/cometbft/cometbft/issues/4740
+	// This is very brittle, see: https://github.com/KYVENetwork/tendermint/issues/4740
 	regexpMissingHeight = regexp.MustCompile(`height \d+ is not available`)
 	regexpTooHigh       = regexp.MustCompile(`height \d+ must be less than or equal to`)
 	regexpTimedOut      = regexp.MustCompile(`Timeout exceeded`)
@@ -188,7 +188,7 @@ func (p *http) signedHeader(ctx context.Context, height *int64) (*types.SignedHe
 		commit, err := p.client.Commit(ctx, height)
 		switch {
 		case err == nil:
-			// See https://github.com/cometbft/cometbft/issues/575
+			// See https://github.com/KYVENetwork/tendermint/issues/575
 			// If the node is starting at a non-zero height, but does not yet
 			// have any blocks, it can return an empty signed header without
 			// returning an error.

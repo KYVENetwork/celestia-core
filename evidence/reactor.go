@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"time"
 
-	clist "github.com/cometbft/cometbft/libs/clist"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/p2p"
-	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	"github.com/cometbft/cometbft/types"
+	clist "github.com/KYVENetwork/tendermint/libs/clist"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/tendermint/p2p"
+	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/tendermint/types"
 	"github.com/gogo/protobuf/proto"
 )
 

@@ -7,14 +7,14 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/config"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	"github.com/cometbft/cometbft/p2p"
-	ssproto "github.com/cometbft/cometbft/proto/tendermint/statesync"
-	"github.com/cometbft/cometbft/proxy"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/types"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/config"
+	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
+	"github.com/KYVENetwork/tendermint/p2p"
+	ssproto "github.com/KYVENetwork/tendermint/proto/tendermint/statesync"
+	"github.com/KYVENetwork/tendermint/proxy"
+	sm "github.com/KYVENetwork/tendermint/state"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 const (

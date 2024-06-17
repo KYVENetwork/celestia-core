@@ -5,12 +5,12 @@ import (
 	"strings"
 	"testing"
 
-	abcicli "github.com/cometbft/cometbft/abci/client"
-	"github.com/cometbft/cometbft/abci/example/kvstore"
-	"github.com/cometbft/cometbft/abci/server"
-	"github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtrand "github.com/cometbft/cometbft/libs/rand"
+	abcicli "github.com/KYVENetwork/tendermint/abci/client"
+	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
+	"github.com/KYVENetwork/tendermint/abci/server"
+	"github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
 )
 
 //----------------------------------------

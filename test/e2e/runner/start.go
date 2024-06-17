@@ -5,9 +5,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/p2p"
-	e2e "github.com/cometbft/cometbft/test/e2e/pkg"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/tendermint/p2p"
+	e2e "github.com/KYVENetwork/tendermint/test/e2e/pkg"
 )
 
 func Start(testnet *e2e.Testnet) error {

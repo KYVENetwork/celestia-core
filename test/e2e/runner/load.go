@@ -7,11 +7,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cometbft/cometbft/libs/log"
-	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
-	e2e "github.com/cometbft/cometbft/test/e2e/pkg"
-	"github.com/cometbft/cometbft/test/loadtime/payload"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	rpchttp "github.com/KYVENetwork/tendermint/rpc/client/http"
+	e2e "github.com/KYVENetwork/tendermint/test/e2e/pkg"
+	"github.com/KYVENetwork/tendermint/test/loadtime/payload"
+	"github.com/KYVENetwork/tendermint/types"
 	"github.com/google/uuid"
 )
 

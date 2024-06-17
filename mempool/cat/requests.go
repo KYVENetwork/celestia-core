@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 const defaultGlobalRequestTimeout = 1 * time.Hour

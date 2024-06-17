@@ -26,9 +26,9 @@ daemon will switch out of fast sync and into the normal consensus mode.
 After running for some time, the node is considered `caught up` if it
 has at least one peer and its height is at least as high as the max
 reported peer height.
-See [the IsCaughtUp method](https://github.com/cometbft/cometbft/blob/v0.34.x/blockchain/v0/pool.go#L168).
+See [the IsCaughtUp method](https://github.com/KYVENetwork/tendermint/blob/v0.34.x/blockchain/v0/pool.go#L168).
 
-Note: There are three versions of fast sync. We recommend using v0 as v1 and v2 are still in beta. 
+Note: There are three versions of fast sync. We recommend using v0 as v1 and v2 are still in beta.
   If you would like to use a different version you can do so by changing the version in the `config.toml`:
 
 ```toml
@@ -40,9 +40,9 @@ Note: There are three versions of fast sync. We recommend using v0 as v1 and v2 
 # Fast Sync version to use:
 #   1) "v0" (default) - the legacy fast sync implementation
 #   2) "v1" - refactor of v0 version for better testability
-#   2) "v2" - complete redesign of v0, optimized for testability & readability 
+#   2) "v2" - complete redesign of v0, optimized for testability & readability
 version = "v0"
 ```
 
 If we're lagging sufficiently, we should go back to fast syncing, but
-this is an [open issue](https://github.com/cometbft/cometbft/issues/129).
+this is an [open issue](https://github.com/KYVENetwork/tendermint/issues/129).

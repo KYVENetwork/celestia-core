@@ -4,8 +4,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	p2pconn "github.com/cometbft/cometbft/p2p/conn"
+	"github.com/KYVENetwork/tendermint/crypto/ed25519"
+	p2pconn "github.com/KYVENetwork/tendermint/p2p/conn"
 )
 
 const (
@@ -140,7 +140,7 @@ func (ln *UnixListener) Accept() (net.Conn, error) {
 	conn := newTimeoutConn(tc, ln.timeoutReadWrite)
 
 	// TODO: wrap in something that authenticates
-	// with a MAC - https://github.com/cometbft/cometbft/issues/3099
+	// with a MAC - https://github.com/KYVENetwork/tendermint/issues/3099
 
 	return conn, nil
 }

@@ -7,16 +7,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cometbft/cometbft/libs/bytes"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtpubsub "github.com/cometbft/cometbft/libs/pubsub"
-	"github.com/cometbft/cometbft/libs/service"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	rpcclient "github.com/cometbft/cometbft/rpc/client"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	jsonrpcclient "github.com/cometbft/cometbft/rpc/jsonrpc/client"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/libs/bytes"
+	cmtjson "github.com/KYVENetwork/tendermint/libs/json"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	cmtpubsub "github.com/KYVENetwork/tendermint/libs/pubsub"
+	"github.com/KYVENetwork/tendermint/libs/service"
+	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
+	rpcclient "github.com/KYVENetwork/tendermint/rpc/client"
+	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
+	jsonrpcclient "github.com/KYVENetwork/tendermint/rpc/jsonrpc/client"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 /*

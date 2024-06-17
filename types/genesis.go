@@ -8,11 +8,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/cometbft/cometbft/crypto"
-	cmtbytes "github.com/cometbft/cometbft/libs/bytes"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	cmtos "github.com/cometbft/cometbft/libs/os"
-	cmttime "github.com/cometbft/cometbft/types/time"
+	"github.com/KYVENetwork/tendermint/crypto"
+	cmtbytes "github.com/KYVENetwork/tendermint/libs/bytes"
+	cmtjson "github.com/KYVENetwork/tendermint/libs/json"
+	cmtos "github.com/KYVENetwork/tendermint/libs/os"
+	cmttime "github.com/KYVENetwork/tendermint/types/time"
 )
 
 const (

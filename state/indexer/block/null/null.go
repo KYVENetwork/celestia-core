@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/cometbft/cometbft/libs/pubsub/query"
-	"github.com/cometbft/cometbft/state/indexer"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/libs/pubsub/query"
+	"github.com/KYVENetwork/tendermint/state/indexer"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 var _ indexer.BlockIndexer = (*BlockerIndexer)(nil)

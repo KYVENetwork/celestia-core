@@ -1,7 +1,7 @@
 package version
 
 import (
-	"github.com/cometbft/cometbft/version"
+	"github.com/KYVENetwork/tendermint/version"
 )
 
 // TODO: eliminate this after some version refactor

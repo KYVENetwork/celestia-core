@@ -7,12 +7,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	flow "github.com/cometbft/cometbft/libs/flowrate"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/libs/service"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	"github.com/cometbft/cometbft/p2p"
-	"github.com/cometbft/cometbft/types"
+	flow "github.com/KYVENetwork/tendermint/libs/flowrate"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/tendermint/libs/service"
+	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
+	"github.com/KYVENetwork/tendermint/p2p"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 /*

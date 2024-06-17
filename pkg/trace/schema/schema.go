@@ -3,7 +3,7 @@ package schema
 import (
 	"strings"
 
-	"github.com/cometbft/cometbft/config"
+	"github.com/KYVENetwork/tendermint/config"
 )
 
 func init() {

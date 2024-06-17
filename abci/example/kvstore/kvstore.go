@@ -8,9 +8,9 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/cometbft/cometbft/abci/example/code"
-	"github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/version"
+	"github.com/KYVENetwork/tendermint/abci/example/code"
+	"github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/version"
 )
 
 var (

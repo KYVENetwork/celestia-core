@@ -1,9 +1,9 @@
 package abcicli
 
 import (
-	types "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/libs/service"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
+	types "github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/libs/service"
+	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
 )
 
 var _ Client = (*localClient)(nil)

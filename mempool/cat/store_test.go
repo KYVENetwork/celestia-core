@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/types"
 	"github.com/stretchr/testify/require"
 )
 

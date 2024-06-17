@@ -10,11 +10,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	"github.com/cometbft/cometbft/libs/protoio"
-	"github.com/cometbft/cometbft/p2p/conn"
-	"github.com/cometbft/cometbft/pkg/trace"
-	tmp2p "github.com/cometbft/cometbft/proto/tendermint/p2p"
+	"github.com/KYVENetwork/tendermint/crypto/ed25519"
+	"github.com/KYVENetwork/tendermint/libs/protoio"
+	"github.com/KYVENetwork/tendermint/p2p/conn"
+	"github.com/KYVENetwork/tendermint/pkg/trace"
+	tmp2p "github.com/KYVENetwork/tendermint/proto/tendermint/p2p"
 )
 
 var defaultNodeName = "host_peer"

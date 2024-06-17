@@ -16,16 +16,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cometbft/cometbft/abci/example/code"
-	"github.com/cometbft/cometbft/abci/example/kvstore"
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/mempool"
-	"github.com/cometbft/cometbft/pkg/consts"
-	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	"github.com/cometbft/cometbft/proxy"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/abci/example/code"
+	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/config"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/tendermint/mempool"
+	"github.com/KYVENetwork/tendermint/pkg/consts"
+	tmproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/tendermint/proxy"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // application extends the KV store application by overriding CheckTx to provide

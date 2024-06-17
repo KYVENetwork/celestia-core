@@ -18,7 +18,7 @@ To get up and running quickly, see the [getting started guide](../docs/app-dev/g
 
 A detailed description of the ABCI methods and message types is contained in:
 
-- [The main spec](https://github.com/cometbft/cometbft/blob/v0.34.x/spec/abci/README.md)
+- [The main spec](https://github.com/KYVENetwork/tendermint/blob/v0.34.x/spec/abci/README.md)
 - [A protobuf file](./types/types.proto)
 - [A Go interface](./types/application.go)
 

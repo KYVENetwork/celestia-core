@@ -13,15 +13,15 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	cfg "github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	cryptoenc "github.com/cometbft/cometbft/crypto/encoding"
-	cmtrand "github.com/cometbft/cometbft/libs/rand"
-	cmtstate "github.com/cometbft/cometbft/proto/tendermint/state"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/types"
-	"github.com/cometbft/cometbft/version"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	cfg "github.com/KYVENetwork/tendermint/config"
+	"github.com/KYVENetwork/tendermint/crypto/ed25519"
+	cryptoenc "github.com/KYVENetwork/tendermint/crypto/encoding"
+	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	cmtstate "github.com/KYVENetwork/tendermint/proto/tendermint/state"
+	sm "github.com/KYVENetwork/tendermint/state"
+	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/tendermint/version"
 )
 
 // setupTestCase does setup common to all test cases.
@@ -456,7 +456,7 @@ func testProposerFreq(t *testing.T, caseNum int, valSet *types.ValidatorSet) {
 }
 
 // TestProposerPriorityDoesNotGetResetToZero assert that we preserve accum when calling updateState
-// see https://github.com/cometbft/cometbft/issues/2718
+// see https://github.com/KYVENetwork/tendermint/issues/2718
 func TestProposerPriorityDoesNotGetResetToZero(t *testing.T) {
 	tearDown, _, state := setupTestCase(t)
 	defer tearDown(t)
@@ -788,7 +788,7 @@ func TestLargeGenesisValidator(t *testing.T) {
 	// add more validators with same voting power as the 2nd
 	// let the genesis validator "unbond",
 	// see how long it takes until the effect wears off and both begin to alternate
-	// see: https://github.com/cometbft/cometbft/issues/2960
+	// see: https://github.com/KYVENetwork/tendermint/issues/2960
 	firstAddedValPubKey := ed25519.GenPrivKey().PubKey()
 	firstAddedValVotingPower := int64(10)
 	fvp, err := cryptoenc.PubKeyToProto(firstAddedValPubKey)

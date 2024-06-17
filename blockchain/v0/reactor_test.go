@@ -13,17 +13,17 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	cfg "github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/mempool/mock"
-	"github.com/cometbft/cometbft/p2p"
-	bcproto "github.com/cometbft/cometbft/proto/tendermint/blockchain"
-	"github.com/cometbft/cometbft/proxy"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/store"
-	"github.com/cometbft/cometbft/types"
-	cmttime "github.com/cometbft/cometbft/types/time"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	cfg "github.com/KYVENetwork/tendermint/config"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/tendermint/mempool/mock"
+	"github.com/KYVENetwork/tendermint/p2p"
+	bcproto "github.com/KYVENetwork/tendermint/proto/tendermint/blockchain"
+	"github.com/KYVENetwork/tendermint/proxy"
+	sm "github.com/KYVENetwork/tendermint/state"
+	"github.com/KYVENetwork/tendermint/store"
+	"github.com/KYVENetwork/tendermint/types"
+	cmttime "github.com/KYVENetwork/tendermint/types/time"
 )
 
 var config *cfg.Config

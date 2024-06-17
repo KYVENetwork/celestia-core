@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cometbft/cometbft/libs/log"
+	"github.com/KYVENetwork/tendermint/libs/log"
 	"github.com/stretchr/testify/require"
 )
 

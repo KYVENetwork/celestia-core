@@ -16,16 +16,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/crypto/merkle"
-	"github.com/cometbft/cometbft/crypto/tmhash"
-	"github.com/cometbft/cometbft/libs/bits"
-	"github.com/cometbft/cometbft/libs/bytes"
-	cmtrand "github.com/cometbft/cometbft/libs/rand"
-	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	cmtversion "github.com/cometbft/cometbft/proto/tendermint/version"
-	cmttime "github.com/cometbft/cometbft/types/time"
-	"github.com/cometbft/cometbft/version"
+	"github.com/KYVENetwork/tendermint/crypto"
+	"github.com/KYVENetwork/tendermint/crypto/merkle"
+	"github.com/KYVENetwork/tendermint/crypto/tmhash"
+	"github.com/KYVENetwork/tendermint/libs/bits"
+	"github.com/KYVENetwork/tendermint/libs/bytes"
+	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	cmtversion "github.com/KYVENetwork/tendermint/proto/tendermint/version"
+	cmttime "github.com/KYVENetwork/tendermint/types/time"
+	"github.com/KYVENetwork/tendermint/version"
 )
 
 func TestMain(m *testing.M) {

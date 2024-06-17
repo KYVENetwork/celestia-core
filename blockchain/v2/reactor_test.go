@@ -14,20 +14,20 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/behaviour"
-	cfg "github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/libs/service"
-	"github.com/cometbft/cometbft/mempool/mock"
-	"github.com/cometbft/cometbft/p2p"
-	"github.com/cometbft/cometbft/p2p/conn"
-	bcproto "github.com/cometbft/cometbft/proto/tendermint/blockchain"
-	"github.com/cometbft/cometbft/proxy"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/store"
-	"github.com/cometbft/cometbft/types"
-	cmttime "github.com/cometbft/cometbft/types/time"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/behaviour"
+	cfg "github.com/KYVENetwork/tendermint/config"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/tendermint/libs/service"
+	"github.com/KYVENetwork/tendermint/mempool/mock"
+	"github.com/KYVENetwork/tendermint/p2p"
+	"github.com/KYVENetwork/tendermint/p2p/conn"
+	bcproto "github.com/KYVENetwork/tendermint/proto/tendermint/blockchain"
+	"github.com/KYVENetwork/tendermint/proxy"
+	sm "github.com/KYVENetwork/tendermint/state"
+	"github.com/KYVENetwork/tendermint/store"
+	"github.com/KYVENetwork/tendermint/types"
+	cmttime "github.com/KYVENetwork/tendermint/types/time"
 )
 
 type mockPeer struct {
@@ -160,7 +160,7 @@ func newTestReactor(p testReactorParams) *BlockchainReactor {
 }
 
 // This test is left here and not deleted to retain the termination cases for
-// future improvement in [#4482](https://github.com/cometbft/cometbft/issues/4482).
+// future improvement in [#4482](https://github.com/KYVENetwork/tendermint/issues/4482).
 // func TestReactorTerminationScenarios(t *testing.T) {
 
 // 	config := cfg.ResetTestRoot("blockchain_reactor_v2_test")

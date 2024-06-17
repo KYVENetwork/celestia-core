@@ -12,11 +12,11 @@ import (
 
 	db "github.com/cometbft/cometbft-db"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/libs/pubsub/query"
-	cmtrand "github.com/cometbft/cometbft/libs/rand"
-	"github.com/cometbft/cometbft/state/txindex"
-	"github.com/cometbft/cometbft/types"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/libs/pubsub/query"
+	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	"github.com/KYVENetwork/tendermint/state/txindex"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 func TestTxIndex(t *testing.T) {
@@ -607,7 +607,7 @@ func TestTxSearchMultipleTxs(t *testing.T) {
 	require.NoError(t, err)
 
 	// indexed fourth (to test we don't include txs with similar events)
-	// https://github.com/cometbft/cometbft/issues/2908
+	// https://github.com/KYVENetwork/tendermint/issues/2908
 	txResult4 := txResultWithEvents([]abci.Event{
 		{Type: "account", Attributes: []abci.EventAttribute{{Key: "number.id", Value: "1", Index: true}}},
 	})

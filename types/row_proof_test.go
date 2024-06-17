@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/cometbft/cometbft/crypto/merkle"
-	tmbytes "github.com/cometbft/cometbft/libs/bytes"
+	"github.com/KYVENetwork/tendermint/crypto/merkle"
+	tmbytes "github.com/KYVENetwork/tendermint/libs/bytes"
 	"github.com/stretchr/testify/assert"
 )
 

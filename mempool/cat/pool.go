@@ -10,12 +10,12 @@ import (
 
 	"github.com/creachadair/taskgroup"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/mempool"
-	"github.com/cometbft/cometbft/proxy"
-	"github.com/cometbft/cometbft/types"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/config"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/tendermint/mempool"
+	"github.com/KYVENetwork/tendermint/proxy"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // enforce compile-time satisfaction of the Mempool interface

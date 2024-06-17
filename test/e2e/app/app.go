@@ -9,10 +9,10 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/cometbft/cometbft/abci/example/code"
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/version"
+	"github.com/KYVENetwork/tendermint/abci/example/code"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/tendermint/version"
 )
 
 const appVersion = 1

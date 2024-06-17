@@ -1,13 +1,13 @@
 package v1
 
 import (
-	"github.com/cometbft/cometbft/abci/example/kvstore"
-	"github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/libs/log"
-	mempl "github.com/cometbft/cometbft/mempool"
-	"github.com/cometbft/cometbft/proxy"
+	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
+	"github.com/KYVENetwork/tendermint/config"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	mempl "github.com/KYVENetwork/tendermint/mempool"
+	"github.com/KYVENetwork/tendermint/proxy"
 
-	mempoolv1 "github.com/cometbft/cometbft/mempool/v1"
+	mempoolv1 "github.com/KYVENetwork/tendermint/mempool/v1"
 )
 
 var mempool mempl.Mempool

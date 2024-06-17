@@ -12,11 +12,11 @@ import (
 	"github.com/gorilla/websocket"
 	metrics "github.com/rcrowley/go-metrics"
 
-	"github.com/cometbft/cometbft/libs/log"
-	cmtrand "github.com/cometbft/cometbft/libs/rand"
-	"github.com/cometbft/cometbft/libs/service"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	types "github.com/cometbft/cometbft/rpc/jsonrpc/types"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	"github.com/KYVENetwork/tendermint/libs/service"
+	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
+	types "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
 )
 
 const (
@@ -501,7 +501,7 @@ func (c *WSClient) readRoutine() {
 		// because they are implemented as responses with the subscribe request's
 		// ID. According to the spec, they should be notifications (requests
 		// without IDs).
-		// https://github.com/cometbft/cometbft/issues/2949
+		// https://github.com/KYVENetwork/tendermint/issues/2949
 		// c.mtx.Lock()
 		// if _, ok := c.sentIDs[response.ID.(types.JSONRPCIntID)]; !ok {
 		// 	c.Logger.Error("unsolicited response ID", "id", response.ID, "expected", c.sentIDs)

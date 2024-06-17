@@ -1,7 +1,7 @@
 package behaviour
 
 import (
-	"github.com/cometbft/cometbft/p2p"
+	"github.com/KYVENetwork/tendermint/p2p"
 )
 
 // PeerBehaviour is a struct describing a behaviour a peer performed.

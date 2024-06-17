@@ -8,13 +8,13 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/cometbft/cometbft/libs/cmap"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/libs/service"
-	"github.com/cometbft/cometbft/pkg/trace"
-	"github.com/cometbft/cometbft/pkg/trace/schema"
+	"github.com/KYVENetwork/tendermint/libs/cmap"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/tendermint/libs/service"
+	"github.com/KYVENetwork/tendermint/pkg/trace"
+	"github.com/KYVENetwork/tendermint/pkg/trace/schema"
 
-	cmtconn "github.com/cometbft/cometbft/p2p/conn"
+	cmtconn "github.com/KYVENetwork/tendermint/p2p/conn"
 )
 
 //go:generate ../scripts/mockery_generate.sh Peer

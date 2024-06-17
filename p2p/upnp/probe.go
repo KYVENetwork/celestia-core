@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/cometbft/cometbft/libs/log"
+	"github.com/KYVENetwork/tendermint/libs/log"
 )
 
 type Capabilities struct {

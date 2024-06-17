@@ -10,17 +10,17 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/crypto/tmhash"
-	"github.com/cometbft/cometbft/evidence"
-	"github.com/cometbft/cometbft/evidence/mocks"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	cmtversion "github.com/cometbft/cometbft/proto/tendermint/version"
-	sm "github.com/cometbft/cometbft/state"
-	smmocks "github.com/cometbft/cometbft/state/mocks"
-	"github.com/cometbft/cometbft/types"
-	"github.com/cometbft/cometbft/version"
+	"github.com/KYVENetwork/tendermint/crypto"
+	"github.com/KYVENetwork/tendermint/crypto/tmhash"
+	"github.com/KYVENetwork/tendermint/evidence"
+	"github.com/KYVENetwork/tendermint/evidence/mocks"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	cmtversion "github.com/KYVENetwork/tendermint/proto/tendermint/version"
+	sm "github.com/KYVENetwork/tendermint/state"
+	smmocks "github.com/KYVENetwork/tendermint/state/mocks"
+	"github.com/KYVENetwork/tendermint/types"
+	"github.com/KYVENetwork/tendermint/version"
 )
 
 const (

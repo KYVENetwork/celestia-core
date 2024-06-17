@@ -3,13 +3,13 @@ package pex
 import (
 	"net"
 
-	"github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/libs/service"
-	"github.com/cometbft/cometbft/p2p"
-	"github.com/cometbft/cometbft/p2p/pex"
-	"github.com/cometbft/cometbft/version"
+	"github.com/KYVENetwork/tendermint/config"
+	"github.com/KYVENetwork/tendermint/crypto/ed25519"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/tendermint/libs/service"
+	"github.com/KYVENetwork/tendermint/p2p"
+	"github.com/KYVENetwork/tendermint/p2p/pex"
+	"github.com/KYVENetwork/tendermint/version"
 )
 
 var (

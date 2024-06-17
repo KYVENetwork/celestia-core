@@ -8,17 +8,17 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	"github.com/cometbft/cometbft/crypto/tmhash"
-	"github.com/cometbft/cometbft/libs/log"
-	memmock "github.com/cometbft/cometbft/mempool/mock"
-	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/state/mocks"
-	"github.com/cometbft/cometbft/test/factory"
-	"github.com/cometbft/cometbft/types"
-	cmttime "github.com/cometbft/cometbft/types/time"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/crypto/ed25519"
+	"github.com/KYVENetwork/tendermint/crypto/tmhash"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	memmock "github.com/KYVENetwork/tendermint/mempool/mock"
+	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	sm "github.com/KYVENetwork/tendermint/state"
+	"github.com/KYVENetwork/tendermint/state/mocks"
+	"github.com/KYVENetwork/tendermint/test/factory"
+	"github.com/KYVENetwork/tendermint/types"
+	cmttime "github.com/KYVENetwork/tendermint/types/time"
 )
 
 const validationTestsStopHeight int64 = 10

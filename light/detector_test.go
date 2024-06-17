@@ -9,12 +9,12 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/light"
-	"github.com/cometbft/cometbft/light/provider"
-	mockp "github.com/cometbft/cometbft/light/provider/mock"
-	dbs "github.com/cometbft/cometbft/light/store/db"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/tendermint/light"
+	"github.com/KYVENetwork/tendermint/light/provider"
+	mockp "github.com/KYVENetwork/tendermint/light/provider/mock"
+	dbs "github.com/KYVENetwork/tendermint/light/store/db"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 func TestLightClientAttackEvidence_Lunatic(t *testing.T) {

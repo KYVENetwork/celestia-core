@@ -5,9 +5,9 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/cometbft/cometbft/abci/example/kvstore"
-	"github.com/cometbft/cometbft/mempool"
-	"github.com/cometbft/cometbft/proxy"
+	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
+	"github.com/KYVENetwork/tendermint/mempool"
+	"github.com/KYVENetwork/tendermint/proxy"
 )
 
 func BenchmarkReap(b *testing.B) {

@@ -13,22 +13,22 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	cfg "github.com/cometbft/cometbft/config"
-	cmtcon "github.com/cometbft/cometbft/consensus"
-	cstypes "github.com/cometbft/cometbft/consensus/types"
-	"github.com/cometbft/cometbft/crypto"
-	cmtevents "github.com/cometbft/cometbft/libs/events"
-	"github.com/cometbft/cometbft/libs/fail"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	cmtos "github.com/cometbft/cometbft/libs/os"
-	"github.com/cometbft/cometbft/libs/service"
-	"github.com/cometbft/cometbft/p2p"
-	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/types"
-	cmttime "github.com/cometbft/cometbft/types/time"
+	cfg "github.com/KYVENetwork/tendermint/config"
+	cmtcon "github.com/KYVENetwork/tendermint/consensus"
+	cstypes "github.com/KYVENetwork/tendermint/consensus/types"
+	"github.com/KYVENetwork/tendermint/crypto"
+	cmtevents "github.com/KYVENetwork/tendermint/libs/events"
+	"github.com/KYVENetwork/tendermint/libs/fail"
+	cmtjson "github.com/KYVENetwork/tendermint/libs/json"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
+	cmtos "github.com/KYVENetwork/tendermint/libs/os"
+	"github.com/KYVENetwork/tendermint/libs/service"
+	"github.com/KYVENetwork/tendermint/p2p"
+	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	sm "github.com/KYVENetwork/tendermint/state"
+	"github.com/KYVENetwork/tendermint/types"
+	cmttime "github.com/KYVENetwork/tendermint/types/time"
 )
 
 // State handles execution of the consensus algorithm.
@@ -214,7 +214,7 @@ func (cs *State) handleMsg(mi msgInfo) {
 		// We probably don't want to stop the peer here. The vote does not
 		// necessarily comes from a malicious peer but can be just broadcasted by
 		// a typical peer.
-		// https://github.com/cometbft/cometbft/issues/1281
+		// https://github.com/KYVENetwork/tendermint/issues/1281
 		// }
 
 		// NOTE: the vote is broadcast to peers by the reactor listening
@@ -1802,7 +1802,7 @@ func (cs *State) tryAddVote(vote *types.Vote, peerID p2p.ID) (bool, error) {
 			// 1) bad peer OR
 			// 2) not a bad peer? this can also err sometimes with "Unexpected step" OR
 			// 3) tmkms use with multiple validators connecting to a single tmkms instance
-			// 		(https://github.com/cometbft/cometbft/issues/3839).
+			// 		(https://github.com/KYVENetwork/tendermint/issues/3839).
 			cs.Logger.Info("Error attempting to add vote", "err", err)
 			return added, ErrAddingVote
 		}
@@ -1855,7 +1855,7 @@ func (cs *State) voteTime() time.Time {
 	// even if cs.LockedBlock != nil. See https://docs.tendermint.com/master/spec/.
 	if cs.LockedBlock != nil {
 		// See the BFT time spec
-		// https://github.com/cometbft/cometbft/blob/v0.34.x/spec/consensus/bft-time.md
+		// https://github.com/KYVENetwork/tendermint/blob/v0.34.x/spec/consensus/bft-time.md
 		minVoteTime = cs.LockedBlock.Time.Add(timeIota)
 	} else if cs.ProposalBlock != nil {
 		minVoteTime = cs.ProposalBlock.Time.Add(timeIota)

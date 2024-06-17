@@ -3,8 +3,8 @@ package merkle
 import (
 	"testing"
 
-	"github.com/cometbft/cometbft/crypto/tmhash"
-	cmtrand "github.com/cometbft/cometbft/libs/rand"
+	"github.com/KYVENetwork/tendermint/crypto/tmhash"
+	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
 	"github.com/stretchr/testify/require"
 )
 

@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"time"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	mempl "github.com/cometbft/cometbft/mempool"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	rpctypes "github.com/cometbft/cometbft/rpc/jsonrpc/types"
-	"github.com/cometbft/cometbft/types"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	mempl "github.com/KYVENetwork/tendermint/mempool"
+	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
+	rpctypes "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

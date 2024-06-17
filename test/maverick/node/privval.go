@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	cmtbytes "github.com/cometbft/cometbft/libs/bytes"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	cmtos "github.com/cometbft/cometbft/libs/os"
-	"github.com/cometbft/cometbft/libs/tempfile"
-	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/crypto"
+	"github.com/KYVENetwork/tendermint/crypto/ed25519"
+	cmtbytes "github.com/KYVENetwork/tendermint/libs/bytes"
+	cmtjson "github.com/KYVENetwork/tendermint/libs/json"
+	cmtos "github.com/KYVENetwork/tendermint/libs/os"
+	"github.com/KYVENetwork/tendermint/libs/tempfile"
+	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // *******************************************************************************************************************

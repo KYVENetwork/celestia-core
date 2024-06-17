@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cometbft/cometbft/light/provider"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/light/provider"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 type Mock struct {

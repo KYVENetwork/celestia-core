@@ -11,13 +11,13 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	auto "github.com/cometbft/cometbft/libs/autofile"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtos "github.com/cometbft/cometbft/libs/os"
-	"github.com/cometbft/cometbft/libs/service"
-	cmtcons "github.com/cometbft/cometbft/proto/tendermint/consensus"
-	cmttime "github.com/cometbft/cometbft/types/time"
+	auto "github.com/KYVENetwork/tendermint/libs/autofile"
+	cmtjson "github.com/KYVENetwork/tendermint/libs/json"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	cmtos "github.com/KYVENetwork/tendermint/libs/os"
+	"github.com/KYVENetwork/tendermint/libs/service"
+	cmtcons "github.com/KYVENetwork/tendermint/proto/tendermint/consensus"
+	cmttime "github.com/KYVENetwork/tendermint/types/time"
 )
 
 const (

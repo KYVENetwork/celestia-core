@@ -1,8 +1,8 @@
 package schema
 
 import (
-	"github.com/cometbft/cometbft/libs/bytes"
-	"github.com/cometbft/cometbft/pkg/trace"
+	"github.com/KYVENetwork/tendermint/libs/bytes"
+	"github.com/KYVENetwork/tendermint/pkg/trace"
 )
 
 // MempoolTables returns the list of tables for mempool tracing.

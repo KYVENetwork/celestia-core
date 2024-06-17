@@ -13,11 +13,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/crypto/ed25519"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	cmtrand "github.com/cometbft/cometbft/libs/rand"
-	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/KYVENetwork/tendermint/crypto"
+	"github.com/KYVENetwork/tendermint/crypto/ed25519"
+	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
+	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
 )
 
 func TestValidatorSetBasic(t *testing.T) {

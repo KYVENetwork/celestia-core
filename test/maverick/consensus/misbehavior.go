@@ -3,13 +3,13 @@ package consensus
 import (
 	"fmt"
 
-	cmtcon "github.com/cometbft/cometbft/consensus"
-	cstypes "github.com/cometbft/cometbft/consensus/types"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/p2p"
-	cmtcons "github.com/cometbft/cometbft/proto/tendermint/consensus"
-	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	"github.com/cometbft/cometbft/types"
+	cmtcon "github.com/KYVENetwork/tendermint/consensus"
+	cstypes "github.com/KYVENetwork/tendermint/consensus/types"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/tendermint/p2p"
+	cmtcons "github.com/KYVENetwork/tendermint/proto/tendermint/consensus"
+	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // MisbehaviorList encompasses a list of all possible behaviors

@@ -3,8 +3,8 @@ package v2
 import (
 	"fmt"
 
-	"github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/state"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 type processorContext interface {

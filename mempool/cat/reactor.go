@@ -7,15 +7,15 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	cfg "github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/crypto/tmhash"
-	"github.com/cometbft/cometbft/libs/log"
-	"github.com/cometbft/cometbft/mempool"
-	"github.com/cometbft/cometbft/p2p"
-	"github.com/cometbft/cometbft/pkg/trace"
-	"github.com/cometbft/cometbft/pkg/trace/schema"
-	protomem "github.com/cometbft/cometbft/proto/tendermint/mempool"
-	"github.com/cometbft/cometbft/types"
+	cfg "github.com/KYVENetwork/tendermint/config"
+	"github.com/KYVENetwork/tendermint/crypto/tmhash"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	"github.com/KYVENetwork/tendermint/mempool"
+	"github.com/KYVENetwork/tendermint/p2p"
+	"github.com/KYVENetwork/tendermint/pkg/trace"
+	"github.com/KYVENetwork/tendermint/pkg/trace/schema"
+	protomem "github.com/KYVENetwork/tendermint/proto/tendermint/mempool"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 const (

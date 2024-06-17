@@ -1,10 +1,10 @@
 package mock
 
 import (
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/libs/clist"
-	"github.com/cometbft/cometbft/mempool"
-	"github.com/cometbft/cometbft/types"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/libs/clist"
+	"github.com/KYVENetwork/tendermint/mempool"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // Mempool is an empty implementation of a Mempool, useful for testing.

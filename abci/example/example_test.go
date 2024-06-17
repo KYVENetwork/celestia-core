@@ -16,14 +16,14 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/cometbft/cometbft/libs/log"
-	cmtnet "github.com/cometbft/cometbft/libs/net"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	cmtnet "github.com/KYVENetwork/tendermint/libs/net"
 
-	abcicli "github.com/cometbft/cometbft/abci/client"
-	"github.com/cometbft/cometbft/abci/example/code"
-	"github.com/cometbft/cometbft/abci/example/kvstore"
-	abciserver "github.com/cometbft/cometbft/abci/server"
-	"github.com/cometbft/cometbft/abci/types"
+	abcicli "github.com/KYVENetwork/tendermint/abci/client"
+	"github.com/KYVENetwork/tendermint/abci/example/code"
+	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
+	abciserver "github.com/KYVENetwork/tendermint/abci/server"
+	"github.com/KYVENetwork/tendermint/abci/types"
 )
 
 var grand *rand.Rand

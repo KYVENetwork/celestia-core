@@ -10,15 +10,15 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cometbft/cometbft/abci/example/counter"
-	cstypes "github.com/cometbft/cometbft/consensus/types"
-	"github.com/cometbft/cometbft/crypto/tmhash"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtpubsub "github.com/cometbft/cometbft/libs/pubsub"
-	cmtrand "github.com/cometbft/cometbft/libs/rand"
-	p2pmock "github.com/cometbft/cometbft/p2p/mock"
-	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/abci/example/counter"
+	cstypes "github.com/KYVENetwork/tendermint/consensus/types"
+	"github.com/KYVENetwork/tendermint/crypto/tmhash"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	cmtpubsub "github.com/KYVENetwork/tendermint/libs/pubsub"
+	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	p2pmock "github.com/KYVENetwork/tendermint/p2p/mock"
+	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 /*

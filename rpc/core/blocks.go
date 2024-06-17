@@ -7,14 +7,14 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/cometbft/cometbft/crypto/merkle"
-	"github.com/cometbft/cometbft/libs/bytes"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	cmtquery "github.com/cometbft/cometbft/libs/pubsub/query"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	rpctypes "github.com/cometbft/cometbft/rpc/jsonrpc/types"
-	blockidxnull "github.com/cometbft/cometbft/state/indexer/block/null"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/crypto/merkle"
+	"github.com/KYVENetwork/tendermint/libs/bytes"
+	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
+	cmtquery "github.com/KYVENetwork/tendermint/libs/pubsub/query"
+	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
+	rpctypes "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
+	blockidxnull "github.com/KYVENetwork/tendermint/state/indexer/block/null"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // BlockchainInfo gets block headers for minHeight <= height <= maxHeight.
@@ -109,7 +109,7 @@ func Header(ctx *rpctypes.Context, heightPtr *int64) (*ctypes.ResultHeader, erro
 func HeaderByHash(ctx *rpctypes.Context, hash bytes.HexBytes) (*ctypes.ResultHeader, error) {
 	// N.B. The hash parameter is HexBytes so that the reflective parameter
 	// decoding logic in the HTTP service will correctly translate from JSON.
-	// See https://github.com/cometbft/cometbft/issues/6802 for context.
+	// See https://github.com/KYVENetwork/tendermint/issues/6802 for context.
 
 	blockMeta := GetEnvironment().BlockStore.LoadBlockMetaByHash(hash)
 	if blockMeta == nil {

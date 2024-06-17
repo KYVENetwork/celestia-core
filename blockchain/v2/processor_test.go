@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/cometbft/cometbft/p2p"
-	cmtState "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/p2p"
+	cmtState "github.com/KYVENetwork/tendermint/state"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // pcBlock is a test helper structure with simple types. Its purpose is to help with test readability.

@@ -1,8 +1,8 @@
 package state
 
 import (
-	cmtstore "github.com/cometbft/cometbft/proto/tendermint/store"
-	"github.com/cometbft/cometbft/types"
+	cmtstore "github.com/KYVENetwork/tendermint/proto/tendermint/store"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 //------------------------------------------------------

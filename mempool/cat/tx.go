@@ -3,7 +3,7 @@ package cat
 import (
 	"time"
 
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // wrappedTx defines a wrapper around a raw transaction with additional metadata

@@ -3,7 +3,7 @@ package types
 import (
 	"context"
 
-	"github.com/cometbft/cometbft/crypto/merkle"
+	"github.com/KYVENetwork/tendermint/crypto/merkle"
 )
 
 // Application is an interface that enables any finite, deterministic state machine

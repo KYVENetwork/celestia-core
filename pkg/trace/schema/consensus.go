@@ -1,8 +1,8 @@
 package schema
 
 import (
-	"github.com/cometbft/cometbft/pkg/trace"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/pkg/trace"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // ConsensusTables returns the list of tables that are used for consensus

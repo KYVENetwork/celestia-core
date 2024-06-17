@@ -3,12 +3,12 @@
 This document describes the implementation of the peer-to-peer (p2p)
 communication layer in CometBFT.
 
-It is part of an [effort](https://github.com/cometbft/cometbft/issues/19)
+It is part of an [effort](https://github.com/KYVENetwork/tendermint/issues/19)
 to produce a high-level specification of the operation of the p2p layer adopted
 in production CometBFT networks.
 
 This documentation, therefore, considers the releases `0.34.*` of CometBFT, more
-specifically, the branch [`v0.34.x`](https://github.com/cometbft/cometbft/tree/v0.34.x)
+specifically, the branch [`v0.34.x`](https://github.com/KYVENetwork/tendermint/tree/v0.34.x)
 of this repository.
 
 ## Overview
@@ -52,11 +52,11 @@ which implements the following abstractions:
 
 Existing documentation referring to the p2p layer:
 
-- <https://github.com/cometbft/cometbft/tree/v0.34.x/spec/p2p>: p2p-related
+- <https://github.com/KYVENetwork/tendermint/tree/v0.34.x/spec/p2p>: p2p-related
   configuration flags; overview of connections, peer instances, and reactors;
   overview of peer discovery and node types; peer identity, secure connections
   and peer authentication handshake.
-- <https://github.com/cometbft/cometbft/tree/v0.34.x/spec/p2p/messages>: message
+- <https://github.com/KYVENetwork/tendermint/tree/v0.34.x/spec/p2p/messages>: message
   types and channel IDs of Block Sync, Mempool, Evidence, State Sync, PEX, and
   Consensus reactors.
 - <https://docs.cometbft.com/v0.34/core>: the p2p layer

@@ -4,14 +4,14 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/cometbft/cometbft/crypto/merkle"
+	"github.com/KYVENetwork/tendermint/crypto/merkle"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/libs/bytes"
-	"github.com/cometbft/cometbft/p2p"
-	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	"github.com/cometbft/cometbft/types"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/crypto"
+	"github.com/KYVENetwork/tendermint/libs/bytes"
+	"github.com/KYVENetwork/tendermint/p2p"
+	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // List of blocks

@@ -15,17 +15,17 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cfg "github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtrand "github.com/cometbft/cometbft/libs/rand"
-	cmtstore "github.com/cometbft/cometbft/proto/tendermint/store"
-	cmtversion "github.com/cometbft/cometbft/proto/tendermint/version"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/test/factory"
-	"github.com/cometbft/cometbft/types"
-	cmttime "github.com/cometbft/cometbft/types/time"
-	"github.com/cometbft/cometbft/version"
+	cfg "github.com/KYVENetwork/tendermint/config"
+	"github.com/KYVENetwork/tendermint/crypto"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	cmtstore "github.com/KYVENetwork/tendermint/proto/tendermint/store"
+	cmtversion "github.com/KYVENetwork/tendermint/proto/tendermint/version"
+	sm "github.com/KYVENetwork/tendermint/state"
+	"github.com/KYVENetwork/tendermint/test/factory"
+	"github.com/KYVENetwork/tendermint/types"
+	cmttime "github.com/KYVENetwork/tendermint/types/time"
+	"github.com/KYVENetwork/tendermint/version"
 )
 
 // A cleanupFunc cleans up any config / test files created for a particular

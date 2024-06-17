@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cometbft/cometbft/libs/log"
+	"github.com/KYVENetwork/tendermint/libs/log"
 )
 
 const (

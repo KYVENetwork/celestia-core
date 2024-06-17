@@ -7,10 +7,10 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 	"github.com/gogo/protobuf/proto"
 
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	cmtstore "github.com/cometbft/cometbft/proto/tendermint/store"
-	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	"github.com/cometbft/cometbft/types"
+	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
+	cmtstore "github.com/KYVENetwork/tendermint/proto/tendermint/store"
+	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 /*

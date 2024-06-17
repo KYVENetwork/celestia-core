@@ -5,10 +5,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/cometbft/cometbft/libs/protoio"
-	"github.com/cometbft/cometbft/libs/service"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	privvalproto "github.com/cometbft/cometbft/proto/tendermint/privval"
+	"github.com/KYVENetwork/tendermint/libs/protoio"
+	"github.com/KYVENetwork/tendermint/libs/service"
+	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
+	privvalproto "github.com/KYVENetwork/tendermint/proto/tendermint/privval"
 )
 
 const (

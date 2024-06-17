@@ -3,8 +3,8 @@ package types
 import (
 	"testing"
 
-	"github.com/cometbft/cometbft/pkg/consts"
-	"github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/KYVENetwork/tendermint/pkg/consts"
+	"github.com/KYVENetwork/tendermint/proto/tendermint/types"
 	"github.com/stretchr/testify/assert"
 )
 

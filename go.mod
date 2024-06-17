@@ -1,4 +1,4 @@
-module github.com/cometbft/cometbft
+module github.com/KYVENetwork/tendermint
 
 go 1.22.4
 

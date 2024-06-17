@@ -11,18 +11,18 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
+	"github.com/KYVENetwork/tendermint/crypto/merkle"
+	"github.com/KYVENetwork/tendermint/libs/pubsub/query"
+	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	"github.com/KYVENetwork/tendermint/types"
 	dbm "github.com/cometbft/cometbft-db"
-	"github.com/cometbft/cometbft/crypto/merkle"
-	"github.com/cometbft/cometbft/libs/pubsub/query"
-	cmtrand "github.com/cometbft/cometbft/libs/rand"
-	"github.com/cometbft/cometbft/types"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	cmtstate "github.com/cometbft/cometbft/proto/tendermint/state"
-	cmtstore "github.com/cometbft/cometbft/proto/tendermint/store"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	rpctypes "github.com/cometbft/cometbft/rpc/jsonrpc/types"
-	sm "github.com/cometbft/cometbft/state"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	cmtstate "github.com/KYVENetwork/tendermint/proto/tendermint/state"
+	cmtstore "github.com/KYVENetwork/tendermint/proto/tendermint/store"
+	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
+	rpctypes "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
+	sm "github.com/KYVENetwork/tendermint/state"
 )
 
 func TestBlockchainInfo(t *testing.T) {

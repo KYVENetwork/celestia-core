@@ -1,6 +1,6 @@
 package schema
 
-import "github.com/cometbft/cometbft/pkg/trace"
+import "github.com/KYVENetwork/tendermint/pkg/trace"
 
 const (
 	ABCITable = "abci"

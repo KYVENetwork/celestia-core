@@ -9,13 +9,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cometbft/cometbft/abci/example/kvstore"
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/libs/bytes"
-	"github.com/cometbft/cometbft/rpc/client"
-	"github.com/cometbft/cometbft/rpc/client/mock"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/libs/bytes"
+	"github.com/KYVENetwork/tendermint/rpc/client"
+	"github.com/KYVENetwork/tendermint/rpc/client/mock"
+	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 func TestABCIMock(t *testing.T) {

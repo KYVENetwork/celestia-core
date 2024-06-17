@@ -3,8 +3,8 @@ package indexer
 import (
 	"context"
 
-	"github.com/cometbft/cometbft/libs/pubsub/query"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/libs/pubsub/query"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 //go:generate ../../scripts/mockery_generate.sh BlockIndexer

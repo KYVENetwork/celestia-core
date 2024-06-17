@@ -10,16 +10,16 @@ import (
 	"github.com/gogo/protobuf/proto"
 	gogotypes "github.com/gogo/protobuf/types"
 
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/crypto/merkle"
-	"github.com/cometbft/cometbft/crypto/tmhash"
-	"github.com/cometbft/cometbft/libs/bits"
-	cmtbytes "github.com/cometbft/cometbft/libs/bytes"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	cmtversion "github.com/cometbft/cometbft/proto/tendermint/version"
-	"github.com/cometbft/cometbft/version"
+	"github.com/KYVENetwork/tendermint/crypto"
+	"github.com/KYVENetwork/tendermint/crypto/merkle"
+	"github.com/KYVENetwork/tendermint/crypto/tmhash"
+	"github.com/KYVENetwork/tendermint/libs/bits"
+	cmtbytes "github.com/KYVENetwork/tendermint/libs/bytes"
+	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
+	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
+	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	cmtversion "github.com/KYVENetwork/tendermint/proto/tendermint/version"
+	"github.com/KYVENetwork/tendermint/version"
 )
 
 const (
@@ -336,7 +336,7 @@ func MakeBlock(
 // NOTE: changes to the Header should be duplicated in:
 // - header.Hash()
 // - abci.Header
-// - https://github.com/cometbft/cometbft/blob/v0.34.x/spec/blockchain/blockchain.md
+// - https://github.com/KYVENetwork/tendermint/blob/v0.34.x/spec/blockchain/blockchain.md
 type Header struct {
 	// basic block info
 	Version cmtversion.Consensus `json:"version"`

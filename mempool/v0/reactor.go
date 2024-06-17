@@ -7,14 +7,14 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	cfg "github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/libs/clist"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtsync "github.com/cometbft/cometbft/libs/sync"
-	"github.com/cometbft/cometbft/mempool"
-	"github.com/cometbft/cometbft/p2p"
-	protomem "github.com/cometbft/cometbft/proto/tendermint/mempool"
-	"github.com/cometbft/cometbft/types"
+	cfg "github.com/KYVENetwork/tendermint/config"
+	"github.com/KYVENetwork/tendermint/libs/clist"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	cmtsync "github.com/KYVENetwork/tendermint/libs/sync"
+	"github.com/KYVENetwork/tendermint/mempool"
+	"github.com/KYVENetwork/tendermint/p2p"
+	protomem "github.com/KYVENetwork/tendermint/proto/tendermint/mempool"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // Reactor handles mempool tx broadcasting amongst peers.
@@ -258,7 +258,7 @@ func (memR *Reactor) broadcastTxRoutine(peer p2p.Peer) {
 		}
 
 		// NOTE: Transaction batching was disabled due to
-		// https://github.com/cometbft/cometbft/issues/5796
+		// https://github.com/KYVENetwork/tendermint/issues/5796
 
 		if _, ok := memTx.senders.Load(peerID); !ok {
 			success := p2p.SendEnvelopeShim(peer, p2p.Envelope{ //nolint: staticcheck

@@ -3,10 +3,10 @@ package v2
 import (
 	"fmt"
 
-	"github.com/cometbft/cometbft/p2p"
-	bcproto "github.com/cometbft/cometbft/proto/tendermint/blockchain"
-	"github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/p2p"
+	bcproto "github.com/KYVENetwork/tendermint/proto/tendermint/blockchain"
+	"github.com/KYVENetwork/tendermint/state"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 type iIO interface {

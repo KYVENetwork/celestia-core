@@ -54,7 +54,7 @@ Therefore we carry out a complete run of the _200-node test_ on the following ne
 
 ## Configuration and Results
 In the following sections we provide the results of the _200 node test_.
-Each section reports the baseline results (for reference), the homogeneous network scenario (all CometBFT nodes), 
+Each section reports the baseline results (for reference), the homogeneous network scenario (all CometBFT nodes),
 and the mixed networks with 1/2, 1/3 and 2/3 of Tendermint Core nodes.
 
 ### Saturation Point
@@ -161,7 +161,7 @@ The following graphs show the rounds needed to complete each height and agree on
 
 A value of `0` shows that only one round was required (with id `0`), and a value of `1` shows that two rounds were required.
 
-#### Baseline 
+#### Baseline
 We can see that round 1 is reached with a certain frequency.
 
 ![rounds](./img/baseline/rounds.png)
@@ -198,13 +198,13 @@ The thick red dashed line represents the moving average over a sliding window of
 The following graph shows the that the number of peers was stable throughout the experiment.
 Seed nodes typically have a higher number of peers.
 The fact that non-seed nodes reach more than 50 peers is due to
-[#9548](https://github.com/cometbft/cometbft/issues/9548).
+[#9548](https://github.com/KYVENetwork/tendermint/issues/9548).
 
 ![peers](./img/baseline/peers.png)
 
 #### CometBFT Homogeneous network
 
-The results for the homogeneous network are very similar to the baseline. 
+The results for the homogeneous network are very similar to the baseline.
 The only difference being that the seed nodes seem to loose peers in the middle of the experiment.
 However this cannot be attributed to the differences in the code, which are mainly rebranding.
 
@@ -250,7 +250,7 @@ mostly within the same range as the baseline.
 
 ![heights-homogeneous-rate](./img/homogeneous/block_rate_regular.png)
 
-The plot showing the transaction rate shows the rate stays around 20000 transactions per minute, 
+The plot showing the transaction rate shows the rate stays around 20000 transactions per minute,
 also topping around 30k.
 
 ![txs-homogeneous-rate](./img/homogeneous/total_txs_rate_regular.png)
@@ -314,7 +314,7 @@ And this is the average plot. It oscillates around 560 MiB, which is noticeably 
 
 ### CPU utilization
 
-The following graphs show the `load1` of nodes, as typically shown in the first line of the Unix `top` 
+The following graphs show the `load1` of nodes, as typically shown in the first line of the Unix `top`
 command, and their average value.
 
 #### Baseline
@@ -355,7 +355,7 @@ As expected, the average plot also looks similar.
 
 The comparison of the baseline results and the homogeneous case show that both scenarios had similar numbers and are therefore equivalent.
 
-The mixed nodes cases show that networks operate normally with a mix of compatible Tendermint Core and CometBFT versions. 
+The mixed nodes cases show that networks operate normally with a mix of compatible Tendermint Core and CometBFT versions.
 Although not the main goal, a comparison of metric numbers with the homogeneous case and the baseline scenarios show similar results and therefore we can conclude that mixing compatible Tendermint Core and CometBFT introduces not performance degradation.
 
 A conclusion of these tests is shown in the following table, along with the commit versions used in the experiments.

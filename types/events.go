@@ -3,10 +3,10 @@ package types
 import (
 	"fmt"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	cmtpubsub "github.com/cometbft/cometbft/libs/pubsub"
-	cmtquery "github.com/cometbft/cometbft/libs/pubsub/query"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	cmtjson "github.com/KYVENetwork/tendermint/libs/json"
+	cmtpubsub "github.com/KYVENetwork/tendermint/libs/pubsub"
+	cmtquery "github.com/KYVENetwork/tendermint/libs/pubsub/query"
 )
 
 // Reserved event types (alphabetically sorted).

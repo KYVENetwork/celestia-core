@@ -15,14 +15,14 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/cometbft/cometbft/libs/log"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	cmtos "github.com/cometbft/cometbft/libs/os"
-	"github.com/cometbft/cometbft/light"
-	lproxy "github.com/cometbft/cometbft/light/proxy"
-	lrpc "github.com/cometbft/cometbft/light/rpc"
-	dbs "github.com/cometbft/cometbft/light/store/db"
-	rpcserver "github.com/cometbft/cometbft/rpc/jsonrpc/server"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
+	cmtos "github.com/KYVENetwork/tendermint/libs/os"
+	"github.com/KYVENetwork/tendermint/light"
+	lproxy "github.com/KYVENetwork/tendermint/light/proxy"
+	lrpc "github.com/KYVENetwork/tendermint/light/rpc"
+	dbs "github.com/KYVENetwork/tendermint/light/store/db"
+	rpcserver "github.com/KYVENetwork/tendermint/rpc/jsonrpc/server"
 )
 
 // LightCmd represents the base command when called without any subcommands
@@ -207,7 +207,7 @@ func runProxy(cmd *cobra.Command, args []string) error {
 	cfg.MaxOpenConnections = maxOpenConnections
 	// If necessary adjust global WriteTimeout to ensure it's greater than
 	// TimeoutBroadcastTxCommit.
-	// See https://github.com/cometbft/cometbft/issues/3435
+	// See https://github.com/KYVENetwork/tendermint/issues/3435
 	if cfg.WriteTimeout <= config.RPC.TimeoutBroadcastTxCommit {
 		cfg.WriteTimeout = config.RPC.TimeoutBroadcastTxCommit + 1*time.Second
 	}

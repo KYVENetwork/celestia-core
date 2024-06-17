@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/cometbft/cometbft/abci/types"
-	cmtnet "github.com/cometbft/cometbft/libs/net"
+	"github.com/KYVENetwork/tendermint/abci/types"
+	cmtnet "github.com/KYVENetwork/tendermint/libs/net"
 )
 
 func main() {

@@ -4,7 +4,7 @@ import (
 	"strings"
 	"time"
 
-	cstypes "github.com/cometbft/cometbft/consensus/types"
+	cstypes "github.com/KYVENetwork/tendermint/consensus/types"
 	"github.com/go-kit/kit/metrics"
 	"github.com/go-kit/kit/metrics/discard"
 

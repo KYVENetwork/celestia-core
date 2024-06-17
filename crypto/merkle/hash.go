@@ -3,7 +3,7 @@ package merkle
 import (
 	"hash"
 
-	"github.com/cometbft/cometbft/crypto/tmhash"
+	"github.com/KYVENetwork/tendermint/crypto/tmhash"
 )
 
 var (

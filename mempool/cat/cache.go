@@ -4,8 +4,8 @@ import (
 	"container/list"
 	"time"
 
-	tmsync "github.com/cometbft/cometbft/libs/sync"
-	"github.com/cometbft/cometbft/types"
+	tmsync "github.com/KYVENetwork/tendermint/libs/sync"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // LRUTxCache maintains a thread-safe LRU cache of raw transactions. The cache

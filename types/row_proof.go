@@ -3,9 +3,9 @@ package types
 import (
 	"fmt"
 
-	"github.com/cometbft/cometbft/crypto/merkle"
-	tmbytes "github.com/cometbft/cometbft/libs/bytes"
-	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
+	"github.com/KYVENetwork/tendermint/crypto/merkle"
+	tmbytes "github.com/KYVENetwork/tendermint/libs/bytes"
+	tmproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
 )
 
 // RowProof is a Merkle proof that a set of rows exist in a Merkle tree with a

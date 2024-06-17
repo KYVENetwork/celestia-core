@@ -5,16 +5,16 @@ import (
 	"fmt"
 	"sort"
 
-	abcitypes "github.com/cometbft/cometbft/abci/types"
-	cmtmath "github.com/cometbft/cometbft/libs/math"
-	cmtquery "github.com/cometbft/cometbft/libs/pubsub/query"
-	"github.com/cometbft/cometbft/pkg/consts"
-	cmtproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	rpctypes "github.com/cometbft/cometbft/rpc/jsonrpc/types"
-	"github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/state/txindex/null"
-	"github.com/cometbft/cometbft/types"
+	abcitypes "github.com/KYVENetwork/tendermint/abci/types"
+	cmtmath "github.com/KYVENetwork/tendermint/libs/math"
+	cmtquery "github.com/KYVENetwork/tendermint/libs/pubsub/query"
+	"github.com/KYVENetwork/tendermint/pkg/consts"
+	cmtproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	ctypes "github.com/KYVENetwork/tendermint/rpc/core/types"
+	rpctypes "github.com/KYVENetwork/tendermint/rpc/jsonrpc/types"
+	"github.com/KYVENetwork/tendermint/state"
+	"github.com/KYVENetwork/tendermint/state/txindex/null"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // Tx allows you to query the transaction results. `nil` could mean the

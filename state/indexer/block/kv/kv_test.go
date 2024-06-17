@@ -8,10 +8,10 @@ import (
 	db "github.com/cometbft/cometbft-db"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/libs/pubsub/query"
-	blockidxkv "github.com/cometbft/cometbft/state/indexer/block/kv"
-	"github.com/cometbft/cometbft/types"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/libs/pubsub/query"
+	blockidxkv "github.com/KYVENetwork/tendermint/state/indexer/block/kv"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 func TestBlockIndexer(t *testing.T) {

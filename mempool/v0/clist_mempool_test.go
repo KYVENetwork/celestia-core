@@ -16,20 +16,20 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	abciclient "github.com/cometbft/cometbft/abci/client"
-	abciclimocks "github.com/cometbft/cometbft/abci/client/mocks"
-	"github.com/cometbft/cometbft/abci/example/kvstore"
-	abciserver "github.com/cometbft/cometbft/abci/server"
-	abci "github.com/cometbft/cometbft/abci/types"
-	"github.com/cometbft/cometbft/config"
-	"github.com/cometbft/cometbft/libs/log"
-	cmtrand "github.com/cometbft/cometbft/libs/rand"
-	"github.com/cometbft/cometbft/libs/service"
-	"github.com/cometbft/cometbft/mempool"
-	"github.com/cometbft/cometbft/pkg/consts"
-	tmproto "github.com/cometbft/cometbft/proto/tendermint/types"
-	"github.com/cometbft/cometbft/proxy"
-	"github.com/cometbft/cometbft/types"
+	abciclient "github.com/KYVENetwork/tendermint/abci/client"
+	abciclimocks "github.com/KYVENetwork/tendermint/abci/client/mocks"
+	"github.com/KYVENetwork/tendermint/abci/example/kvstore"
+	abciserver "github.com/KYVENetwork/tendermint/abci/server"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	"github.com/KYVENetwork/tendermint/config"
+	"github.com/KYVENetwork/tendermint/libs/log"
+	cmtrand "github.com/KYVENetwork/tendermint/libs/rand"
+	"github.com/KYVENetwork/tendermint/libs/service"
+	"github.com/KYVENetwork/tendermint/mempool"
+	"github.com/KYVENetwork/tendermint/pkg/consts"
+	tmproto "github.com/KYVENetwork/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/tendermint/proxy"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // A cleanupFunc cleans up any config / test files created for a particular
@@ -642,7 +642,7 @@ func TestMempoolTxsBytes(t *testing.T) {
 }
 
 // This will non-deterministically catch some concurrency failures like
-// https://github.com/cometbft/cometbft/issues/3509
+// https://github.com/KYVENetwork/tendermint/issues/3509
 // TODO: all of the tests should probably also run using the remote proxy app
 // since otherwise we're not actually testing the concurrency of the mempool here!
 func TestMempoolRemoteAppConcurrency(t *testing.T) {

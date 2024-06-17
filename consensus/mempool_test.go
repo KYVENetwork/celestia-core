@@ -12,12 +12,12 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/cometbft/cometbft/abci/example/code"
-	abci "github.com/cometbft/cometbft/abci/types"
-	cfg "github.com/cometbft/cometbft/config"
-	mempl "github.com/cometbft/cometbft/mempool"
-	sm "github.com/cometbft/cometbft/state"
-	"github.com/cometbft/cometbft/types"
+	"github.com/KYVENetwork/tendermint/abci/example/code"
+	abci "github.com/KYVENetwork/tendermint/abci/types"
+	cfg "github.com/KYVENetwork/tendermint/config"
+	mempl "github.com/KYVENetwork/tendermint/mempool"
+	sm "github.com/KYVENetwork/tendermint/state"
+	"github.com/KYVENetwork/tendermint/types"
 )
 
 // for testing
