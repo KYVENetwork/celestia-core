@@ -11,8 +11,6 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/cmap"
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	"github.com/KYVENetwork/celestia-core/libs/service"
-	"github.com/KYVENetwork/celestia-core/pkg/trace"
-	"github.com/KYVENetwork/celestia-core/pkg/trace/schema"
 
 	cmtconn "github.com/KYVENetwork/celestia-core/p2p/conn"
 )

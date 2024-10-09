@@ -7,7 +7,6 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 	"github.com/gogo/protobuf/proto"
 
-	abci "github.com/KYVENetwork/celestia-core/abci/types"
 	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 	cmtstore "github.com/KYVENetwork/celestia-core/proto/celestiacore/store"
 	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"

@@ -8,12 +8,11 @@ import (
 
 	"golang.org/x/net/netutil"
 
-	"github.com/gogo/protobuf/proto"
 	"github.com/KYVENetwork/celestia-core/crypto"
 	"github.com/KYVENetwork/celestia-core/libs/protoio"
 	"github.com/KYVENetwork/celestia-core/p2p/conn"
-	"github.com/KYVENetwork/celestia-core/pkg/trace"
 	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestiacore/p2p"
+	"github.com/gogo/protobuf/proto"
 )
 
 const (

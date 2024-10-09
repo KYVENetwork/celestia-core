@@ -1,7 +1,6 @@
 package v0
 
 import (
-	"context"
 	"errors"
 	"fmt"
 	"time"
@@ -16,7 +15,6 @@ import (
 	"github.com/KYVENetwork/celestia-core/p2p"
 	protomem "github.com/KYVENetwork/celestia-core/proto/celestiacore/mempool"
 	"github.com/KYVENetwork/celestia-core/types"
-	"golang.org/x/sync/semaphore"
 )
 
 // Reactor handles mempool tx broadcasting amongst peers.

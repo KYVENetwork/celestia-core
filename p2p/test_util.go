@@ -10,7 +10,6 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	cmtnet "github.com/KYVENetwork/celestia-core/libs/net"
 	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
-	"github.com/KYVENetwork/celestia-core/pkg/trace"
 
 	"github.com/KYVENetwork/celestia-core/config"
 	"github.com/KYVENetwork/celestia-core/p2p/conn"

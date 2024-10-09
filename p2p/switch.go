@@ -6,14 +6,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gogo/protobuf/proto"
 	"github.com/KYVENetwork/celestia-core/config"
 	"github.com/KYVENetwork/celestia-core/libs/cmap"
 	"github.com/KYVENetwork/celestia-core/libs/rand"
 	"github.com/KYVENetwork/celestia-core/libs/service"
 	"github.com/KYVENetwork/celestia-core/p2p/conn"
-	"github.com/KYVENetwork/celestia-core/pkg/trace"
-	"github.com/KYVENetwork/celestia-core/pkg/trace/schema"
+	"github.com/gogo/protobuf/proto"
 )
 
 const (
