@@ -12,9 +12,7 @@ import (
 
 	abci "github.com/KYVENetwork/celestia-core/abci/types"
 	cfg "github.com/KYVENetwork/celestia-core/config"
-	"github.com/KYVENetwork/celestia-core/crypto"
 	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
-	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
 	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
 	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	sm "github.com/KYVENetwork/celestia-core/state"

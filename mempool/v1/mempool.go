@@ -16,7 +16,6 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/log"
 	"github.com/KYVENetwork/celestia-core/mempool"
 	"github.com/KYVENetwork/celestia-core/pkg/trace"
-	"github.com/KYVENetwork/celestia-core/pkg/trace/schema"
 	"github.com/KYVENetwork/celestia-core/proxy"
 	"github.com/KYVENetwork/celestia-core/types"
 )

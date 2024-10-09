@@ -1,8 +1,6 @@
 module github.com/KYVENetwork/celestia-core
 
-go 1.21
-
-toolchain go1.21.4
+go 1.23.1
 
 require (
 	github.com/BurntSushi/toml v1.2.1

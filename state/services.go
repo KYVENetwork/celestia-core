@@ -1,6 +1,7 @@
 package state
 
 import (
+	cmtstore "github.com/KYVENetwork/celestia-core/proto/celestiacore/store"
 	"github.com/KYVENetwork/celestia-core/types"
 )
 

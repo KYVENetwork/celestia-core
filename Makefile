@@ -154,7 +154,7 @@ endif
 
 proto-gen: check-proto-deps
 	@echo "Generating Protobuf files"
-	@go run github.com/bufbuild/buf/cmd/buf generate
+	@go run github.com/bufbuild/buf/cmd/buf@$(BUF_VERSION) generate
 	@mv ./proto/celestiacore/abci/types.pb.go ./abci/types/
 	@cp ./proto/celestiacore/rpc/grpc/types.pb.go ./rpc/grpc
 .PHONY: proto-gen

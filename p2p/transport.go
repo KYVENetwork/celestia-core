@@ -8,11 +8,12 @@ import (
 
 	"golang.org/x/net/netutil"
 
+	"github.com/gogo/protobuf/proto"
 	"github.com/KYVENetwork/celestia-core/crypto"
 	"github.com/KYVENetwork/celestia-core/libs/protoio"
 	"github.com/KYVENetwork/celestia-core/p2p/conn"
+	"github.com/KYVENetwork/celestia-core/pkg/trace"
 	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestiacore/p2p"
-	"github.com/gogo/protobuf/proto"
 )
 
 const (
@@ -297,7 +298,7 @@ func (mt *MultiplexTransport) acceptPeers() {
 
 		// Connection upgrade and filtering should be asynchronous to avoid
 		// Head-of-line blocking[0].
-		// Reference:  https://github.com/KYVENetwork/celestia-core/issues/2047
+		// Reference:  https://github.com/tendermint/tendermint/issues/2047
 		//
 		// [0] https://en.wikipedia.org/wiki/Head-of-line_blocking
 		go func(c net.Conn) {

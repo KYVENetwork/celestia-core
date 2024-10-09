@@ -10,6 +10,7 @@ import (
 	"strings"
 
 	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
 	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
 	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )

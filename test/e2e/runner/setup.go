@@ -165,11 +165,12 @@ func MakeConfig(node *e2e.Node) (*config.Config, error) {
 	cfg.P2P.AddrBookStrict = false
 	cfg.DBBackend = node.Database
 	cfg.StateSync.DiscoveryTime = 5 * time.Second
+	cfg.Mempool.ExperimentalMaxGossipConnectionsToNonPersistentPeers = int(node.Testnet.ExperimentalMaxGossipConnectionsToNonPersistentPeers)
+	cfg.Mempool.ExperimentalMaxGossipConnectionsToPersistentPeers = int(node.Testnet.ExperimentalMaxGossipConnectionsToPersistentPeers)
 
-	cfg.Instrumentation.InfluxOrg = "celestia"
-	cfg.Instrumentation.InfluxBucket = "e2e"
-	cfg.Instrumentation.InfluxURL = node.InfluxDBURL
-	cfg.Instrumentation.InfluxToken = node.InfluxDBToken
+	cfg.Instrumentation.TraceType = "celestia"
+	cfg.Instrumentation.TracePushConfig = node.TracePushConfig
+	cfg.Instrumentation.TracePullAddress = node.TracePullAddress
 	cfg.Instrumentation.PyroscopeTrace = node.PyroscopeTrace
 	cfg.Instrumentation.PyroscopeURL = node.PyroscopeURL
 	cfg.Instrumentation.PyroscopeProfileTypes = node.PyroscopeProfileTypes

@@ -7,6 +7,7 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 	"github.com/gogo/protobuf/proto"
 
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
 	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 	cmtstore "github.com/KYVENetwork/celestia-core/proto/celestiacore/store"
 	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
@@ -37,7 +38,7 @@ type BlockStore struct {
 	// fine-grained concurrency control for its data, and thus this mutex does not apply to
 	// database contents. The only reason for keeping these fields in the struct is that the data
 	// can't efficiently be queried from the database since the key encoding we use is not
-	// lexicographically ordered (see https://github.com/KYVENetwork/celestia-core/issues/4567).
+	// lexicographically ordered (see https://github.com/tendermint/tendermint/issues/4567).
 	mtx    cmtsync.RWMutex
 	base   int64
 	height int64

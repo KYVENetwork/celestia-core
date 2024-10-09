@@ -404,6 +404,22 @@ ttl-num-blocks = {{ .Mempool.TTLNumBlocks }}
 # Default is 200ms
 max-gossip-delay = "{{ .Mempool.MaxGossipDelay }}"
 
+# Experimental parameters to limit gossiping txs to up to the specified number of peers.
+# This feature is only available for the default mempool (version config set to "v0").
+# We use two independent upper values for persistent and non-persistent peers.
+# Unconditional peers are not affected by this feature.
+# If we are connected to more than the specified number of persistent peers, only send txs to
+# ExperimentalMaxGossipConnectionsToPersistentPeers of them. If one of those
+# persistent peers disconnects, activate another persistent peer.
+# Similarly for non-persistent peers, with an upper limit of
+# ExperimentalMaxGossipConnectionsToNonPersistentPeers.
+# If set to 0, the feature is disabled for the corresponding group of peers, that is, the
+# number of active connections to that group of peers is not bounded.
+# For non-persistent peers, if enabled, a value of 10 is recommended based on experimental
+# performance results using the default P2P configuration.
+experimental_max_gossip_connections_to_persistent_peers = {{ .Mempool.ExperimentalMaxGossipConnectionsToPersistentPeers }}
+experimental_max_gossip_connections_to_non_persistent_peers = {{ .Mempool.ExperimentalMaxGossipConnectionsToNonPersistentPeers }}
+
 #######################################################
 ###         State Sync Configuration Options        ###
 #######################################################
@@ -455,6 +471,11 @@ version = "{{ .FastSync.Version }}"
 ###         Consensus Configuration Options         ###
 #######################################################
 [consensus]
+
+# If set to "true", only internal messages will be
+# written to the WAL. External messages like votes, proposal,
+# block parts, will not be written.
+only_internal_wal = "{{ .Consensus.OnlyInternalWal }}"
 
 wal_file = "{{ js .Consensus.WalPath }}"
 
@@ -547,25 +568,26 @@ max_open_connections = {{ .Instrumentation.MaxOpenConnections }}
 # Instrumentation namespace
 namespace = "{{ .Instrumentation.Namespace }}"
 
-# The URL of the influxdb instance to use for remote event
-# collection. If empty, remote event collection is disabled.
-influx_url = "{{ .Instrumentation.InfluxURL }}"
+# TracePushConfig is the relative path of the push config.
+# This second config contains credentials for where and how often to
+# push trace data to. For example, if the config is next to this config,
+# it would be "push_config.json".
+trace_push_config = "{{ .Instrumentation.TracePushConfig }}"
 
-# The influxdb token to use for remote event collection.
-influx_token = "{{ .Instrumentation.InfluxToken }}"
+# The tracer pull address specifies which address will be used for pull based
+# event collection. If empty, the pull based server will not be started.
+trace_pull_address = "{{ .Instrumentation.TracePullAddress }}"
 
-# The influxdb bucket to use for remote event collection.
-influx_bucket = "{{ .Instrumentation.InfluxBucket }}"
-
-# The influxdb org to use for event remote collection.
-influx_org = "{{ .Instrumentation.InfluxOrg }}"
+# The tracer to use for collecting trace data.
+trace_type = "{{ .Instrumentation.TraceType }}"
 
 # The size of the batches that are sent to the database.
-influx_batch_size = {{ .Instrumentation.InfluxBatchSize }}
+trace_push_batch_size = {{ .Instrumentation.TraceBufferSize }}
 
 # The list of tables that are updated when tracing. All available tables and
-# their schema can be found in the pkg/trace/schema package.
-influx_tables = [{{ range .Instrumentation.InfluxTables }}{{ printf "%q, " . }}{{end}}]
+# their schema can be found in the pkg/trace/schema package. It is represented as a
+# comma separate string. For example: "consensus_round_state,mempool_tx".
+tracing_tables = "{{ .Instrumentation.TracingTables }}"
 
 # The URL of the pyroscope instance to use for continuous profiling.
 # If empty, continuous profiling is disabled.

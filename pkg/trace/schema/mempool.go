@@ -2,9 +2,7 @@ package schema
 
 import (
 	"github.com/KYVENetwork/celestia-core/libs/bytes"
-	"github.com/KYVENetwork/celestia-core/p2p"
 	"github.com/KYVENetwork/celestia-core/pkg/trace"
-	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // MempoolTables returns the list of tables for mempool tracing.

@@ -38,6 +38,7 @@ var (
 	ErrInvalidProposalPOLRound    = errors.New("error invalid proposal POL round")
 	ErrAddingVote                 = errors.New("error adding vote")
 	ErrSignatureFoundInPastBlocks = errors.New("found signature from the same key")
+	ErrProposalTooManyParts       = errors.New("proposal block has too many parts")
 
 	errPubKeyIsNotSet = errors.New("pubkey is not set. Look for \"Can't get private validator pubkey\" errors")
 )
@@ -143,7 +144,7 @@ type State struct {
 	// for reporting metrics
 	metrics *Metrics
 
-	traceClient *trace.Client
+	traceClient trace.Tracer
 }
 
 // StateOption sets an optional parameter on the State.
@@ -174,7 +175,7 @@ func NewState(
 		evpool:           evpool,
 		evsw:             cmtevents.NewEventSwitch(),
 		metrics:          NopMetrics(),
-		traceClient:      &trace.Client{},
+		traceClient:      trace.NoOpTracer(),
 	}
 
 	// set function defaults (may be overwritten before calling Start)
@@ -217,7 +218,7 @@ func StateMetrics(metrics *Metrics) StateOption {
 }
 
 // SetTraceClient sets the remote event collector.
-func SetTraceClient(ec *trace.Client) StateOption {
+func SetTraceClient(ec trace.Tracer) StateOption {
 	return func(cs *State) { cs.traceClient = ec }
 }
 
@@ -314,6 +315,8 @@ func (cs *State) OnStart() error {
 			return err
 		}
 	}
+
+	cs.metrics.StartHeight.Set(float64(cs.Height))
 
 	// we need the timeoutRoutine for replay so
 	// we don't block on the tick chan.
@@ -536,6 +539,7 @@ func (cs *State) updateRoundStep(round int32, step cstypes.RoundStepType) {
 		}
 		if cs.Step != step {
 			cs.metrics.MarkStep(cs.Step)
+			schema.WriteRoundState(cs.traceClient, cs.Height, round, uint8(step))
 		}
 	}
 	cs.Round = round
@@ -704,8 +708,6 @@ func (cs *State) newStep() {
 
 	cs.nSteps++
 
-	schema.WriteRoundState(cs.traceClient, cs.Height, cs.Round, cs.Step)
-
 	// newStep is called by updateToState in NewState before the eventBus is set!
 	if cs.eventBus != nil {
 		if err := cs.eventBus.PublishEventNewRoundStep(rs); err != nil {
@@ -771,8 +773,10 @@ func (cs *State) receiveRoutine(maxSteps int) {
 			cs.handleTxsAvailable()
 
 		case mi = <-cs.peerMsgQueue:
-			if err := cs.wal.Write(mi); err != nil {
-				cs.Logger.Error("failed writing to WAL", "err", err)
+			if !cs.config.OnlyInternalWal {
+				if err := cs.wal.Write(mi); err != nil {
+					cs.Logger.Error("failed writing to WAL", "err", err)
+				}
 			}
 
 			// handles proposals, block parts, votes
@@ -1156,7 +1160,9 @@ func (cs *State) defaultDecideProposal(height int64, round int32) {
 		block, blockParts = cs.TwoThirdPrevoteBlock, cs.TwoThirdPrevoteBlockParts
 	} else {
 		// Create a new proposal block from state/txs from the mempool.
+		schema.WriteABCI(cs.traceClient, schema.PrepareProposalStart, height, round)
 		block, blockParts = cs.createProposalBlock()
+		schema.WriteABCI(cs.traceClient, schema.PrepareProposalEnd, height, round)
 		if block == nil {
 			return
 		}
@@ -1287,6 +1293,7 @@ func (cs *State) defaultDoPrevote(height int64, round int32) {
 	// If ProposalBlock is nil, prevote nil.
 	if cs.ProposalBlock == nil {
 		logger.Debug("prevote step: ProposalBlock is nil")
+		cs.metrics.TimedOutProposals.Add(1)
 		cs.signAddVote(cmtproto.PrevoteType, nil, types.PartSetHeader{})
 		return
 	}
@@ -1300,15 +1307,21 @@ func (cs *State) defaultDoPrevote(height int64, round int32) {
 		return
 	}
 
+	schema.WriteABCI(cs.traceClient, schema.ProcessProposalStart, height, round)
+
 	stateMachineValidBlock, err := cs.blockExec.ProcessProposal(cs.ProposalBlock)
 	if err != nil {
 		cs.Logger.Error("state machine returned an error when trying to process proposal block", "err", err)
+		return
 	}
+
+	schema.WriteABCI(cs.traceClient, schema.ProcessProposalEnd, height, round)
 
 	// Vote nil if application invalidated the block
 	if !stateMachineValidBlock {
 		// The app says we must vote nil
 		logger.Error("prevote step: the application deems this block to be mustVoteNil", "err", err)
+		cs.metrics.ApplicationRejectedProposals.Add(1)
 		cs.signAddVote(cmtproto.PrevoteType, nil, types.PartSetHeader{})
 		return
 	}
@@ -1503,6 +1516,7 @@ func (cs *State) enterPrecommitWait(height int64, round int32) {
 	defer func() {
 		// Done enterPrecommitWait:
 		cs.TriggeredTimeoutPrecommit = true
+		cs.updateRoundStep(round, cstypes.RoundStepPrecommitWait)
 		cs.newStep()
 	}()
 
@@ -1690,6 +1704,8 @@ func (cs *State) finalizeCommit(height int64) {
 		retainHeight int64
 	)
 
+	schema.WriteABCI(cs.traceClient, schema.CommitStart, height, 0)
+
 	stateCopy, retainHeight, err = cs.blockExec.ApplyBlock(
 		stateCopy,
 		types.BlockID{
@@ -1702,6 +1718,8 @@ func (cs *State) finalizeCommit(height int64) {
 	if err != nil {
 		panic(fmt.Sprintf("failed to apply block; error %v", err))
 	}
+
+	schema.WriteABCI(cs.traceClient, schema.CommitEnd, height, 0)
 
 	fail.Fail() // XXX
 
@@ -1840,7 +1858,7 @@ func (cs *State) recordMetrics(height int64, block *types.Block) {
 	blockSize := block.Size()
 
 	// trace some metadata about the block
-	schema.WriteBlock(cs.traceClient, block, blockSize)
+	schema.WriteBlockSummary(cs.traceClient, block, blockSize)
 
 	cs.metrics.NumTxs.Set(float64(len(block.Data.Txs)))
 	cs.metrics.TotalTxs.Add(float64(len(block.Data.Txs)))
@@ -1875,6 +1893,15 @@ func (cs *State) defaultSetProposal(proposal *types.Proposal) error {
 		types.ProposalSignBytes(cs.state.ChainID, p), proposal.Signature,
 	) {
 		return ErrInvalidProposalSignature
+	}
+
+	// Validate the proposed block size, derived from its PartSetHeader
+	maxBytes := cs.state.ConsensusParams.Block.MaxBytes
+	if maxBytes == -1 {
+		maxBytes = int64(types.MaxBlockSizeBytes)
+	}
+	if int64(proposal.BlockID.PartSetHeader.Total) > (maxBytes-1)/int64(types.BlockPartSizeBytes)+1 {
+		return ErrProposalTooManyParts
 	}
 
 	proposal.Signature = p.Signature

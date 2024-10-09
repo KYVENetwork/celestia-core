@@ -62,11 +62,11 @@ var (
 	minSubscriptionBufferSize     = 100
 	defaultSubscriptionBufferSize = 200
 
-	// DefaultInfluxTables is a list of tables that are used for storing traces.
+	// DefaultTracingTables is a list of tables that are used for storing traces.
 	// This global var is filled by an init function in the schema package. This
 	// allows for the schema package to contain all the relevant logic while
 	// avoiding import cycles.
-	DefaultInfluxTables = []string{}
+	DefaultTracingTables = ""
 )
 
 // Config defines the top level configuration for a CometBFT node
@@ -736,6 +736,21 @@ type MempoolConfig struct {
 	// Including space needed by encoding (one varint per transaction).
 	// XXX: Unused due to https://github.com/KYVENetwork/celestia-core/issues/5796
 	MaxBatchBytes int `mapstructure:"max_batch_bytes"`
+	// Experimental parameters to limit gossiping txs to up to the specified number of peers.
+	// This feature is only available for the default mempool (version config set to "v0").
+	// We use two independent upper values for persistent and non-persistent peers.
+	// Unconditional peers are not affected by this feature.
+	// If we are connected to more than the specified number of persistent peers, only send txs to
+	// ExperimentalMaxGossipConnectionsToPersistentPeers of them. If one of those
+	// persistent peers disconnects, activate another persistent peer.
+	// Similarly for non-persistent peers, with an upper limit of
+	// ExperimentalMaxGossipConnectionsToNonPersistentPeers.
+	// If set to 0, the feature is disabled for the corresponding group of peers, that is, the
+	// number of active connections to that group of peers is not bounded.
+	// For non-persistent peers, if enabled, a value of 10 is recommended based on experimental
+	// performance results using the default P2P configuration.
+	ExperimentalMaxGossipConnectionsToPersistentPeers    int `mapstructure:"experimental_max_gossip_connections_to_persistent_peers"`
+	ExperimentalMaxGossipConnectionsToNonPersistentPeers int `mapstructure:"experimental_max_gossip_connections_to_non_persistent_peers"`
 
 	// TTLDuration, if non-zero, defines the maximum amount of time a transaction
 	// can exist for in the mempool.
@@ -769,10 +784,12 @@ func DefaultMempoolConfig() *MempoolConfig {
 		WalPath:   "",
 		// Each signature verification takes .5ms, Size reduced until we implement
 		// ABCI Recheck
-		Size:         5000,
-		MaxTxsBytes:  1024 * 1024 * 1024, // 1GB
-		CacheSize:    10000,
-		MaxTxBytes:   1024 * 1024, // 1MB
+		Size:        5000,
+		MaxTxsBytes: 1024 * 1024 * 1024, // 1GB
+		CacheSize:   10000,
+		MaxTxBytes:  1024 * 1024, // 1MB
+		ExperimentalMaxGossipConnectionsToNonPersistentPeers: 0,
+		ExperimentalMaxGossipConnectionsToPersistentPeers:    0,
 		TTLDuration:  0 * time.Second,
 		TTLNumBlocks: 0,
 	}
@@ -809,6 +826,12 @@ func (cfg *MempoolConfig) ValidateBasic() error {
 	}
 	if cfg.MaxTxBytes < 0 {
 		return errors.New("max_tx_bytes can't be negative")
+	}
+	if cfg.ExperimentalMaxGossipConnectionsToPersistentPeers < 0 {
+		return errors.New("experimental_max_gossip_connections_to_persistent_peers can't be negative")
+	}
+	if cfg.ExperimentalMaxGossipConnectionsToNonPersistentPeers < 0 {
+		return errors.New("experimental_max_gossip_connections_to_non_persistent_peers can't be negative")
 	}
 	return nil
 }
@@ -941,8 +964,13 @@ func (cfg *FastSyncConfig) ValidateBasic() error {
 // including timeouts and details about the WAL and the block structure.
 type ConsensusConfig struct {
 	RootDir string `mapstructure:"home"`
-	WalPath string `mapstructure:"wal_file"`
-	walFile string // overrides WalPath if set
+	// If set to true, only internal messages will be written
+	// to the WAL. External messages like votes, proposals
+	// block parts, will not be written
+	// Default: true
+	OnlyInternalWal bool   `mapstructure:"only_internal_wal"`
+	WalPath         string `mapstructure:"wal_file"`
+	walFile         string // overrides WalPath if set
 
 	// How long we wait for a proposal block before prevoting nil
 	TimeoutPropose time.Duration `mapstructure:"timeout_propose"`
@@ -979,6 +1007,7 @@ type ConsensusConfig struct {
 // DefaultConsensusConfig returns a default configuration for the consensus service
 func DefaultConsensusConfig() *ConsensusConfig {
 	return &ConsensusConfig{
+		OnlyInternalWal:             true,
 		WalPath:                     filepath.Join(defaultDataDir, "cs.wal", "wal"),
 		TimeoutPropose:              3000 * time.Millisecond,
 		TimeoutProposeDelta:         500 * time.Millisecond,
@@ -1188,24 +1217,24 @@ type InstrumentationConfig struct {
 	// Instrumentation namespace.
 	Namespace string `mapstructure:"namespace"`
 
-	// InfluxURL is the influxdb url.
-	InfluxURL string `mapstructure:"influx_url"`
+	// TracePushConfig is the relative path of the push config. This second
+	// config contains credentials for where and how often to.
+	TracePushConfig string `mapstructure:"trace_push_config"`
 
-	// InfluxToken is the influxdb token.
-	InfluxToken string `mapstructure:"influx_token"`
+	// TracePullAddress is the address that the trace server will listen on for
+	// pulling data.
+	TracePullAddress string `mapstructure:"trace_pull_address"`
 
-	// InfluxOrg is the influxdb organization.
-	InfluxOrg string `mapstructure:"influx_org"`
+	// TraceType is the type of tracer used. Options are "local" and "noop".
+	TraceType string `mapstructure:"trace_type"`
 
-	// InfluxBucket is the influxdb bucket.
-	InfluxBucket string `mapstructure:"influx_bucket"`
+	// TraceBufferSize is the number of traces to write in a single batch.
+	TraceBufferSize int `mapstructure:"trace_push_batch_size"`
 
-	// InfluxBatchSize is the number of points to write in a single batch.
-	InfluxBatchSize int `mapstructure:"influx_batch_size"`
-
-	// InfluxTables is the list of tables that will be traced. See the
-	// pkg/trace/schema for a complete list of tables.
-	InfluxTables []string `mapstructure:"influx_tables"`
+	// TracingTables is the list of tables that will be traced. See the
+	// pkg/trace/schema for a complete list of tables. It is represented as a
+	// comma separate string. For example: "consensus_round_state,mempool_tx".
+	TracingTables string `mapstructure:"tracing_tables"`
 
 	// PyroscopeURL is the pyroscope url used to establish a connection with a
 	// pyroscope continuous profiling server.
@@ -1229,11 +1258,11 @@ func DefaultInstrumentationConfig() *InstrumentationConfig {
 		PrometheusListenAddr: ":26660",
 		MaxOpenConnections:   3,
 		Namespace:            "cometbft",
-		InfluxURL:            "",
-		InfluxOrg:            "celestia",
-		InfluxBucket:         "e2e",
-		InfluxBatchSize:      20,
-		InfluxTables:         DefaultInfluxTables,
+		TracePushConfig:      "",
+		TracePullAddress:     "",
+		TraceType:            "noop",
+		TraceBufferSize:      1000,
+		TracingTables:        DefaultTracingTables,
 		PyroscopeURL:         "",
 		PyroscopeTrace:       false,
 		PyroscopeProfileTypes: []string{
@@ -1264,21 +1293,18 @@ func (cfg *InstrumentationConfig) ValidateBasic() error {
 	if cfg.PyroscopeTrace && cfg.PyroscopeURL == "" {
 		return errors.New("pyroscope_trace can't be enabled if profiling is disabled")
 	}
-	// if there is not InfluxURL configured, then we do not need to validate the rest
+	// if there is not TracePushConfig configured, then we do not need to validate the rest
 	// of the config because we are not connecting.
-	if cfg.InfluxURL == "" {
+	if cfg.TracePushConfig == "" {
 		return nil
 	}
-	if cfg.InfluxToken == "" {
+	if cfg.TracePullAddress == "" {
 		return fmt.Errorf("token is required")
 	}
-	if cfg.InfluxOrg == "" {
+	if cfg.TraceType == "" {
 		return fmt.Errorf("org is required")
 	}
-	if cfg.InfluxBucket == "" {
-		return fmt.Errorf("bucket is required")
-	}
-	if cfg.InfluxBatchSize <= 0 {
+	if cfg.TraceBufferSize <= 0 {
 		return fmt.Errorf("batch size must be greater than 0")
 	}
 	return nil

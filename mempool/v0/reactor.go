@@ -1,6 +1,7 @@
 package v0
 
 import (
+	"context"
 	"errors"
 	"fmt"
 	"time"
@@ -15,6 +16,7 @@ import (
 	"github.com/KYVENetwork/celestia-core/p2p"
 	protomem "github.com/KYVENetwork/celestia-core/proto/celestiacore/mempool"
 	"github.com/KYVENetwork/celestia-core/types"
+	"golang.org/x/sync/semaphore"
 )
 
 // Reactor handles mempool tx broadcasting amongst peers.
@@ -258,7 +260,7 @@ func (memR *Reactor) broadcastTxRoutine(peer p2p.Peer) {
 		}
 
 		// NOTE: Transaction batching was disabled due to
-		// https://github.com/KYVENetwork/celestia-core/issues/5796
+		// https://github.com/tendermint/tendermint/issues/5796
 
 		if _, ok := memTx.senders.Load(peerID); !ok {
 			success := p2p.SendEnvelopeShim(peer, p2p.Envelope{ //nolint: staticcheck

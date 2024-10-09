@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/KYVENetwork/celestia-core/config"
-	"github.com/KYVENetwork/celestia-core/libs/log"
 	influxdb2 "github.com/influxdata/influxdb-client-go/v2"
 	"github.com/influxdata/influxdb-client-go/v2/api/write"
+	"github.com/tendermint/tendermint/config"
+	"github.com/tendermint/tendermint/libs/log"
 )
 
 const (

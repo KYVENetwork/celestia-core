@@ -1,14 +1,14 @@
 syntax = "proto3";
-package celestiacore.abci;
+package tendermint.abci;
 
-option go_package = "github.com/KYVENetwork/celestia-core/abci/types";
+option go_package = "github.com/tendermint/tendermint/abci/types";
 
 // For more information on gogo.proto, see:
 // https://github.com/gogo/protobuf/blob/master/extensions.md
-import "celestiacore/crypto/proof.proto";
-import "celestiacore/types/types.proto";
-import "celestiacore/crypto/keys.proto";
-import "celestiacore/types/params.proto";
+import "tendermint/crypto/proof.proto";
+import "tendermint/types/types.proto";
+import "tendermint/crypto/keys.proto";
+import "tendermint/types/params.proto";
 import "google/protobuf/timestamp.proto";
 import "gogoproto/gogo.proto";
 
@@ -78,7 +78,7 @@ message RequestQuery {
 
 message RequestBeginBlock {
   bytes                   hash                 = 1;
-  celestiacore.types.Header header               = 2 [(gogoproto.nullable) = false];
+  tendermint.types.Header header               = 2 [(gogoproto.nullable) = false];
   LastCommitInfo          last_commit_info     = 3 [(gogoproto.nullable) = false];
   repeated Evidence       byzantine_validators = 4 [(gogoproto.nullable) = false];
 }
@@ -127,11 +127,11 @@ message RequestApplySnapshotChunk {
 }
 
 message RequestPrepareProposal {
-  // block_data is an array of transactions that will be included in a block,
-  // sent to the app for possible modifications.
-  // applications can not exceed the size of the data passed to it.
+  // BlockData is a slice of candidate transactions that may be included in a
+  // block. BlockData is sent to the application so that the application can
+  // filter and re-arrange the slice of candidate transactions.
   celestiacore.types.Data block_data = 1;
-  // If an application decides to populate block_data with extra information, they can not exceed this value.
+  // BlockDataSize is the maximum size (in bytes) that BlockData should be.
   int64 block_data_size = 2;
   // chain_id is a unique identifier for the blockchain network this proposal
   // belongs to (e.g. mocha-1).
@@ -144,8 +144,8 @@ message RequestPrepareProposal {
 }
 
 message RequestProcessProposal {
-  celestiacore.types.Header header     = 1 [(gogoproto.nullable) = false];
-  celestiacore.types.Data   block_data = 2;
+  tendermint.types.Header header     = 1 [(gogoproto.nullable) = false];
+  tendermint.types.Data   block_data = 2;
 }
 
 //----------------------------------------
@@ -217,7 +217,7 @@ message ResponseQuery {
   int64                      index     = 5;
   bytes                      key       = 6;
   bytes                      value     = 7;
-  celestiacore.crypto.ProofOps proof_ops = 8;
+  tendermint.crypto.ProofOps proof_ops = 8;
   int64                      height    = 9;
   string                     codespace = 10;
 }
@@ -309,7 +309,7 @@ message ResponseApplySnapshotChunk {
 }
 
 message ResponsePrepareProposal {
-  celestiacore.types.Data block_data = 1;
+  tendermint.types.Data block_data = 1;
 }
 
 message ResponseProcessProposal {
@@ -330,9 +330,9 @@ message ResponseProcessProposal {
 // that can be adjusted by the abci app
 message ConsensusParams {
   BlockParams                      block     = 1;
-  celestiacore.types.EvidenceParams  evidence  = 2;
-  celestiacore.types.ValidatorParams validator = 3;
-  celestiacore.types.VersionParams   version   = 4;
+  tendermint.types.EvidenceParams  evidence  = 2;
+  tendermint.types.ValidatorParams validator = 3;
+  tendermint.types.VersionParams   version   = 4;
 }
 
 // BlockParams contains limits on the block size.
@@ -388,7 +388,7 @@ message Validator {
 
 // ValidatorUpdate
 message ValidatorUpdate {
-  celestiacore.crypto.PublicKey pub_key = 1 [(gogoproto.nullable) = false];
+  tendermint.crypto.PublicKey pub_key = 1 [(gogoproto.nullable) = false];
   int64                       power   = 2;
 }
 
@@ -415,7 +415,7 @@ message Evidence {
       [(gogoproto.nullable) = false, (gogoproto.stdtime) = true];
   // Total voting power of the validator set in case the ABCI application does
   // not store historical validators.
-  // https://github.com/KYVENetwork/celestia-core/issues/4581
+  // https://github.com/tendermint/tendermint/issues/4581
   int64 total_voting_power = 5;
 }
 

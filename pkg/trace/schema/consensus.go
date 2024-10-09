@@ -1,8 +1,6 @@
 package schema
 
 import (
-	cstypes "github.com/KYVENetwork/celestia-core/consensus/types"
-	"github.com/KYVENetwork/celestia-core/p2p"
 	"github.com/KYVENetwork/celestia-core/pkg/trace"
 	"github.com/KYVENetwork/celestia-core/types"
 )

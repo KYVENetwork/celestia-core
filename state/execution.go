@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"time"
 
-	abci "github.com/KYVENetwork/celestia-core/abci/types"
-	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
-	"github.com/KYVENetwork/celestia-core/libs/fail"
-	"github.com/KYVENetwork/celestia-core/libs/log"
-	mempl "github.com/KYVENetwork/celestia-core/mempool"
-	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
-	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
-	"github.com/KYVENetwork/celestia-core/proxy"
-	"github.com/KYVENetwork/celestia-core/types"
+	abci "github.com/tendermint/tendermint/abci/types"
+	cryptoenc "github.com/tendermint/tendermint/crypto/encoding"
+	"github.com/tendermint/tendermint/libs/fail"
+	"github.com/tendermint/tendermint/libs/log"
+	mempl "github.com/tendermint/tendermint/mempool"
+	cmtstate "github.com/tendermint/tendermint/proto/tendermint/state"
+	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/tendermint/tendermint/proxy"
+	"github.com/tendermint/tendermint/types"
 )
 
 //-----------------------------------------------------------------------------
@@ -107,12 +107,6 @@ func (blockExec *BlockExecutor) CreateProposalBlock(
 	// Fetch a limited amount of valid txs
 	maxDataBytes := types.MaxDataBytes(maxBytes, evSize, state.Validators.Size())
 
-	// TODO(ismail): reaping the mempool has to happen in relation to a max
-	// allowed square size instead of (only) Gas / bytes
-	// maybe the mempool actually should track things separately
-	// meaning that CheckTx should already do the mapping:
-	// Tx -> Txs, Message
-	// https://github.com/KYVENetwork/celestia-core/issues/77
 	txs := blockExec.mempool.ReapMaxBytesMaxGas(maxDataBytes, maxGas)
 
 	var timestamp time.Time

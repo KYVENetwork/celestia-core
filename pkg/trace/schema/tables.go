@@ -1,6 +1,6 @@
 package schema
 
-import "github.com/KYVENetwork/celestia-core/config"
+import "github.com/tendermint/tendermint/config"
 
 func init() {
 	config.DefaultInfluxTables = AllTables()

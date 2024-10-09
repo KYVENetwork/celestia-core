@@ -27,6 +27,7 @@ import (
 	mempl "github.com/KYVENetwork/celestia-core/mempool"
 	"github.com/KYVENetwork/celestia-core/privval"
 	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
+	cmtstore "github.com/KYVENetwork/celestia-core/proto/celestiacore/store"
 	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/KYVENetwork/celestia-core/proxy"
 	sm "github.com/KYVENetwork/celestia-core/state"

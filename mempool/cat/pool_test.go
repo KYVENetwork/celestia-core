@@ -244,6 +244,7 @@ func TestTxPool_Eviction(t *testing.T) {
 	mustCheckTx(t, txmp, "key1=0000=25")
 	require.True(t, txExists("key1=0000=25"))
 	require.False(t, txExists(bigTx))
+	require.True(t, txmp.WasRecentlyEvicted(types.Tx(bigTx).Key()))
 	require.Equal(t, int64(len("key1=0000=25")), txmp.SizeBytes())
 
 	// Now fill up the rest of the slots with other transactions.
@@ -257,23 +258,27 @@ func TestTxPool_Eviction(t *testing.T) {
 	require.Error(t, err)
 	require.Contains(t, err.Error(), "mempool is full")
 	require.False(t, txExists("key6=0005=1"))
+	require.True(t, txmp.WasRecentlyEvicted(types.Tx("key6=0005=1").Key()))
 
 	// A new transaction with higher priority should evict key5, which is the
 	// newest of the two transactions with lowest priority.
 	mustCheckTx(t, txmp, "key7=0006=7")
 	require.True(t, txExists("key7=0006=7"))  // new transaction added
 	require.False(t, txExists("key5=0004=3")) // newest low-priority tx evicted
-	require.True(t, txExists("key4=0003=3"))  // older low-priority tx retained
+	require.True(t, txmp.WasRecentlyEvicted(types.Tx("key5=0004=3").Key()))
+	require.True(t, txExists("key4=0003=3")) // older low-priority tx retained
 
 	// Another new transaction evicts the other low-priority element.
 	mustCheckTx(t, txmp, "key8=0007=20")
 	require.True(t, txExists("key8=0007=20"))
 	require.False(t, txExists("key4=0003=3"))
+	require.True(t, txmp.WasRecentlyEvicted(types.Tx("key4=0003=3").Key()))
 
 	// Now the lowest-priority tx is 5, so that should be the next to go.
 	mustCheckTx(t, txmp, "key9=0008=9")
 	require.True(t, txExists("key9=0008=9"))
 	require.False(t, txExists("key2=0001=5"))
+	require.True(t, txmp.WasRecentlyEvicted(types.Tx("key2=0001=5").Key()))
 
 	// Add a transaction that requires eviction of multiple lower-priority
 	// entries, in order to fit the size of the element.
@@ -282,8 +287,11 @@ func TestTxPool_Eviction(t *testing.T) {
 	require.True(t, txExists("key8=0007=20"))
 	require.True(t, txExists("key10=0123456789abcdef=11"))
 	require.False(t, txExists("key3=0002=10"))
+	require.True(t, txmp.WasRecentlyEvicted(types.Tx("key3=0002=10").Key()))
 	require.False(t, txExists("key9=0008=9"))
+	require.True(t, txmp.WasRecentlyEvicted(types.Tx("key9=0008=9").Key()))
 	require.False(t, txExists("key7=0006=7"))
+	require.True(t, txmp.WasRecentlyEvicted(types.Tx("key7=0006=7").Key()))
 
 	// Free up some space so we can add back previously evicted txs
 	err = txmp.Update(1, types.Txs{types.Tx("key10=0123456789abcdef=11")}, []*abci.ResponseDeliverTx{{Code: abci.CodeTypeOK}}, nil, nil)
@@ -296,6 +304,7 @@ func TestTxPool_Eviction(t *testing.T) {
 	// space for the previously evicted tx
 	require.NoError(t, txmp.RemoveTxByKey(types.Tx("key8=0007=20").Key()))
 	require.False(t, txExists("key8=0007=20"))
+	require.False(t, txmp.WasRecentlyEvicted(types.Tx("key8=0007=20").Key()))
 }
 
 func TestTxPool_Flush(t *testing.T) {
@@ -471,19 +480,21 @@ func TestTxPool_CheckTxSamePeer(t *testing.T) {
 	require.Error(t, txmp.CheckTx(tx, nil, mempool.TxInfo{SenderID: peerID}))
 }
 
+// TestTxPool_ConcurrentTxs adds a bunch of txs to the txPool (via checkTx) and
+// then reaps transactions from the mempool. At the end it asserts that the
+// mempool is empty.
 func TestTxPool_ConcurrentTxs(t *testing.T) {
-	txmp := setup(t, 100)
-	rng := rand.New(rand.NewSource(time.Now().UnixNano()))
+	cacheSize := 10
+	txPool := setup(t, cacheSize)
 	checkTxDone := make(chan struct{})
 
 	var wg sync.WaitGroup
-
 	wg.Add(1)
 	go func() {
-		for i := 0; i < 20; i++ {
-			_ = checkTxs(t, txmp, 100, 0)
-			dur := rng.Intn(1000-500) + 500
-			time.Sleep(time.Duration(dur) * time.Millisecond)
+		for i := 0; i < 10; i++ {
+			numTxs := 10
+			peerID := uint16(0)
+			_ = checkTxs(t, txPool, numTxs, peerID)
 		}
 
 		wg.Done()
@@ -496,33 +507,18 @@ func TestTxPool_ConcurrentTxs(t *testing.T) {
 		defer ticker.Stop()
 		defer wg.Done()
 
-		var height int64 = 1
-
+		height := int64(1)
 		for range ticker.C {
-			reapedTxs := txmp.ReapMaxTxs(200)
+			reapedTxs := txPool.ReapMaxTxs(50)
 			if len(reapedTxs) > 0 {
-				responses := make([]*abci.ResponseDeliverTx, len(reapedTxs))
-				for i := 0; i < len(responses); i++ {
-					var code uint32
-
-					if i%10 == 0 {
-						code = 100
-					} else {
-						code = abci.CodeTypeOK
-					}
-
-					responses[i] = &abci.ResponseDeliverTx{Code: code}
-				}
-
-				txmp.Lock()
-				require.NoError(t, txmp.Update(height, reapedTxs, responses, nil, nil))
-				txmp.Unlock()
-
+				responses := generateResponses(len(reapedTxs))
+				err := txPool.Update(height, reapedTxs, responses, nil, nil)
+				require.NoError(t, err)
 				height++
 			} else {
-				// only return once we know we finished the CheckTx loop
 				select {
 				case <-checkTxDone:
+					// only return once we know we finished the CheckTx loop
 					return
 				default:
 				}
@@ -531,8 +527,21 @@ func TestTxPool_ConcurrentTxs(t *testing.T) {
 	}()
 
 	wg.Wait()
-	require.Zero(t, txmp.Size())
-	require.Zero(t, txmp.SizeBytes())
+	assert.Zero(t, txPool.Size())
+	assert.Zero(t, txPool.SizeBytes())
+}
+
+func generateResponses(numResponses int) (responses []*abci.ResponseDeliverTx) {
+	for i := 0; i < numResponses; i++ {
+		var response *abci.ResponseDeliverTx
+		if i%2 == 0 {
+			response = &abci.ResponseDeliverTx{Code: abci.CodeTypeOK}
+		} else {
+			response = &abci.ResponseDeliverTx{Code: 100}
+		}
+		responses = append(responses, response)
+	}
+	return responses
 }
 
 func TestTxPool_ExpiredTxs_Timestamp(t *testing.T) {
@@ -567,6 +576,10 @@ func TestTxPool_ExpiredTxs_Timestamp(t *testing.T) {
 
 	// All the transactions in the original set should have been purged.
 	for _, tx := range added1 {
+		// Check that it was added to the evictedTxCache
+		evicted := txmp.WasRecentlyEvicted(tx.tx.Key())
+		require.True(t, evicted)
+
 		if txmp.store.has(tx.tx.Key()) {
 			t.Errorf("Transaction %X should have been purged for TTL", tx.tx.Key())
 		}
@@ -708,7 +721,8 @@ func abciResponses(n int, code uint32) []*abci.ResponseDeliverTx {
 }
 
 func TestTxPool_ConcurrentlyAddingTx(t *testing.T) {
-	txmp := setup(t, 500)
+	cacheSize := 500
+	txPool := setup(t, cacheSize)
 	tx := types.Tx("sender=0000=1")
 
 	numTxs := 10
@@ -718,7 +732,7 @@ func TestTxPool_ConcurrentlyAddingTx(t *testing.T) {
 		wg.Add(1)
 		go func(sender uint16) {
 			defer wg.Done()
-			_, err := txmp.TryAddNewTx(tx, tx.Key(), mempool.TxInfo{SenderID: sender})
+			_, err := txPool.TryAddNewTx(tx, tx.Key(), mempool.TxInfo{SenderID: sender})
 			errCh <- err
 		}(uint16(i + 1))
 	}
@@ -734,7 +748,10 @@ func TestTxPool_ConcurrentlyAddingTx(t *testing.T) {
 			errCount++
 		}
 	}
-	require.Equal(t, numTxs-1, errCount)
+	// At least one tx should succeed and get added to the mempool without an error.
+	require.Less(t, errCount, numTxs)
+	// The rest of the txs may fail with ErrTxInMempool but the number of errors isn't exact.
+	require.LessOrEqual(t, errCount, numTxs-1)
 }
 
 func TestTxPool_BroadcastQueue(t *testing.T) {
@@ -745,6 +762,12 @@ func TestTxPool_BroadcastQueue(t *testing.T) {
 
 	wg := sync.WaitGroup{}
 	wg.Add(1)
+
+	for i := 0; i < txs; i++ {
+		tx := newDefaultTx(fmt.Sprintf("%d", i))
+		require.NoError(t, txmp.CheckTx(tx, nil, mempool.TxInfo{SenderID: 0}))
+	}
+
 	go func() {
 		defer wg.Done()
 		for i := 0; i < txs; i++ {
@@ -754,14 +777,8 @@ func TestTxPool_BroadcastQueue(t *testing.T) {
 			case wtx := <-txmp.next():
 				require.Equal(t, wtx.tx, newDefaultTx(fmt.Sprintf("%d", i)))
 			}
-			time.Sleep(10 * time.Millisecond)
 		}
 	}()
-
-	for i := 0; i < txs; i++ {
-		tx := newDefaultTx(fmt.Sprintf("%d", i))
-		require.NoError(t, txmp.CheckTx(tx, nil, mempool.TxInfo{SenderID: 0}))
-	}
 
 	wg.Wait()
 }

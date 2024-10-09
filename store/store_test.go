@@ -14,6 +14,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
 	cfg "github.com/KYVENetwork/celestia-core/config"
 	"github.com/KYVENetwork/celestia-core/crypto"
 	"github.com/KYVENetwork/celestia-core/libs/log"

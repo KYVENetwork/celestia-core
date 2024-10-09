@@ -11,7 +11,6 @@ import (
 	"github.com/KYVENetwork/celestia-core/libs/bytes"
 	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
 	cmtquery "github.com/KYVENetwork/celestia-core/libs/pubsub/query"
-	"github.com/KYVENetwork/celestia-core/pkg/consts"
 	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
 	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
 	blockidxnull "github.com/KYVENetwork/celestia-core/state/indexer/block/null"
@@ -110,7 +109,7 @@ func Header(ctx *rpctypes.Context, heightPtr *int64) (*ctypes.ResultHeader, erro
 func HeaderByHash(ctx *rpctypes.Context, hash bytes.HexBytes) (*ctypes.ResultHeader, error) {
 	// N.B. The hash parameter is HexBytes so that the reflective parameter
 	// decoding logic in the HTTP service will correctly translate from JSON.
-	// See https://github.com/KYVENetwork/celestia-core/issues/6802 for context.
+	// See https://github.com/tendermint/tendermint/issues/6802 for context.
 
 	blockMeta := GetEnvironment().BlockStore.LoadBlockMetaByHash(hash)
 	if blockMeta == nil {

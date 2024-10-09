@@ -2,7 +2,6 @@ package v0
 
 import (
 	"bytes"
-	"crypto/rand"
 	"encoding/binary"
 	"fmt"
 	mrand "math/rand"
@@ -99,16 +98,27 @@ func ensureFire(t *testing.T, ch <-chan struct{}, timeoutMS int) {
 	}
 }
 
+func callCheckTx(t *testing.T, mp mempool.Mempool, txs types.Txs) {
+	txInfo := mempool.TxInfo{SenderID: 0}
+	for i, tx := range txs {
+		if err := mp.CheckTx(tx, nil, txInfo); err != nil {
+			// Skip invalid txs.
+			// TestMempoolFilters will fail otherwise. It asserts a number of txs
+			// returned.
+			if mempool.IsPreCheckError(err) {
+				continue
+			}
+			t.Fatalf("CheckTx failed: %v while checking #%d tx", err, i)
+		}
+	}
+}
+
 func checkTxs(t *testing.T, mp mempool.Mempool, count int, peerID uint16) types.Txs {
 	txs := make(types.Txs, count)
 	txInfo := mempool.TxInfo{SenderID: peerID}
 	for i := 0; i < count; i++ {
-		txBytes := make([]byte, 20)
+		txBytes := kvstore.NewRandomTx(20)
 		txs[i] = txBytes
-		_, err := rand.Read(txBytes)
-		if err != nil {
-			t.Error(err)
-		}
 		if err := mp.CheckTx(txBytes, nil, txInfo); err != nil {
 			// Skip invalid txs.
 			// TestMempoolFilters will fail otherwise. It asserts a number of txs
@@ -548,6 +558,32 @@ func TestMempool_CheckTxChecksTxSize(t *testing.T) {
 			}, caseString)
 		}
 	}
+}
+
+func TestGetTxByKey(t *testing.T) {
+	app := kvstore.NewApplication()
+	cc := proxy.NewLocalClientCreator(app)
+
+	mp, cleanup := newMempoolWithApp(cc)
+	defer cleanup()
+
+	// Create a tx
+	tx := types.Tx([]byte{0x01})
+	// Add it to the mempool
+	err := mp.CheckTx(tx, nil, mempool.TxInfo{})
+	require.NoError(t, err)
+
+	// Query the tx from the mempool
+	got, ok := mp.GetTxByKey(tx.Key())
+	require.True(t, ok)
+	// Ensure the returned tx is the same as the one we added
+	require.Equal(t, tx, got)
+
+	// Query a random tx from the mempool
+	randomTx, ok := mp.GetTxByKey(types.Tx([]byte{0x02}).Key())
+	// Ensure the returned tx is nil
+	require.False(t, ok)
+	require.Nil(t, randomTx)
 }
 
 func TestMempoolTxsBytes(t *testing.T) {
