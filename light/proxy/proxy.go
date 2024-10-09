@@ -6,12 +6,12 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/tendermint/tendermint/libs/log"
-	cmtpubsub "github.com/tendermint/tendermint/libs/pubsub"
-	"github.com/tendermint/tendermint/light"
-	lrpc "github.com/tendermint/tendermint/light/rpc"
-	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
-	rpcserver "github.com/tendermint/tendermint/rpc/jsonrpc/server"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtpubsub "github.com/KYVENetwork/celestia-core/libs/pubsub"
+	"github.com/KYVENetwork/celestia-core/light"
+	lrpc "github.com/KYVENetwork/celestia-core/light/rpc"
+	rpchttp "github.com/KYVENetwork/celestia-core/rpc/client/http"
+	rpcserver "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/server"
 )
 
 // A Proxy defines parameters for running an HTTP server proxy.

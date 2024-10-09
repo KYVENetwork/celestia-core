@@ -1,8 +1,8 @@
 package node
 
 import (
+	"github.com/KYVENetwork/celestia-core/config"
 	"github.com/grafana/pyroscope-go"
-	"github.com/tendermint/tendermint/config"
 
 	otelpyroscope "github.com/grafana/otel-profiling-go"
 	"go.opentelemetry.io/otel"

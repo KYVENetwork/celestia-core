@@ -12,18 +12,18 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	"github.com/tendermint/tendermint/p2p/mock"
-	"github.com/tendermint/tendermint/pkg/trace"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	"github.com/KYVENetwork/celestia-core/p2p/mock"
+	"github.com/KYVENetwork/celestia-core/pkg/trace"
 
-	cfg "github.com/tendermint/tendermint/config"
+	cfg "github.com/KYVENetwork/celestia-core/config"
 
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/mempool"
-	"github.com/tendermint/tendermint/p2p"
-	memproto "github.com/tendermint/tendermint/proto/tendermint/mempool"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/mempool"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	memproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/mempool"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const (

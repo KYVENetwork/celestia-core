@@ -8,12 +8,12 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/KYVENetwork/celestia-core/libs/math"
+	e2e "github.com/KYVENetwork/celestia-core/test/e2e/pkg"
+	"github.com/KYVENetwork/celestia-core/version"
 	"github.com/Masterminds/semver/v3"
 	"github.com/go-git/go-git/v5"
 	"github.com/go-git/go-git/v5/plumbing/object"
-	"github.com/tendermint/tendermint/libs/math"
-	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
-	"github.com/tendermint/tendermint/version"
 )
 
 var (

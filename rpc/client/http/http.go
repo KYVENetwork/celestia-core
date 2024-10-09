@@ -7,16 +7,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tendermint/tendermint/libs/bytes"
-	cmtjson "github.com/tendermint/tendermint/libs/json"
-	"github.com/tendermint/tendermint/libs/log"
-	cmtpubsub "github.com/tendermint/tendermint/libs/pubsub"
-	"github.com/tendermint/tendermint/libs/service"
-	cmtsync "github.com/tendermint/tendermint/libs/sync"
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	jsonrpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/bytes"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtpubsub "github.com/KYVENetwork/celestia-core/libs/pubsub"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	rpcclient "github.com/KYVENetwork/celestia-core/rpc/client"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	jsonrpcclient "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/client"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 /*

@@ -11,14 +11,14 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	// cmtjson "github.com/tendermint/tendermint/libs/json"
-	cmtcon "github.com/tendermint/tendermint/consensus"
-	auto "github.com/tendermint/tendermint/libs/autofile"
-	"github.com/tendermint/tendermint/libs/log"
-	cmtos "github.com/tendermint/tendermint/libs/os"
-	"github.com/tendermint/tendermint/libs/service"
-	cmtcons "github.com/tendermint/tendermint/proto/tendermint/consensus"
-	cmttime "github.com/tendermint/tendermint/types/time"
+	// cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	cmtcon "github.com/KYVENetwork/celestia-core/consensus"
+	auto "github.com/KYVENetwork/celestia-core/libs/autofile"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	cmtcons "github.com/KYVENetwork/celestia-core/proto/celestiacore/consensus"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
 const (
@@ -177,7 +177,7 @@ func (wal *BaseWAL) WriteSync(msg cmtcon.WALMessage) error {
 	}
 
 	if err := wal.FlushAndSync(); err != nil {
-		wal.Logger.Error(`WriteSync failed to flush consensus wal. 
+		wal.Logger.Error(`WriteSync failed to flush consensus wal.
 		WARNING: may result in creating alternative proposals / votes for the current height iff the node restarted`,
 			"err", err)
 		return err

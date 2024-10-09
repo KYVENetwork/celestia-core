@@ -4,11 +4,11 @@ import (
 	"os"
 	"path/filepath"
 
-	cmd "github.com/tendermint/tendermint/cmd/cometbft/commands"
-	"github.com/tendermint/tendermint/cmd/cometbft/commands/debug"
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/cli"
-	nm "github.com/tendermint/tendermint/node"
+	cmd "github.com/KYVENetwork/celestia-core/cmd/cometbft/commands"
+	"github.com/KYVENetwork/celestia-core/cmd/cometbft/commands/debug"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/cli"
+	nm "github.com/KYVENetwork/celestia-core/node"
 )
 
 func main() {

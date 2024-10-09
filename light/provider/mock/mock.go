@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tendermint/tendermint/light/provider"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/light/provider"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 type Mock struct {

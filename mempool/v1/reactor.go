@@ -7,16 +7,16 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/clist"
-	"github.com/tendermint/tendermint/libs/log"
-	cmtsync "github.com/tendermint/tendermint/libs/sync"
-	"github.com/tendermint/tendermint/mempool"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/pkg/trace"
-	"github.com/tendermint/tendermint/pkg/trace/schema"
-	protomem "github.com/tendermint/tendermint/proto/tendermint/mempool"
-	"github.com/tendermint/tendermint/types"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/clist"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/mempool"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/pkg/trace"
+	"github.com/KYVENetwork/celestia-core/pkg/trace/schema"
+	protomem "github.com/KYVENetwork/celestia-core/proto/celestiacore/mempool"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // Reactor handles mempool tx broadcasting amongst peers.

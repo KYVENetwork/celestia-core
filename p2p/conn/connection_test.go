@@ -11,10 +11,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/protoio"
-	tmp2p "github.com/tendermint/tendermint/proto/tendermint/p2p"
-	"github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/libs/protoio"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestiacore/p2p"
+	"github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 const maxPingPongPacketSize = 1024 // bytes

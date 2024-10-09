@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
 )
 
 const (

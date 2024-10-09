@@ -1,4 +1,4 @@
-module github.com/tendermint/tendermint
+module github.com/KYVENetwork/celestia-core
 
 go 1.22.6
 
@@ -14,6 +14,7 @@ require (
 	github.com/bufbuild/buf v1.15.1
 	github.com/celestiaorg/nmt v0.22.1
 	github.com/cometbft/cometbft-db v0.7.0
+	github.com/cosmos/gogoproto v1.7.0
 	github.com/creachadair/taskgroup v0.3.2
 	github.com/fortytw2/leaktest v1.3.0
 	github.com/go-git/go-git/v5 v5.11.0
@@ -26,7 +27,7 @@ require (
 	github.com/golang/protobuf v1.5.3
 	github.com/golangci/golangci-lint v1.52.0
 	github.com/google/orderedcode v0.0.1
-	github.com/google/uuid v1.4.0
+	github.com/google/uuid v1.6.0
 	github.com/gorilla/websocket v1.5.0
 	github.com/grafana/otel-profiling-go v0.5.1
 	github.com/grafana/pyroscope-go v1.1.2
@@ -53,8 +54,8 @@ require (
 	golang.org/x/crypto v0.21.0
 	golang.org/x/net v0.23.0
 	gonum.org/v1/gonum v0.12.0
-	google.golang.org/grpc v1.60.0
-	google.golang.org/protobuf v1.31.0
+	google.golang.org/grpc v1.62.1
+	google.golang.org/protobuf v1.32.0
 )
 
 require (
@@ -140,7 +141,7 @@ require (
 	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/gofrs/flock v0.8.1 // indirect
 	github.com/gofrs/uuid/v5 v5.0.0 // indirect
-	github.com/golang/glog v1.1.2 // indirect
+	github.com/golang/glog v1.2.0 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/golangci/check v0.0.0-20180506172741-cfe4005ccda2 // indirect
@@ -283,12 +284,12 @@ require (
 	golang.org/x/exp v0.0.0-20230905200255-921286631fa9 // indirect
 	golang.org/x/exp/typeparams v0.0.0-20230307190834-24139beb5833 // indirect
 	golang.org/x/mod v0.12.0 // indirect
-	golang.org/x/sync v0.5.0 // indirect
+	golang.org/x/sync v0.6.0 // indirect
 	golang.org/x/sys v0.18.0 // indirect
 	golang.org/x/term v0.18.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/tools v0.13.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20231120223509-83a465c0220f // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240123012728-ef4313101c80 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect

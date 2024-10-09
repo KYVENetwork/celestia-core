@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // simple, thread-safe in memory store for transactions

@@ -16,16 +16,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/abci/example/code"
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/mempool"
-	"github.com/tendermint/tendermint/pkg/consts"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/abci/example/code"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/mempool"
+	"github.com/KYVENetwork/celestia-core/pkg/consts"
+	tmproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // application extends the KV store application by overriding CheckTx to provide

@@ -10,16 +10,16 @@ import (
 	"github.com/gogo/protobuf/proto"
 	gogotypes "github.com/gogo/protobuf/types"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/merkle"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	"github.com/tendermint/tendermint/libs/bits"
-	cmtbytes "github.com/tendermint/tendermint/libs/bytes"
-	cmtmath "github.com/tendermint/tendermint/libs/math"
-	cmtsync "github.com/tendermint/tendermint/libs/sync"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	cmtversion "github.com/tendermint/tendermint/proto/tendermint/version"
-	"github.com/tendermint/tendermint/version"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	"github.com/KYVENetwork/celestia-core/libs/bits"
+	cmtbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestiacore/version"
+	"github.com/KYVENetwork/celestia-core/version"
 )
 
 const (

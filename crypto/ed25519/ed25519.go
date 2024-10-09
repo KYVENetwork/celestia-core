@@ -8,9 +8,9 @@ import (
 
 	"golang.org/x/crypto/ed25519"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	cmtjson "github.com/tendermint/tendermint/libs/json"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
 )
 
 //-------------------------------------

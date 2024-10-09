@@ -9,9 +9,9 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func TestTxFilter(t *testing.T) {

@@ -10,15 +10,15 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
-	cmtstate "github.com/tendermint/tendermint/proto/tendermint/state"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func TestStoreLoadValidators(t *testing.T) {

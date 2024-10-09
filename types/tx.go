@@ -6,12 +6,12 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	cmtbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
+	"github.com/KYVENetwork/celestia-core/pkg/consts"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 	"github.com/gogo/protobuf/proto"
-	"github.com/tendermint/tendermint/crypto/merkle"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	cmtbytes "github.com/tendermint/tendermint/libs/bytes"
-	"github.com/tendermint/tendermint/pkg/consts"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )
 
 // TxKeySize is the size of the transaction key index

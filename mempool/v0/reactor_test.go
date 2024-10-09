@@ -14,17 +14,17 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	abci "github.com/tendermint/tendermint/abci/types"
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/log"
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
-	"github.com/tendermint/tendermint/mempool"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/p2p/mock"
-	memproto "github.com/tendermint/tendermint/proto/tendermint/mempool"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/mempool"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/p2p/mock"
+	memproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/mempool"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const (

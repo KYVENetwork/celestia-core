@@ -12,11 +12,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/p2p/mock"
-	tmp2p "github.com/tendermint/tendermint/proto/tendermint/p2p"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/p2p/mock"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestiacore/p2p"
 )
 
 var cfg *config.P2PConfig

@@ -4,14 +4,14 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto/merkle"
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/libs/bytes"
-	"github.com/tendermint/tendermint/p2p"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/libs/bytes"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // List of blocks

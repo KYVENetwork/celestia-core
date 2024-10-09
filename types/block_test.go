@@ -16,16 +16,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/merkle"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	"github.com/tendermint/tendermint/libs/bits"
-	"github.com/tendermint/tendermint/libs/bytes"
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	cmtversion "github.com/tendermint/tendermint/proto/tendermint/version"
-	cmttime "github.com/tendermint/tendermint/types/time"
-	"github.com/tendermint/tendermint/version"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	"github.com/KYVENetwork/celestia-core/libs/bits"
+	"github.com/KYVENetwork/celestia-core/libs/bytes"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestiacore/version"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
+	"github.com/KYVENetwork/celestia-core/version"
 )
 
 func TestMain(m *testing.M) {

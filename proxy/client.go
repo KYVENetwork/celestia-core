@@ -3,12 +3,12 @@ package proxy
 import (
 	"fmt"
 
-	abcicli "github.com/tendermint/tendermint/abci/client"
-	"github.com/tendermint/tendermint/abci/example/counter"
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	"github.com/tendermint/tendermint/abci/types"
-	cmtsync "github.com/tendermint/tendermint/libs/sync"
-	e2e "github.com/tendermint/tendermint/test/e2e/app"
+	abcicli "github.com/KYVENetwork/celestia-core/abci/client"
+	"github.com/KYVENetwork/celestia-core/abci/example/counter"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	"github.com/KYVENetwork/celestia-core/abci/types"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	e2e "github.com/KYVENetwork/celestia-core/test/e2e/app"
 )
 
 //go:generate ../scripts/mockery_generate.sh ClientCreator

@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/p2p/mocks"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/p2p/mocks"
 )
 
 func TestPeerLifecycle(t *testing.T) {

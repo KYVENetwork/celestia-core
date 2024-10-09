@@ -8,7 +8,7 @@ import (
 	"strings"
 	"text/template"
 
-	cmtos "github.com/tendermint/tendermint/libs/os"
+	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
 )
 
 // DefaultDirPerm is the default permissions used when creating directories.

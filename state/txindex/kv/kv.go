@@ -12,11 +12,11 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 	"github.com/gogo/protobuf/proto"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/pubsub/query"
-	"github.com/tendermint/tendermint/state/indexer"
-	"github.com/tendermint/tendermint/state/txindex"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	"github.com/KYVENetwork/celestia-core/state/indexer"
+	"github.com/KYVENetwork/celestia-core/state/txindex"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const (

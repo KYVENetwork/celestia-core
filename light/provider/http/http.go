@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tendermint/tendermint/light/provider"
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
-	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/light/provider"
+	rpcclient "github.com/KYVENetwork/celestia-core/rpc/client"
+	rpchttp "github.com/KYVENetwork/celestia-core/rpc/client/http"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 var (

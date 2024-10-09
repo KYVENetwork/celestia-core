@@ -8,12 +8,12 @@ import (
 
 	"golang.org/x/net/netutil"
 
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/libs/protoio"
+	"github.com/KYVENetwork/celestia-core/p2p/conn"
+	"github.com/KYVENetwork/celestia-core/pkg/trace"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestiacore/p2p"
 	"github.com/gogo/protobuf/proto"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/libs/protoio"
-	"github.com/tendermint/tendermint/p2p/conn"
-	"github.com/tendermint/tendermint/pkg/trace"
-	tmp2p "github.com/tendermint/tendermint/proto/tendermint/p2p"
 )
 
 const (

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // RetrySignerClient wraps SignerClient adding retry for each operation (except

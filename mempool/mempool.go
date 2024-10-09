@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"math"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const (

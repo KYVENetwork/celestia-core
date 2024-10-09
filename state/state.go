@@ -9,12 +9,12 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	cmtstate "github.com/tendermint/tendermint/proto/tendermint/state"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	cmtversion "github.com/tendermint/tendermint/proto/tendermint/version"
-	"github.com/tendermint/tendermint/types"
-	cmttime "github.com/tendermint/tendermint/types/time"
-	"github.com/tendermint/tendermint/version"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
+	cmtversion "github.com/KYVENetwork/celestia-core/proto/celestiacore/version"
+	"github.com/KYVENetwork/celestia-core/types"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
+	"github.com/KYVENetwork/celestia-core/version"
 )
 
 // database key

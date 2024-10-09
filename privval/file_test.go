@@ -10,13 +10,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	cmtjson "github.com/tendermint/tendermint/libs/json"
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
-	cmttime "github.com/tendermint/tendermint/types/time"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
+	"github.com/KYVENetwork/celestia-core/types"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
 func TestGenLoadValidator(t *testing.T) {

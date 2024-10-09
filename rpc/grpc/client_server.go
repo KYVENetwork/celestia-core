@@ -7,7 +7,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	cmtnet "github.com/tendermint/tendermint/libs/net"
+	cmtnet "github.com/KYVENetwork/celestia-core/libs/net"
 )
 
 // Config is an gRPC server configuration.

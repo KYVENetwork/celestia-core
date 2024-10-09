@@ -8,18 +8,18 @@ import (
 	"strings"
 	"time"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/log"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/log"
 
-	cfg "github.com/tendermint/tendermint/config"
-	cmtnet "github.com/tendermint/tendermint/libs/net"
-	nm "github.com/tendermint/tendermint/node"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/privval"
-	"github.com/tendermint/tendermint/proxy"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	core_grpc "github.com/tendermint/tendermint/rpc/grpc"
-	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	cmtnet "github.com/KYVENetwork/celestia-core/libs/net"
+	nm "github.com/KYVENetwork/celestia-core/node"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/privval"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	core_grpc "github.com/KYVENetwork/celestia-core/rpc/grpc"
+	rpcclient "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/client"
 )
 
 // Options helps with specifying some parameters for our RPC testing for greater

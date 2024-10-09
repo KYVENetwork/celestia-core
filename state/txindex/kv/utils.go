@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"math/big"
 
+	"github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	"github.com/KYVENetwork/celestia-core/state/indexer"
+	"github.com/KYVENetwork/celestia-core/types"
 	"github.com/google/orderedcode"
-	"github.com/tendermint/tendermint/libs/pubsub/query"
-	"github.com/tendermint/tendermint/state/indexer"
-	"github.com/tendermint/tendermint/types"
 )
 
 type HeightInfo struct {

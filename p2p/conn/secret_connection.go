@@ -21,13 +21,13 @@ import (
 	"golang.org/x/crypto/hkdf"
 	"golang.org/x/crypto/nacl/box"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	cryptoenc "github.com/tendermint/tendermint/crypto/encoding"
-	"github.com/tendermint/tendermint/libs/async"
-	"github.com/tendermint/tendermint/libs/protoio"
-	cmtsync "github.com/tendermint/tendermint/libs/sync"
-	tmp2p "github.com/tendermint/tendermint/proto/tendermint/p2p"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	cryptoenc "github.com/KYVENetwork/celestia-core/crypto/encoding"
+	"github.com/KYVENetwork/celestia-core/libs/async"
+	"github.com/KYVENetwork/celestia-core/libs/protoio"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestiacore/p2p"
 )
 
 // 4 + 1024 == 1028 total frame size

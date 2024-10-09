@@ -12,11 +12,11 @@ import (
 
 	db "github.com/cometbft/cometbft-db"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/pubsub/query"
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
-	"github.com/tendermint/tendermint/state/txindex"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/state/txindex"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func TestBigInt(t *testing.T) {

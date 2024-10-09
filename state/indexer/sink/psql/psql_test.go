@@ -18,9 +18,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/state/txindex"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/state/txindex"
+	"github.com/KYVENetwork/celestia-core/types"
 
 	// Register the Postgres database driver.
 	_ "github.com/lib/pq"

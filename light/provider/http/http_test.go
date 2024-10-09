@@ -10,14 +10,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	"github.com/tendermint/tendermint/light/provider"
-	lighthttp "github.com/tendermint/tendermint/light/provider/http"
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
-	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctest "github.com/tendermint/tendermint/rpc/test"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	"github.com/KYVENetwork/celestia-core/light/provider"
+	lighthttp "github.com/KYVENetwork/celestia-core/light/provider/http"
+	rpcclient "github.com/KYVENetwork/celestia-core/rpc/client"
+	rpchttp "github.com/KYVENetwork/celestia-core/rpc/client/http"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	rpctest "github.com/KYVENetwork/celestia-core/rpc/test"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func TestNewProvider(t *testing.T) {

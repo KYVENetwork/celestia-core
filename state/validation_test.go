@@ -8,17 +8,17 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	"github.com/tendermint/tendermint/libs/log"
-	memmock "github.com/tendermint/tendermint/mempool/mock"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/state/mocks"
-	"github.com/tendermint/tendermint/test/factory"
-	"github.com/tendermint/tendermint/types"
-	cmttime "github.com/tendermint/tendermint/types/time"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	memmock "github.com/KYVENetwork/celestia-core/mempool/mock"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/state/mocks"
+	"github.com/KYVENetwork/celestia-core/test/factory"
+	"github.com/KYVENetwork/celestia-core/types"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
 const validationTestsStopHeight int64 = 10

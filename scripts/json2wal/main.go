@@ -14,9 +14,9 @@ import (
 	"os"
 	"strings"
 
-	cs "github.com/tendermint/tendermint/consensus"
-	cmtjson "github.com/tendermint/tendermint/libs/json"
-	"github.com/tendermint/tendermint/types"
+	cs "github.com/KYVENetwork/celestia-core/consensus"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 func main() {

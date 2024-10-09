@@ -6,14 +6,14 @@ import (
 	"sync"
 	"time"
 
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/cmap"
+	"github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	"github.com/KYVENetwork/celestia-core/p2p/conn"
+	"github.com/KYVENetwork/celestia-core/pkg/trace"
+	"github.com/KYVENetwork/celestia-core/pkg/trace/schema"
 	"github.com/gogo/protobuf/proto"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/cmap"
-	"github.com/tendermint/tendermint/libs/rand"
-	"github.com/tendermint/tendermint/libs/service"
-	"github.com/tendermint/tendermint/p2p/conn"
-	"github.com/tendermint/tendermint/pkg/trace"
-	"github.com/tendermint/tendermint/pkg/trace/schema"
 )
 
 const (

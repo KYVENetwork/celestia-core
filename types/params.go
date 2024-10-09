@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/crypto/tmhash"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 const (

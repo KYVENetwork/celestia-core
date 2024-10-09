@@ -9,9 +9,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/tendermint/tendermint/crypto/merkle"
-	cmtmath "github.com/tendermint/tendermint/libs/math"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 const (

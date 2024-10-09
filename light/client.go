@@ -9,12 +9,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tendermint/tendermint/libs/log"
-	cmtmath "github.com/tendermint/tendermint/libs/math"
-	cmtsync "github.com/tendermint/tendermint/libs/sync"
-	"github.com/tendermint/tendermint/light/provider"
-	"github.com/tendermint/tendermint/light/store"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/light/provider"
+	"github.com/KYVENetwork/celestia-core/light/store"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 type mode byte
