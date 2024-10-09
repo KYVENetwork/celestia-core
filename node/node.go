@@ -17,45 +17,45 @@ import (
 	"github.com/rs/cors"
 	sdktrace "go.opentelemetry.io/otel/sdk/trace"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	bcv0 "github.com/tendermint/tendermint/blockchain/v0"
-	bcv1 "github.com/tendermint/tendermint/blockchain/v1"
-	bcv2 "github.com/tendermint/tendermint/blockchain/v2"
-	cfg "github.com/tendermint/tendermint/config"
-	cs "github.com/tendermint/tendermint/consensus"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/evidence"
-	"github.com/tendermint/tendermint/pkg/trace"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	bcv0 "github.com/KYVENetwork/celestia-core/blockchain/v0"
+	bcv1 "github.com/KYVENetwork/celestia-core/blockchain/v1"
+	bcv2 "github.com/KYVENetwork/celestia-core/blockchain/v2"
+	cfg "github.com/KYVENetwork/celestia-core/config"
+	cs "github.com/KYVENetwork/celestia-core/consensus"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/evidence"
+	"github.com/KYVENetwork/celestia-core/pkg/trace"
 
-	cmtjson "github.com/tendermint/tendermint/libs/json"
-	"github.com/tendermint/tendermint/libs/log"
-	cmtpubsub "github.com/tendermint/tendermint/libs/pubsub"
-	"github.com/tendermint/tendermint/libs/service"
-	"github.com/tendermint/tendermint/light"
-	mempl "github.com/tendermint/tendermint/mempool"
-	mempoolv2 "github.com/tendermint/tendermint/mempool/cat"
-	mempoolv0 "github.com/tendermint/tendermint/mempool/v0"
-	mempoolv1 "github.com/tendermint/tendermint/mempool/v1"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/p2p/pex"
-	"github.com/tendermint/tendermint/privval"
-	"github.com/tendermint/tendermint/proxy"
-	rpccore "github.com/tendermint/tendermint/rpc/core"
-	grpccore "github.com/tendermint/tendermint/rpc/grpc"
-	rpcserver "github.com/tendermint/tendermint/rpc/jsonrpc/server"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/state/indexer"
-	blockidxkv "github.com/tendermint/tendermint/state/indexer/block/kv"
-	blockidxnull "github.com/tendermint/tendermint/state/indexer/block/null"
-	"github.com/tendermint/tendermint/state/indexer/sink/psql"
-	"github.com/tendermint/tendermint/state/txindex"
-	"github.com/tendermint/tendermint/state/txindex/kv"
-	"github.com/tendermint/tendermint/state/txindex/null"
-	"github.com/tendermint/tendermint/statesync"
-	"github.com/tendermint/tendermint/store"
-	"github.com/tendermint/tendermint/types"
-	cmttime "github.com/tendermint/tendermint/types/time"
-	"github.com/tendermint/tendermint/version"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtpubsub "github.com/KYVENetwork/celestia-core/libs/pubsub"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	"github.com/KYVENetwork/celestia-core/light"
+	mempl "github.com/KYVENetwork/celestia-core/mempool"
+	mempoolv2 "github.com/KYVENetwork/celestia-core/mempool/cat"
+	mempoolv0 "github.com/KYVENetwork/celestia-core/mempool/v0"
+	mempoolv1 "github.com/KYVENetwork/celestia-core/mempool/v1"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/p2p/pex"
+	"github.com/KYVENetwork/celestia-core/privval"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	rpccore "github.com/KYVENetwork/celestia-core/rpc/core"
+	grpccore "github.com/KYVENetwork/celestia-core/rpc/grpc"
+	rpcserver "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/server"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/state/indexer"
+	blockidxkv "github.com/KYVENetwork/celestia-core/state/indexer/block/kv"
+	blockidxnull "github.com/KYVENetwork/celestia-core/state/indexer/block/null"
+	"github.com/KYVENetwork/celestia-core/state/indexer/sink/psql"
+	"github.com/KYVENetwork/celestia-core/state/txindex"
+	"github.com/KYVENetwork/celestia-core/state/txindex/kv"
+	"github.com/KYVENetwork/celestia-core/state/txindex/null"
+	"github.com/KYVENetwork/celestia-core/statesync"
+	"github.com/KYVENetwork/celestia-core/store"
+	"github.com/KYVENetwork/celestia-core/types"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
+	"github.com/KYVENetwork/celestia-core/version"
 
 	_ "net/http/pprof" //nolint: gosec // securely exposed on separate, optional port
 
@@ -139,7 +139,7 @@ func DefaultMetricsProvider(config *cfg.InstrumentationConfig) MetricsProvider {
 type Option func(*Node)
 
 // Temporary interface for switching to fast sync, we should get rid of v0 and v1 reactors.
-// See: https://github.com/tendermint/tendermint/issues/4595
+// See: https://github.com/KYVENetwork/celestia-core/issues/4595
 type fastSyncReactor interface {
 	SwitchToFastSync(sm.State) error
 }
@@ -688,7 +688,7 @@ func createPEXReactorAndAddToSwitch(addrBook pex.AddrBook, config *cfg.Config,
 			// blocks assuming 10s blocks ~ 28 hours.
 			// TODO (melekes): make it dynamic based on the actual block latencies
 			// from the live network.
-			// https://github.com/tendermint/tendermint/issues/3523
+			// https://github.com/KYVENetwork/celestia-core/issues/3523
 			SeedDisconnectWaitPeriod:     28 * time.Hour,
 			PersistentPeersMaxDialPeriod: config.P2P.PersistentPeersMaxDialPeriod,
 		})
@@ -928,7 +928,7 @@ func NewNodeWithContext(ctx context.Context,
 	// Set up state sync reactor, and schedule a sync if requested.
 	// FIXME The way we do phased startups (e.g. replay -> fast sync -> consensus) is very messy,
 	// we should clean this whole thing up. See:
-	// https://github.com/tendermint/tendermint/issues/4644
+	// https://github.com/KYVENetwork/celestia-core/issues/4644
 	stateSyncReactor := statesync.NewReactor(
 		*config.StateSync,
 		proxyApp.Snapshot(),
@@ -1244,7 +1244,7 @@ func (n *Node) startRPC() ([]net.Listener, error) {
 	config.MaxOpenConnections = n.config.RPC.MaxOpenConnections
 	// If necessary adjust global WriteTimeout to ensure it's greater than
 	// TimeoutBroadcastTxCommit.
-	// See https://github.com/tendermint/tendermint/issues/3435
+	// See https://github.com/KYVENetwork/celestia-core/issues/3435
 	if config.WriteTimeout <= n.config.RPC.TimeoutBroadcastTxCommit {
 		config.WriteTimeout = n.config.RPC.TimeoutBroadcastTxCommit + 1*time.Second
 	}
@@ -1324,7 +1324,7 @@ func (n *Node) startRPC() ([]net.Listener, error) {
 		config.MaxOpenConnections = n.config.RPC.GRPCMaxOpenConnections
 		// If necessary adjust global WriteTimeout to ensure it's greater than
 		// TimeoutBroadcastTxCommit.
-		// See https://github.com/tendermint/tendermint/issues/3435
+		// See https://github.com/KYVENetwork/celestia-core/issues/3435
 		if config.WriteTimeout <= n.config.RPC.TimeoutBroadcastTxCommit {
 			config.WriteTimeout = n.config.RPC.TimeoutBroadcastTxCommit + 1*time.Second
 		}

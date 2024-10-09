@@ -12,12 +12,12 @@ import (
 
 	dbm "github.com/cometbft/cometbft-db"
 
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/light"
-	"github.com/tendermint/tendermint/light/provider"
-	mockp "github.com/tendermint/tendermint/light/provider/mock"
-	dbs "github.com/tendermint/tendermint/light/store/db"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/light"
+	"github.com/KYVENetwork/celestia-core/light/provider"
+	mockp "github.com/KYVENetwork/celestia-core/light/provider/mock"
+	dbs "github.com/KYVENetwork/celestia-core/light/store/db"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const (

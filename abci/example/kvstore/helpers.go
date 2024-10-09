@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tendermint/tendermint/abci/types"
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	"github.com/KYVENetwork/celestia-core/abci/types"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
 )
 
 // RandVal creates one random validator, with a key derived

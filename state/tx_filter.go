@@ -1,8 +1,8 @@
 package state
 
 import (
-	mempl "github.com/tendermint/tendermint/mempool"
-	"github.com/tendermint/tendermint/types"
+	mempl "github.com/KYVENetwork/celestia-core/mempool"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // TxPreCheck returns a function to filter transactions before processing.

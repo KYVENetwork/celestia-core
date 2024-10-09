@@ -9,19 +9,19 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	cmtcon "github.com/tendermint/tendermint/consensus"
-	cstypes "github.com/tendermint/tendermint/consensus/types"
-	"github.com/tendermint/tendermint/libs/bits"
-	cmtevents "github.com/tendermint/tendermint/libs/events"
-	cmtjson "github.com/tendermint/tendermint/libs/json"
-	"github.com/tendermint/tendermint/libs/log"
-	cmtsync "github.com/tendermint/tendermint/libs/sync"
-	"github.com/tendermint/tendermint/p2p"
-	cmtcons "github.com/tendermint/tendermint/proto/tendermint/consensus"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
-	cmttime "github.com/tendermint/tendermint/types/time"
+	cmtcon "github.com/KYVENetwork/celestia-core/consensus"
+	cstypes "github.com/KYVENetwork/celestia-core/consensus/types"
+	"github.com/KYVENetwork/celestia-core/libs/bits"
+	cmtevents "github.com/KYVENetwork/celestia-core/libs/events"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
+	"github.com/KYVENetwork/celestia-core/p2p"
+	cmtcons "github.com/KYVENetwork/celestia-core/proto/celestiacore/consensus"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
+	sm "github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/types"
+	cmttime "github.com/KYVENetwork/celestia-core/types/time"
 )
 
 const (

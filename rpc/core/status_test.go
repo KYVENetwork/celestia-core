@@ -3,11 +3,11 @@ package core_test
 import (
 	"testing"
 
+	"github.com/KYVENetwork/celestia-core/p2p"
+	"github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
+	"github.com/KYVENetwork/celestia-core/rpc/core"
+	"github.com/KYVENetwork/celestia-core/state/mocks"
 	"github.com/stretchr/testify/assert"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/rpc/core"
-	"github.com/tendermint/tendermint/state/mocks"
 )
 
 func TestGetNodeInfo(t *testing.T) {

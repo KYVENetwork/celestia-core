@@ -16,20 +16,20 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	abciclimocks "github.com/tendermint/tendermint/abci/client/mocks"
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	abciserver "github.com/tendermint/tendermint/abci/server"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/log"
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
-	"github.com/tendermint/tendermint/libs/service"
-	"github.com/tendermint/tendermint/mempool"
-	"github.com/tendermint/tendermint/pkg/consts"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
+	abciclient "github.com/KYVENetwork/celestia-core/abci/client"
+	abciclimocks "github.com/KYVENetwork/celestia-core/abci/client/mocks"
+	"github.com/KYVENetwork/celestia-core/abci/example/kvstore"
+	abciserver "github.com/KYVENetwork/celestia-core/abci/server"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	"github.com/KYVENetwork/celestia-core/mempool"
+	"github.com/KYVENetwork/celestia-core/pkg/consts"
+	tmproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
+	"github.com/KYVENetwork/celestia-core/proxy"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // A cleanupFunc cleans up any config / test files created for a particular
@@ -724,7 +724,7 @@ func TestMempoolNoCacheOverflow(t *testing.T) {
 }
 
 // This will non-deterministically catch some concurrency failures like
-// https://github.com/tendermint/tendermint/issues/3509
+// https://github.com/KYVENetwork/celestia-core/issues/3509
 // TODO: all of the tests should probably also run using the remote proxy app
 // since otherwise we're not actually testing the concurrency of the mempool here!
 func TestMempoolRemoteAppConcurrency(t *testing.T) {

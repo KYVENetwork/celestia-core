@@ -4,8 +4,8 @@ import (
 	"crypto/rand"
 	"testing"
 
+	"github.com/KYVENetwork/celestia-core/types"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/types"
 )
 
 func populate(cache TxCache, numTxs int) ([][]byte, error) {

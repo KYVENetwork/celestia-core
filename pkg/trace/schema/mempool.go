@@ -1,8 +1,8 @@
 package schema
 
 import (
-	"github.com/tendermint/tendermint/libs/bytes"
-	"github.com/tendermint/tendermint/pkg/trace"
+	"github.com/KYVENetwork/celestia-core/libs/bytes"
+	"github.com/KYVENetwork/celestia-core/pkg/trace"
 )
 
 // MempoolTables returns the list of tables for mempool tracing.

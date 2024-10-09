@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	tmp2p "github.com/tendermint/tendermint/proto/tendermint/p2p"
+	tmp2p "github.com/KYVENetwork/celestia-core/proto/celestiacore/p2p"
 )
 
 // EmptyNetAddress defines the string representation of an empty NetAddress

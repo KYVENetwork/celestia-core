@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/tendermint/tendermint/crypto/merkle"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	tmbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
+	tmproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
 )
 
 // RowProof is a Merkle proof that a set of rows exist in a Merkle tree with a

@@ -6,7 +6,7 @@ import (
 	"github.com/cometbft/cometbft-load-test/pkg/loadtest"
 	"github.com/google/uuid"
 
-	"github.com/tendermint/tendermint/test/loadtime/payload"
+	"github.com/KYVENetwork/celestia-core/test/loadtime/payload"
 )
 
 // Ensure all of the interfaces are correctly satisfied.

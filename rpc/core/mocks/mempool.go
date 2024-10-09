@@ -8,9 +8,9 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	types "github.com/tendermint/tendermint/abci/types"
-	mempool "github.com/tendermint/tendermint/mempool"
-	types0 "github.com/tendermint/tendermint/types"
+	types "github.com/KYVENetwork/celestia-core/abci/types"
+	mempool "github.com/KYVENetwork/celestia-core/mempool"
+	types0 "github.com/KYVENetwork/celestia-core/types"
 )
 
 // MockMempool is a mock of Mempool interface.

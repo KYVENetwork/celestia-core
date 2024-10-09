@@ -4,9 +4,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/tendermint/tendermint/config"
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
-	cmtsync "github.com/tendermint/tendermint/libs/sync"
+	"github.com/KYVENetwork/celestia-core/config"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	cmtsync "github.com/KYVENetwork/celestia-core/libs/sync"
 )
 
 // FuzzedConnection wraps any net.Conn and depending on the mode either delays

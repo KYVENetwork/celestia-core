@@ -1,4 +1,4 @@
-module github.com/tendermint/tendermint
+module github.com/KYVENetwork/celestia-core
 
 go 1.23.1
 
@@ -14,6 +14,7 @@ require (
 	github.com/celestiaorg/nmt v0.22.2
 	github.com/cometbft/cometbft-db v0.7.0
 	github.com/cometbft/cometbft-load-test v0.3.0
+	github.com/cosmos/gogoproto v1.7.0
 	github.com/creachadair/taskgroup v0.3.2
 	github.com/fortytw2/leaktest v1.3.0
 	github.com/go-git/go-git/v5 v5.11.0
@@ -93,6 +94,7 @@ require (
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/google/btree v1.1.2 // indirect
+	github.com/google/go-cmp v0.6.0 // indirect
 	github.com/gotestyourself/gotestyourself v2.2.0+incompatible // indirect
 	github.com/grafana/pyroscope-go/godeltaprof v0.1.8 // indirect
 	github.com/gtank/ristretto255 v0.1.2 // indirect

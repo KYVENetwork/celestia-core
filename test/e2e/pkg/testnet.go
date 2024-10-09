@@ -11,12 +11,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/crypto/secp256k1"
-	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
-	mcs "github.com/tendermint/tendermint/test/maverick/consensus"
+	"github.com/KYVENetwork/celestia-core/config"
+	"github.com/KYVENetwork/celestia-core/crypto"
+	"github.com/KYVENetwork/celestia-core/crypto/ed25519"
+	"github.com/KYVENetwork/celestia-core/crypto/secp256k1"
+	rpchttp "github.com/KYVENetwork/celestia-core/rpc/client/http"
+	mcs "github.com/KYVENetwork/celestia-core/test/maverick/consensus"
 )
 
 const (

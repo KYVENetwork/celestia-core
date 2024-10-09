@@ -5,16 +5,16 @@ import (
 	"fmt"
 	"sort"
 
-	abcitypes "github.com/tendermint/tendermint/abci/types"
-	cmtmath "github.com/tendermint/tendermint/libs/math"
-	cmtquery "github.com/tendermint/tendermint/libs/pubsub/query"
-	"github.com/tendermint/tendermint/pkg/consts"
-	cmtproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
-	"github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/state/txindex/null"
-	"github.com/tendermint/tendermint/types"
+	abcitypes "github.com/KYVENetwork/celestia-core/abci/types"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	cmtquery "github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	"github.com/KYVENetwork/celestia-core/pkg/consts"
+	cmtproto "github.com/KYVENetwork/celestia-core/proto/celestiacore/types"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
+	"github.com/KYVENetwork/celestia-core/state"
+	"github.com/KYVENetwork/celestia-core/state/txindex/null"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 const (

@@ -1,0 +1,9 @@
+syntax = "proto3";
+package celestiacore.libs.bits;
+
+option go_package = "github.com/KYVENetwork/celestia-core/proto/celestiacore/libs/bits";
+
+message BitArray {
+  int64           bits  = 1;
+  repeated uint64 elems = 2;
+}

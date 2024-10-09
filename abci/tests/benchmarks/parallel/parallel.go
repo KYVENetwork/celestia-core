@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/tendermint/tendermint/abci/types"
-	cmtnet "github.com/tendermint/tendermint/libs/net"
+	"github.com/KYVENetwork/celestia-core/abci/types"
+	cmtnet "github.com/KYVENetwork/celestia-core/libs/net"
 )
 
 func main() {

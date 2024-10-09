@@ -13,10 +13,10 @@ import (
 	dbm "github.com/cometbft/cometbft-db"
 	"github.com/google/orderedcode"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/pubsub/query"
-	"github.com/tendermint/tendermint/state/indexer"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	"github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	"github.com/KYVENetwork/celestia-core/state/indexer"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 var _ indexer.BlockIndexer = (*BlockerIndexer)(nil)

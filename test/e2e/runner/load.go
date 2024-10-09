@@ -7,12 +7,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	rpchttp "github.com/KYVENetwork/celestia-core/rpc/client/http"
+	e2e "github.com/KYVENetwork/celestia-core/test/e2e/pkg"
+	"github.com/KYVENetwork/celestia-core/test/loadtime/payload"
+	"github.com/KYVENetwork/celestia-core/types"
 	"github.com/google/uuid"
-	"github.com/tendermint/tendermint/libs/log"
-	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
-	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
-	"github.com/tendermint/tendermint/test/loadtime/payload"
-	"github.com/tendermint/tendermint/types"
 )
 
 const workerPoolSize = 16

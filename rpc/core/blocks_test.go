@@ -11,18 +11,18 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	"github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
+	"github.com/KYVENetwork/celestia-core/types"
 	dbm "github.com/cometbft/cometbft-db"
-	"github.com/tendermint/tendermint/crypto/merkle"
-	"github.com/tendermint/tendermint/libs/pubsub/query"
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
-	"github.com/tendermint/tendermint/types"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	cmtstate "github.com/tendermint/tendermint/proto/tendermint/state"
-	cmtstore "github.com/tendermint/tendermint/proto/tendermint/store"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
-	sm "github.com/tendermint/tendermint/state"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	cmtstate "github.com/KYVENetwork/celestia-core/proto/celestiacore/state"
+	cmtstore "github.com/KYVENetwork/celestia-core/proto/celestiacore/store"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
+	sm "github.com/KYVENetwork/celestia-core/state"
 )
 
 func TestBlockchainInfo(t *testing.T) {

@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	cmtjson "github.com/tendermint/tendermint/libs/json"
-	types "github.com/tendermint/tendermint/rpc/jsonrpc/types"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	types "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
 )
 
 func unmarshalResponseBytes(

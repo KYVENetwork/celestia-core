@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"testing"
 
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	tmbytes "github.com/KYVENetwork/celestia-core/libs/bytes"
 	"github.com/stretchr/testify/assert"
-	"github.com/tendermint/tendermint/crypto/merkle"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
 )
 
 func TestRowProofValidate(t *testing.T) {

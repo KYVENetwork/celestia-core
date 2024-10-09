@@ -3,11 +3,11 @@ package core
 import (
 	"testing"
 
+	mock "github.com/KYVENetwork/celestia-core/rpc/core/mocks"
+	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
+	types "github.com/KYVENetwork/celestia-core/types"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
-	mock "github.com/tendermint/tendermint/rpc/core/mocks"
-	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
-	types "github.com/tendermint/tendermint/types"
 )
 
 // TestTxStatus tests the TxStatus function in the RPC core

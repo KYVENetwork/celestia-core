@@ -10,10 +10,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	cmtpubsub "github.com/tendermint/tendermint/libs/pubsub"
-	cmtquery "github.com/tendermint/tendermint/libs/pubsub/query"
-	cmtrand "github.com/tendermint/tendermint/libs/rand"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	cmtpubsub "github.com/KYVENetwork/celestia-core/libs/pubsub"
+	cmtquery "github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	cmtrand "github.com/KYVENetwork/celestia-core/libs/rand"
 )
 
 func TestEventBusPublishEventTx(t *testing.T) {

@@ -7,14 +7,14 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/tendermint/tendermint/crypto/merkle"
-	"github.com/tendermint/tendermint/libs/bytes"
-	cmtmath "github.com/tendermint/tendermint/libs/math"
-	cmtquery "github.com/tendermint/tendermint/libs/pubsub/query"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
-	blockidxnull "github.com/tendermint/tendermint/state/indexer/block/null"
-	"github.com/tendermint/tendermint/types"
+	"github.com/KYVENetwork/celestia-core/crypto/merkle"
+	"github.com/KYVENetwork/celestia-core/libs/bytes"
+	cmtmath "github.com/KYVENetwork/celestia-core/libs/math"
+	cmtquery "github.com/KYVENetwork/celestia-core/libs/pubsub/query"
+	ctypes "github.com/KYVENetwork/celestia-core/rpc/core/types"
+	rpctypes "github.com/KYVENetwork/celestia-core/rpc/jsonrpc/types"
+	blockidxnull "github.com/KYVENetwork/celestia-core/state/indexer/block/null"
+	"github.com/KYVENetwork/celestia-core/types"
 )
 
 // BlockchainInfo gets block headers for minHeight <= height <= maxHeight.
@@ -109,7 +109,7 @@ func Header(ctx *rpctypes.Context, heightPtr *int64) (*ctypes.ResultHeader, erro
 func HeaderByHash(ctx *rpctypes.Context, hash bytes.HexBytes) (*ctypes.ResultHeader, error) {
 	// N.B. The hash parameter is HexBytes so that the reflective parameter
 	// decoding logic in the HTTP service will correctly translate from JSON.
-	// See https://github.com/tendermint/tendermint/issues/6802 for context.
+	// See https://github.com/KYVENetwork/celestia-core/issues/6802 for context.
 
 	blockMeta := GetEnvironment().BlockStore.LoadBlockMetaByHash(hash)
 	if blockMeta == nil {

@@ -49,8 +49,8 @@ branch in the `tendermint/tendermint` Buf repository.
 [tmcore]: https://github.com/tendermint/tendermint
 [\#1330]: https://github.com/cometbft/cometbft/issues/1330
 [v034-protos]: https://github.com/cometbft/cometbft/tree/v0.34.x/proto
-[v034-buf]: https://buf.build/tendermint/tendermint/docs/v0.34.x
+[v034-buf]: https://buf.build/KYVENetwork/celestia-core/docs/v0.34.x
 [v037-protos]: https://github.com/cometbft/cometbft/tree/v0.37.x/proto
-[v037-buf]: https://buf.build/tendermint/tendermint/docs/v0.37.x
+[v037-buf]: https://buf.build/KYVENetwork/celestia-core/docs/v0.37.x
 [v038-protos]: https://github.com/cometbft/cometbft/tree/v0.38.x/proto
-[v038-buf]: https://buf.build/tendermint/tendermint/docs/v0.38.x
+[v038-buf]: https://buf.build/KYVENetwork/celestia-core/docs/v0.38.x

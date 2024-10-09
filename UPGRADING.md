@@ -75,9 +75,9 @@ If you run into any trouble with this upgrade, please [contact us][discussions].
 For historical upgrading instructions for Tendermint Core v0.34.24 and earlier,
 please see the [Tendermint Core upgrading instructions][tmupgrade].
 
-[v03424]: https://github.com/tendermint/tendermint/releases/tag/v0.34.24
+[v03424]: https://github.com/KYVENetwork/celestia-core/releases/tag/v0.34.24
 [v03425]: https://github.com/informalsystems/tendermint/releases/tag/v0.34.25
 [v03426]: https://github.com/informalsystems/tendermint/releases/tag/v0.34.26
 [discussions]: https://github.com/cometbft/cometbft/discussions
-[tmupgrade]: https://github.com/tendermint/tendermint/blob/35581cf54ec436b8c37fabb43fdaa3f48339a170/UPGRADING.md
+[tmupgrade]: https://github.com/KYVENetwork/celestia-core/blob/35581cf54ec436b8c37fabb43fdaa3f48339a170/UPGRADING.md
 [go120]: https://go.dev/blog/go1.20

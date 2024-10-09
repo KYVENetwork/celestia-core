@@ -3,10 +3,10 @@ package types
 import (
 	"fmt"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	cmtjson "github.com/tendermint/tendermint/libs/json"
-	cmtpubsub "github.com/tendermint/tendermint/libs/pubsub"
-	cmtquery "github.com/tendermint/tendermint/libs/pubsub/query"
+	abci "github.com/KYVENetwork/celestia-core/abci/types"
+	cmtjson "github.com/KYVENetwork/celestia-core/libs/json"
+	cmtpubsub "github.com/KYVENetwork/celestia-core/libs/pubsub"
+	cmtquery "github.com/KYVENetwork/celestia-core/libs/pubsub/query"
 )
 
 // Reserved event types (alphabetically sorted).

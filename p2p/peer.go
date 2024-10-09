@@ -8,13 +8,13 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/tendermint/tendermint/libs/cmap"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	"github.com/tendermint/tendermint/pkg/trace"
-	"github.com/tendermint/tendermint/pkg/trace/schema"
+	"github.com/KYVENetwork/celestia-core/libs/cmap"
+	"github.com/KYVENetwork/celestia-core/libs/log"
+	"github.com/KYVENetwork/celestia-core/libs/service"
+	"github.com/KYVENetwork/celestia-core/pkg/trace"
+	"github.com/KYVENetwork/celestia-core/pkg/trace/schema"
 
-	cmtconn "github.com/tendermint/tendermint/p2p/conn"
+	cmtconn "github.com/KYVENetwork/celestia-core/p2p/conn"
 )
 
 //go:generate ../scripts/mockery_generate.sh Peer

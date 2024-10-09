@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/KYVENetwork/celestia-core/types"
 	"github.com/fortytw2/leaktest"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/types"
 )
 
 func TestRequestSchedulerRerequest(t *testing.T) {
