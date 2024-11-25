@@ -5,7 +5,6 @@ import (
 
 	abcicli "github.com/KYVENetwork/celestia-core/abci/client"
 	cmtlog "github.com/KYVENetwork/celestia-core/libs/log"
-	cmtos "github.com/KYVENetwork/celestia-core/libs/os"
 	"github.com/KYVENetwork/celestia-core/libs/service"
 )
 
@@ -129,10 +128,11 @@ func (app *multiAppConn) killTMOnClientError() {
 		logger.Error(
 			fmt.Sprintf("%s connection terminated. Did the application crash? Please restart CometBFT", conn),
 			"err", err)
-		killErr := cmtos.Kill()
-		if killErr != nil {
-			logger.Error("Failed to kill this process - please do so manually", "err", killErr)
-		}
+		// Do not kill tendermint process to enable KSYNC to continue running during upgrades
+		//killErr := cmtos.Kill()
+		//if killErr != nil {
+		//	logger.Error("Failed to kill this process - please do so manually", "err", killErr)
+		//}
 	}
 
 	select {
